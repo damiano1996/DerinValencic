@@ -11,6 +11,6 @@
 ## Project Tree
 
 - [Delivery Folder](DeliveryFolder): contains the documents for final evaluation;
-- [RASD](RASD): contains the Requirements Analysis and Apecification Document;
+- [RASD](RASD): contains the Requirements Analysis and Specification Document;
 - [DD](DD): contains the Design Document;
 - [ProjectAssignments_AY2020-2021](ProjectAssignments_AY2020-2021): contains the project assignments.
