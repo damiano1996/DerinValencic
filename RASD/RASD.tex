@@ -1,61 +1,106 @@
-\documentclass{article}
-
-\usepackage{arxiv}
-
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
-\usepackage{lipsum}
-\usepackage{amssymb, amsmath}
-
-\title{Requirements Analysis and Specification Document}
-
-\author{
-	Damiano Derin \\
-	Department of Computer Science and Engineering\\
-	Politecnico di Milano\\
-	\texttt{damiano.derin@mail.polimi.it}
-	\And
-	Jas Valencic \\
-	Department of Computer Science and Engineering\\
-	Politecnico di Milano\\
-	\texttt{jas.valencic@mail.polimi.it}
-}
-
-  
+\input{commandsFile}
 
 \begin{document}
-\maketitle
+
+%TITLE PAGE
+
+\begin{titlepage}
 
 
-% keywords can be removed
-% \keywords{First keyword \and Second keyword \and More}
+%LOGO
+
+{\begin{table}[t!]
+\centering
+\begin{tabu} to \textwidth { X[1.3,r,p] X[1.7,l,p] }
+\textcolor{Blue}
+{\textbf{\small{Travlendar+ project YOUR NAMES}}} & \includegraphics[scale=0.5]{Images/PolimiLogo}
+\end{tabu}
+\end{table}}~\\ [7cm]
+
+%TITLE 
+
+\begin{flushleft}
+
+%Replace the text string with your title
+{\textcolor{Blue}{\textbf{\Huge{Requirement Analysis and Specification
+        Document}}}} \\ [1cm]
+
+\end{flushleft}
+
+\end{titlepage}
+
+%Define deliverable specific info
+%Replace cell contents where needed
+\begin{table}[h!]
+\begin{tabu} to \textwidth { X[0.3,r,p] X[0.7,l,p] }
+\hline
+
+\textbf{Deliverable:} & RASD\\
+\textbf{Title:} & Requirement Analysis and Verification Document \\
+\textbf{Authors:} & YOUR NAMES \\
+\textbf{Version:} & 1.0 \\ 
+\textbf{Date:} & 31-January-2016 \\
+\textbf{Download page:} & LINK TO YOUR REPOSITORY \\
+\textbf{Copyright:} & Copyright © 2017, YOUR NAMES – All rights reserved \\
+\hline
+\end{tabu}
+\end{table}
 
 
-\input{introduction}
-\input{section_01}
 
 
-\bibliographystyle{unsrt}  
-%\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
-%%% and comment out the ``thebibliography'' section.
+\setcounter{page}{2}
 
 
-%%% Comment out this section when you \bibliography{references} is enabled.
-% \begin{thebibliography}{1}
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
 
-% \bibitem{kour2014real}
-% George Kour and Raid Saabne.
-% \newblock Real-time segmentation of on-line handwritten arabic script.
-% \newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
-%   International Conference on}, pages 417--422. IEEE, 2014.
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Introduction}}}
+\label{sect:introduction}
+\input{Files/introduction}
 
-% \end{thebibliography}
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Overall Description}}}
+\label{sect:overview}
+\input{Files/overview}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Specific Requirements}}}
+\label{sect:requirements}
+\input{Files/requirements}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Formal Analysis Using Alloy}}}
+\label{sect:alloy}
+\input{Files/alloy}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Effort Spent}}}
+\label{sect:effort}
+\input{Files/effort}
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{main}
+%------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 \end{document}
