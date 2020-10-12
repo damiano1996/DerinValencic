@@ -1,3 +1,3 @@
-# Delivery Folder
+## Delivery Folder
 
-Inside this directory are stored the final commits, of the documents published, for the evaluation.
+Inside this directory are stored the documents for the final evaluation.
