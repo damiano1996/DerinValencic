@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  15 OCT 2020 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.25)  15 OCT 2020 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,9 +45,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language4) on input line 105.
+(babel)             (\language42) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language4) on input line 108.
+(babel)             (\language42) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -953,11 +953,7 @@ l.72 \mainmatter
 
 ] (./main/introduction.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) (./main/section01.tex) (./main/conclusions.tex [1
+) (./main/section01.tex) (./main/conclusions.tex [1
 
 
 ]
@@ -980,27 +976,24 @@ Package rerunfilecheck Info: File `RASD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 24876 strings out of 483140
- 467394 string characters out of 5965151
- 852108 words of memory out of 5000000
- 39337 multiletter control sequences out of 15000+600000
- 547702 words of font info for 54 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 24853 strings out of 481239
+ 466727 string characters out of 5920377
+ 856919 words of memory out of 5000000
+ 39563 multiletter control sequences out of 15000+600000
+ 546164 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
  68i,8n,64p,999b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.6
-00pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx207
-4.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1095.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx2488.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecrm1095.600pk>
-Output written on RASD.pdf (4 pages, 91229 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on RASD.pdf (4 pages, 160346 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
