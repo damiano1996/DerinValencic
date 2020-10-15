@@ -1,106 +1,102 @@
-\input{commandsFile}
+\documentclass[a4paper,11pt,oneside,openany]{book}
 
-\begin{document}
+\usepackage[english]{babel}
 
-%TITLE PAGE
+\usepackage[utf8]{inputenc} % Consente l'uso dei caratteri accentati italiani
+\usepackage[T1]{fontenc} % Consente l'uso di caratteri speciali appartenenti in genere ad alfabeti non inglesi
 
-\begin{titlepage}
+\usepackage{fancyhdr} % Consente il rendering della copertina
+
+\usepackage{graphicx} % Consente l'inserimento delle figure nel documento
+
+\usepackage{subfigure} % Consente l'inserimento di sottofigure
+
+\usepackage{tabularx} % Consente l'uso di funzionalità aggiuntive alle tabelle
+\usepackage{longtable} % Consente la scrittura delle tabelle su più pagine
+
+\usepackage[titletoc]{appendix} % Consente di porre le appendici in indice
+
+\usepackage{float} % Necessario per inserire immagini flottanti
+
+\usepackage{fancyvrb} % Consente l'utilizzo di finestre Verbatim (testo cche si vuole porre così com'è, senza formattazione alcuna) all'interno di una cornice
+
+\usepackage{amsmath} % Consente l'uso di funzioni aggiuntive per le formule
+\numberwithin{equation}{section}
+
+\usepackage{hyperref} % Indice degli argomenti e rimandi cliccabili, per una navigazione più comoda all'interno del file
+
+\usepackage{lipsum} % Consente di inserire testo fittizio all'interno della tesi. Inutile in fase di scrittura della tesi. Eliminare questa dicitura e tutte le diciture \lorem all'interno del testo.
+
+\usepackage{lineno}
+\modulolinenumbers[1]
+
+\usepackage[nopostdot,style=super,nonumberlist,toc, automake]{glossaries}
+\makeglossaries
+
+\setacronymstyle{long-short}
+\input{main/glossary} % input definitions
+
+% Per inserire i contenuti, riferirsi ai file relativi e segnati tra parentesi graffe nei parametri \input
+
+%*******************************************************
+% Impostazioni della singola pagina e della copertina
+%*******************************************************
+\input{settings/settings}
+
+%*******************************************************
+% Copertina
+%*******************************************************
+% Imposta la copertina
+% Non modificare questa parte
+\usepackage[some]{background}
+\SetBgScale{1}
+\SetBgColor{gray}
+\SetBgAngle{0}
+\SetBgOpacity{0.07}
+% Non modificare questa parte
+
+\input{main/frontpage}
+	
+\frontmatter
 
 
-%LOGO
-
-{\begin{table}[t!]
-\centering
-\begin{tabu} to \textwidth { X[1.3,r,p] X[1.7,l,p] }
-\textcolor{Blue}
-{\textbf{\small{Travlendar+ project YOUR NAMES}}} & \includegraphics[scale=0.5]{Images/PolimiLogo}
-\end{tabu}
-\end{table}}~\\ [7cm]
-
-%TITLE 
-
-\begin{flushleft}
-
-%Replace the text string with your title
-{\textcolor{Blue}{\textbf{\Huge{Requirement Analysis and Specification
-        Document}}}} \\ [1cm]
-
-\end{flushleft}
-
-\end{titlepage}
-
-%Define deliverable specific info
-%Replace cell contents where needed
-\begin{table}[h!]
-\begin{tabu} to \textwidth { X[0.3,r,p] X[0.7,l,p] }
-\hline
-
-\textbf{Deliverable:} & RASD\\
-\textbf{Title:} & Requirement Analysis and Verification Document \\
-\textbf{Authors:} & YOUR NAMES \\
-\textbf{Version:} & 1.0 \\ 
-\textbf{Date:} & 31-January-2016 \\
-\textbf{Download page:} & LINK TO YOUR REPOSITORY \\
-\textbf{Copyright:} & Copyright © 2017, YOUR NAMES – All rights reserved \\
-\hline
-\end{tabu}
-\end{table}
-
-
-
-
-\setcounter{page}{2}
-
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\newpage
-\addcontentsline{toc}{section}{Table of Contents}
+%*******************************************************
+% Indice
+%*******************************************************
 \tableofcontents
-\newpage
-\addcontentsline{toc}{section}{List of Figures}
-\listoffigures
-\addcontentsline{toc}{section}{List of Tables}
-\listoftables
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-{\color{Blue}{\section{Introduction}}}
-\label{sect:introduction}
-\input{Files/introduction}
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-{\color{Blue}{\section{Overall Description}}}
-\label{sect:overview}
-\input{Files/overview}
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-{\color{Blue}{\section{Specific Requirements}}}
-\label{sect:requirements}
-\input{Files/requirements}
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-{\color{Blue}{\section{Formal Analysis Using Alloy}}}
-\label{sect:alloy}
-\input{Files/alloy}
-
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-{\color{Blue}{\section{Effort Spent}}}
-\label{sect:effort}
-\input{Files/effort}
 
 
-%------------------------------------------------------------------------------------------------------------------------------------------------
-\clearpage
-\addcontentsline{toc}{section}{References}
+%*******************************************************
+% Capitoli
+%*******************************************************
+\mainmatter
+
+% Non modificare questa parte
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+% Non modificare questa parte
+
+% Inserire tutti i capitoli necessari. Si possono inserire tutti i capitoli
+% all'interno di un singolo file .tex oppure un file .tex per ogni capitolo.
+
+\begin{linenumbers}
+\input{main/introduction}
+
+\input{main/section01}
+
+\input{main/conclusions}
+\end{linenumbers}
+
+%*******************************************************
+% Bibliografia
+%*******************************************************
+\nocite{*}
+\bibliography{bib/bibliography}
 \bibliographystyle{plain}
-\bibliography{main}
-%------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
+%*******************************************************
+% Glossario
+%*******************************************************
+%\glsaddall
+\printglossary[type=\acronymtype,title={Glossary}]
 
 \end{document}
