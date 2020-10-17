@@ -1,0 +1,69 @@
+SOFTWARE ENGINEERING 2
+
+    RASD - Notes
+
+------------------------------------------------------------------------------------------------------------------------
+
+// TODO: Discuss about the descriptive granularity of the statements.
+
+GOALS, DOMAIN ASSUMPTIONS and REQUIREMENTS:
+
+- GOALS:
+		[ Groups composed by single student requirements: ]
+		- [G1]: CLup shall allow customers to line up from a remote device.
+		- [G2]: CLup shall monitor the accesses to the store.
+		- [G3]: CLup shall manage the queue of customers.
+		
+		- [G4]: CLup shall allow customers to line up from a physical spot.
+		
+		[ Groups composed by two students requirements: ]
+		- [G5]: CLup shall allow customers to book a visit from a remote device.
+		- [G6]: CLup shall allow customers to book a visit from a physical hotspot.
+
+		- [G7]: CLup shall maximize the number of customers in the store w.r.t.
+			    the capacity of the store and the social distances imposed
+			    by the "decreto del Presidente del Consiglio dei ministri (d.P.C.m.)".
+
+- DOMAIN ASSUMPTIONS:
+        - [D]: Customers respect the d.P.C.m. impositions.
+        - [D]: If customers have line up from remote, they shall approach to the store with the smartphone.
+        - [D]: If customers indicate the category of products they would buy, they won't buy other things.
+        - [D]: Customers lining up remotely mustn't be in the line of sight of the store.
+        - [D]: Customers lining up remotely shall have a GPS module inside the smartphone.
+        - [D]: Customers lining up remotely shall accept GPS localization permissions.
+        - [D]: Customers lining up remotely shall keep Internet connection active.
+        - [D]: Customers lining up remotely shall keep notification option active.
+        - [D]: Customers enter in the store only if the system authorize them.
+        - [D]: Customers go away from the store after they have done their shopping.
+        - [D]: Customers lining up from the physical spot take care about the printed QR code.
+        - [D]: Customers show the QR code to the scanner to be accepted by the system.
+
+- REQUIREMENTS:
+
+        - FUNCTIONAL:
+                - [R]: CLup shall provide a sign-in page to register new customers. // Have we to specify the content of the form?
+                                                                                    // Maybe yes, in sub-point.
+                                                                                    // Same rationale for the other requirements.
+                - [R]: CLup shall provide a login page to authenticate already registered customers.
+                - [R]: CLup shall provide, to the customers, the possibility to line up.
+                - [R]: CLup shall provide, to the customers, the possibility to book a visit.
+                - [R]: CLup shall generate, and store, a QR code to identify the lining up of the customer.
+                - [R]: CLup shall print the QR code if generated from the physical spot.
+                - [R]: CLup shall scan the QR code.
+                - [R]: CLup shall advise authorized customers, with a confirmation message, that they can enter in the store.
+                - [R]: CLup shall plan the optimal road trip, in terms of time, from customer position and store.
+                - [R]: CLup shall estimate the time of departure, of the customers, from their position to reach the store.
+                - [R]: CLup shall notify the customers when the time of departure is approaching. // Quantification is needed!!!
+                - [R]: CLup shall keep track of the customers in the store.
+                - [R]: CLup shall keep track the average residence time, of the customers, in the store.
+                - [R]: CLup shall
+
+        - NON FUNCTIONAL:
+                - [R]: CLup shall be easy to use.
+                - [R]:
+
+        - CONSTRAINTS:
+                - [R]: CLup shall be a smartphone application.
+                - [R]:
+
+------------------------------------------------------------------------------------------------------------------------
