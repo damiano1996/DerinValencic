@@ -79,8 +79,9 @@ Exit conditions:    | Sign up finished successfully
 Exceptions:         | - Customer's username already in use
                       - Empty form field
                       - Policy agreement rejected
+                      - Lost Internet connection
 
-Name:               | Log in
+Name:               | Log In
 Actor:              | Customer
 Entry Conditions:   | Customer is on the log in page
 Events flow:        | - Customer inserts the requested information in the form
@@ -88,16 +89,32 @@ Events flow:        | - Customer inserts the requested information in the form
 Exit conditions:    | Log in finished successfully
 Exceptions:         | - Customer's username or password incorrect
                       - Empty form field
+                      - Lost Internet connection
 
-Name:               | Lining up
+Name:               | Log Out
+Actor:              | Customer
+Entry Conditions:   | Customer is logged in and he is on the log out page
+Events flow:        | Customer clicks on the Log Out button
+Exit conditions:    | Log Out completed successfully
+Exceptions:         | - Account information don't flushed entirely from the smartphone's cache
+                      - Lost Internet connection
+
+Name:               | Lining Up
+Actor:              | Customer
+Entry Conditions:   | Customer is logged in and he is on the lining up page
+Events flow:        | - Customer fill the form
+Exit conditions:    |
+Exceptions:         |
+
+Name:               | Booking Visit
 Actor:              | Customer
 Entry Conditions:   |
 Events flow:        |
 Exit conditions:    |
 Exceptions:         |
 
-Name:               | Booking visit
-Actor:              |
+Name:               | Check queue
+Actor:              | Customer
 Entry Conditions:   |
 Events flow:        |
 Exit conditions:    |
@@ -108,5 +125,6 @@ Actor:              |
 Entry Conditions:   |
 Events flow:        |
 Exit conditions:    |
-Exceptions:         |
+
+
 
