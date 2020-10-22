@@ -14,15 +14,17 @@ GOALS, DOMAIN ASSUMPTIONS and REQUIREMENTS:
         - [G2]: CLup shall monitor the accesses to the store.
         - [G3]: CLup shall manage the queue of customers.
 
-        - [G4]: CLup shall allow customers to line up from a physical spot.
+        // (?) - [G4]: CLup shall allow customers to line up from a physical spot.
 
         [ Groups composed by two students requirements: ]
         - [G5]: CLup shall allow customers to book a visit from a remote device.
-        - [G6]: CLup shall allow customers to book a visit from a physical hotspot.
+        // (?) - [G6]: CLup shall allow customers to book a visit from a physical spot.
 
         - [G7]: CLup shall maximize the number of customers in the store w.r.t.
                 the capacity of the store and the social distances imposed
                 by the "decreto del Presidente del Consiglio dei ministri (d.P.C.m.)".
+
+        // Aggiungiamo un goal per garantire la visibilità del WR code nell'app?
 
 - DOMAIN ASSUMPTIONS:
         - [D]: Customers respect the d.P.C.m. impositions.
@@ -45,12 +47,12 @@ GOALS, DOMAIN ASSUMPTIONS and REQUIREMENTS:
                                                                                     // Maybe yes, in sub-point.
                                                                                     // Same rationale for the other requirements.
                 - [R]: CLup shall provide a log in page to authenticate already registered customers.
-                - [R]: CLup shall provide, to the customers, the possibility to line up.
+                - [R]: CLup shall provide, to the customers, the possibility to line up. // da spostare tra i goal
                 - [R]: CLup shall provide, to the customers, the possibility to book a visit.
                 - [R]: CLup shall generate, and store, a QR code to identify the lining up of the customer.
                 - [R]: CLup shall print the QR code if generated from the physical spot.
                 - [R]: CLup shall scan the QR code.
-                - [R]: CLup shall advise authorized customers, with a confirmation message, that they can enter in the store.
+                - [R]: CLup shall advise authorized customers, with a confirmation message, that they can enter in the store. // tornello risolve tutto
                 - [R]: CLup shall plan the optimal road trip, in terms of time, from customer position and store.
                 - [R]: CLup shall estimate the time of departure, of the customers, from their position to reach the store.
                 - [R]: CLup shall notify the customers when the time of departure is approaching. // Quantification is needed!!!
@@ -113,12 +115,18 @@ Events flow:        |
 Exit conditions:    |
 Exceptions:         |
 
-Name:               | Check queue
+Name:               | Get Status
 Actor:              | Customer
 Entry Conditions:   |
 Events flow:        |
 Exit conditions:    |
 Exceptions:         |
+
+Name:               | Show Ticket
+Actor:              |
+Entry Conditions:   |
+Events flow:        |
+Exit conditions:    |
 
 Name:               |
 Actor:              |
