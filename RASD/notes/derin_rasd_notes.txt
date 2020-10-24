@@ -38,7 +38,7 @@ GOALS, DOMAIN ASSUMPTIONS and REQUIREMENTS:
         - [D]: Customers enter in the store only if the system authorize them.
         - [D]: Customers go away from the store after they have done their shopping.
         - [D]: Customers lining up from the physical spot take care about the printed QR code.
-        - [D]: Customers show the QR code to the scanner to be accepted by the system.
+        - [D]: Customers show the QR code to the scanner to be accepted by the system
 
 - REQUIREMENTS:
 
