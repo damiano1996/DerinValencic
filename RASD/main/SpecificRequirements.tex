@@ -71,12 +71,12 @@ Bla bla bla...
 	\item Customer clicks on the Log In button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Log In completed successfully. \\ 
+	\textbf{Exit Conditions} & Log In completed successfully and customer redirected to home page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
 	\item Customer's username or password incorrect.
-	\item Empty form filed.
+	\item Empty form field.
 	\item Lost Internet connection.
 	\end{itemize} \\ 
 	\hline
@@ -100,7 +100,7 @@ Bla bla bla...
 	\item Customer clicks on the Log Out button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Log Out completed successfully. \\ 
+	\textbf{Exit Conditions} & Log Out completed successfully and customer redirected to the Sign Up/Log In page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
@@ -110,6 +110,147 @@ Bla bla bla...
 	\hline
 \end{tabular}
 \caption{Customer - use case: \textbf{Log Out}.}
+\label{tableLogIn}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
+	\hline
+	\textbf{Name} & Lining Up \\ 
+	\hline
+	\textbf{Actor} & Customer \\ 
+	\hline
+	\textbf{Entry Conditions} & Customer is on the Home page \\ 
+	\hline
+	\textbf{Event Flows} &
+	\begin{itemize}
+	\item Customer clicks on the Lining Up button.
+	\end{itemize} \\ 
+	\hline
+	\textbf{Exit Conditions} & Lining Up completed successfully and the application returns to the customer the Status page. \\ 
+	\hline
+	\textbf{Exceptions} &
+	\begin{itemize}
+	\item Previous Lining Up was not expired.
+	\item Customer wasn't logged.
+	\item Lost Internet connection.
+	\end{itemize} \\ 
+	\hline
+\end{tabular}
+\caption{Customer - use case: \textbf{Lining Up}.}
+\label{tableLogIn}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
+	\hline
+	\textbf{Name} & Booking Visit \\ 
+	\hline
+	\textbf{Actor} & Customer \\ 
+	\hline
+	\textbf{Entry Conditions} & Customer is on the Home page \\ 
+	\hline
+	\textbf{Event Flows} &
+	\begin{itemize}
+	\item Customer clicks on the Booking Visit button.
+	\item Customer fills the form with the requested data.
+	\item Customer clicks on the Submit button.
+	\end{itemize} \\ 
+	\hline
+	\textbf{Exit Conditions} & Booking Visit completed successfully and the application returns to the customer the Status page. \\ 
+	\hline
+	\textbf{Exceptions} &
+	\begin{itemize}
+	\item Previous Booking Visit was not expired.
+	\item Customer wasn't logged.
+	\item Lost Internet connection.
+	\end{itemize} \\ 
+	\hline
+\end{tabular}
+\caption{Customer - use case: \textbf{Booking Visit}.}
+\label{tableLogIn}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
+	\hline
+	\textbf{Name} & Show QR code \\ 
+	\hline
+	\textbf{Actor} & Customer \\ 
+	\hline
+	\textbf{Entry Conditions} & ... \\ 
+	\hline
+	\textbf{Event Flows} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+	\textbf{Exit Conditions} & ... \\ 
+	\hline
+	\textbf{Exceptions} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+\end{tabular}
+\caption{Customer - use case: \textbf{Show QR code}.}
+\label{tableLogIn}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
+	\hline
+	\textbf{Name} & Get Status \\ 
+	\hline
+	\textbf{Actor} & Customer \\ 
+	\hline
+	\textbf{Entry Conditions} & ... \\ 
+	\hline
+	\textbf{Event Flows} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+	\textbf{Exit Conditions} & ... \\ 
+	\hline
+	\textbf{Exceptions} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+\end{tabular}
+\caption{Customer - use case: \textbf{Get Status}.}
+\label{tableLogIn}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
+	\hline
+	\textbf{Name} & Print QR code \\ 
+	\hline
+	\textbf{Actor} & Customer \\ 
+	\hline
+	\textbf{Entry Conditions} & ... \\ 
+	\hline
+	\textbf{Event Flows} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+	\textbf{Exit Conditions} & ... \\ 
+	\hline
+	\textbf{Exceptions} &
+	\begin{itemize}
+	\item ...
+	\end{itemize} \\ 
+	\hline
+\end{tabular}
+\caption{Customer - use case: \textbf{Print QR code}.}
 \label{tableLogIn}
 \end{table}
 
