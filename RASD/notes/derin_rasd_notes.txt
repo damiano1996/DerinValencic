@@ -14,7 +14,7 @@ GOALS, DOMAIN ASSUMPTIONS and REQUIREMENTS:
         - [G2]: CLup shall monitor the accesses to the store.
         - [G3]: CLup shall manage the queue of customers.
 
-        // (?) - [G4]: CLup shall allow customers to line up from a physical spot.
+        - [G4]: CLup shall allow customers to line up from a physical spot.
 
         [ Groups composed by two students requirements: ]
         - [G5]: CLup shall allow customers to book a visit from a remote device.

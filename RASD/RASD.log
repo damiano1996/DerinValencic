@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.25)  26 OCT 2020 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  27 OCT 2020 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,9 +45,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language42) on input line 105.
+(babel)             (\language4) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language42) on input line 108.
+(babel)             (\language4) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -866,6 +866,12 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 ))
 (./main/frontpage.tex (./RASD.aux
 
+LaTeX Warning: Label `customersUseCasesDiagram' multiply defined.
+
+
+LaTeX Warning: Label `customersUseCasesDiagram' multiply defined.
+
+
 LaTeX Warning: Label `tableLogIn' multiply defined.
 
 
@@ -961,7 +967,7 @@ Package pdftex.def Info: images/polimi_logo.jpg  used on input line 10.
 h the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ... {3.5.2}Availability}{8}{subsection.3.5.2}
+l.34 ... {3.5.2}Availability}{6}{subsection.3.5.2}
                                                   % [1
 
 
@@ -981,27 +987,44 @@ Chapter 1.
 ) (./main/OverallDescription.tex [1
 
 
-] [2]
+]
 Chapter 2.
-[3
+[2
 
-]) (./main/SpecificRequirements.tex [4]
+]) (./main/SpecificRequirements.tex [3]
 Chapter 3.
-<images/customers_use_cases_diagram.pdf, id=257, 587.3142pt x 529.98pt>
+<images/log_in.png, id=252, 1375.1375pt x 2543.5025pt>
+File: images/log_in.png Graphic file (type png)
+<use images/log_in.png>
+Package pdftex.def Info: images/log_in.png  used on input line 12.
+(pdftex.def)             Requested size: 180.0pt x 332.91795pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sign_up.png, id=254, 1375.1375pt x 2543.5025pt>
+File: images/sign_up.png Graphic file (type png)
+<use images/sign_up.png>
+Package pdftex.def Info: images/sign_up.png  used on input line 21.
+(pdftex.def)             Requested size: 180.0pt x 332.91795pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/customers_use_cases_diagram.pdf, id=255, 587.3142pt x 529.98pt>
 File: images/customers_use_cases_diagram.pdf Graphic file (type pdf)
 <use images/customers_use_cases_diagram.pdf>
 Package pdftex.def Info: images/customers_use_cases_diagram.pdf  used on input 
-line 22.
+line 43.
 (pdftex.def)             Requested size: 360.0pt x 324.85616pt.
-[5
 
-]
-Underfull \hbox (badness 1147) in paragraph at lines 43--44
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 64--65
 []|\T1/cmr/m/n/10.95 Sign Up com-pleted suc-cess-fully and cus-tomer is
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 29--54
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 50--75
  [][] 
  []
 
@@ -1009,7 +1032,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 29--54
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 60--84
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 81--105
  [][] 
  []
 
@@ -1017,7 +1040,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 60--84
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 90--112
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 111--133
  [][] 
  []
 
@@ -1025,7 +1048,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 90--112
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 118--141
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 139--164
  [][] 
  []
 
@@ -1033,7 +1056,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 118--141
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 147--172
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 170--197
  [][] 
  []
 
@@ -1041,7 +1064,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 147--172
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 178--199
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 203--226
  [][] 
  []
 
@@ -1049,7 +1072,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 178--199
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 205--226
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 232--255
  [][] 
  []
 
@@ -1057,42 +1080,39 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 205--226
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 232--253
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 261--284
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./main/FormalAnalysisUsingAlloy.tex [6 <./images/customers_use_cases_diagram
-.pdf
+) (./main/FormalAnalysisUsingAlloy.tex [4
+
+] [5 <./images/log_in.png>]
+Overfull \vbox (73.07002pt too high) has occurred while \output is active []
+
+
+[6 <./images/sign_up.png>] [7 <./images/customers_use_cases_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/customers_use_cases_diagram.pd
 f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
 e <array>); ignored.
->] [7]
-Overfull \vbox (124.08002pt too high) has occurred while \output is active []
-
-
-[8]
-
-LaTeX Warning: Text page 9 contains only floats.
-
-[9] [10]
+>] [8] [9] [10] [11]
 Chapter 4.
-) (./main/EffortSpent.tex [11
+) (./main/EffortSpent.tex [12
 
 ]
 Chapter 5.
-) (./main/References.tex [12
+) (./main/References.tex [13
 
 ]
 Chapter 6.
 )
 No file RASD.bbl.
-(./RASD.gls [13
+(./RASD.gls [14
 
-]) [14
+]) [15
 
 
 runsystem(makeindex -s RASD.ist -t RASD.glg -o RASD.gls RASD.glo)...executed sa
@@ -1113,27 +1133,28 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 25048 strings out of 481239
- 469692 string characters out of 5920377
- 876528 words of memory out of 5000000
- 39682 multiletter control sequences out of 15000+600000
- 547895 words of font info for 55 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 25061 strings out of 483140
+ 469921 string characters out of 5965151
+ 875718 words of memory out of 5000000
+ 39446 multiletter control sequences out of 15000+600000
+ 547194 words of font info for 54 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
  68i,11n,64p,999b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
-cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
-
-Output written on RASD.pdf (17 pages, 360039 bytes).
+ </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.6
+00pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm109
+5.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+2074.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1095.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx2488.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecbx1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecrm1095.600pk>
+Output written on RASD.pdf (18 pages, 1354245 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

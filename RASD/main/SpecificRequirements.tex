@@ -3,6 +3,27 @@
 \section{External Interface Requirements}
 
 \subsection{User Interfaces}
+
+% screenshots here
+\begin{figure}[h]
+	\centering
+	% \captionsetup{justification=centering,margin=1cm}
+
+	\includegraphics[width=0.5\textwidth]{images/log_in.png}
+	\caption{Log In page.}
+	\label{customersUseCasesDiagram}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	% \captionsetup{justification=centering,margin=1cm}
+
+	\includegraphics[width=0.5\textwidth]{images/sign_up.png}
+	\caption{Sign Up page.}
+	\label{customersUseCasesDiagram}
+\end{figure}
+
+
 \subsection{Hardware Interfaces}
 \subsection{Software interfaces}
 \subsection{Communications Interfaces}
@@ -15,7 +36,7 @@
 
 Bla bla bla...
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	% \captionsetup{justification=centering,margin=1cm}
 
@@ -71,7 +92,7 @@ Bla bla bla...
 	\item Customer clicks on the Log In button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Log In completed successfully and customer redirected to home page. \\ 
+	\textbf{Exit Conditions} & Log In completed successfully and customer redirected to Home page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
@@ -128,12 +149,14 @@ Bla bla bla...
 	\item Customer clicks on the Lining Up button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Lining Up completed successfully and the application returns to the customer the Status page. \\ 
+	\textbf{Exit Conditions} & Lining Up completed successfully, the application returns, to the customer, the Status page and saves the QR code in the main memory. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
-	\item Previous Lining Up was not expired.
+	\item Previous Lining Up action was not expired.
+	\item Previous Booking Visit action was not expired.
 	\item Customer wasn't logged.
+	\item QR code cannot be saved correctly on the main memory.
 	\item Lost Internet connection.
 	\end{itemize} \\ 
 	\hline
@@ -159,12 +182,14 @@ Bla bla bla...
 	\item Customer clicks on the Submit button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Booking Visit completed successfully and the application returns to the customer the Status page. \\ 
+	\textbf{Exit Conditions} & Booking Visit completed successfully and the application returns, to the customer, the Status page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
-	\item Previous Booking Visit was not expired.
+	\item Previous Lining Up action was not expired.
+	\item Previous Booking Visit action was not expired.
 	\item Customer wasn't logged.
+	\item QR code cannot be saved correctly on the main memory.
 	\item Lost Internet connection.
 	\end{itemize} \\ 
 	\hline
@@ -181,18 +206,20 @@ Bla bla bla...
 	\hline
 	\textbf{Actor} & Customer \\ 
 	\hline
-	\textbf{Entry Conditions} & ... \\ 
+	\textbf{Entry Conditions} & Customer is on the Home page \\ 
 	\hline
 	\textbf{Event Flows} &
 	\begin{itemize}
-	\item ...
+	\item Customer clicks on the Show QR code button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & ... \\ 
+	\textbf{Exit Conditions} & The application shows the QR code associated to the last Lining Up, or Booking Visit, operation. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
-	\item ...
+	\item QR code hasn't be saved on the application correctly.
+	\item No Lining Up, or Booking Visit, action performed. % redirect to Lining Up page ot hide button if QR code doesn't exist.
+	\item Customer wasn't logged.
 	\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -208,18 +235,20 @@ Bla bla bla...
 	\hline
 	\textbf{Actor} & Customer \\ 
 	\hline
-	\textbf{Entry Conditions} & ... \\ 
+	\textbf{Entry Conditions} & Customer is on the Home page. \\ 
 	\hline
 	\textbf{Event Flows} &
 	\begin{itemize}
-	\item ...
+	\item Customer clicks on the Get Status button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & ... \\ 
+	\textbf{Exit Conditions} & The application returns the Get Status page showing information about the last Lining Up, or Booking Visit, operation. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
-	\item ...
+	\item No operation previously performed, therefore there is no data to show.
+	\item Customer wasn't logged.
+	\item Lost Internet connection.
 	\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -235,18 +264,20 @@ Bla bla bla...
 	\hline
 	\textbf{Actor} & Customer \\ 
 	\hline
-	\textbf{Entry Conditions} & ... \\ 
+	\textbf{Entry Conditions} & Customer is acting on the physical spot and he is on the Print QR code page. \\ 
 	\hline
 	\textbf{Event Flows} &
 	\begin{itemize}
-	\item ...
+	\item Customer clicks on the Print QR code button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & ... \\ 
+	\textbf{Exit Conditions} & The spot prints the ticket with the QR code. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
-	\item ...
+	\item Spot finished the paper.
+	\item Spot finished the ink.
+	\item No more empty slots for the Lining Up in the current day.
 	\end{itemize} \\ 
 	\hline
 \end{tabular}
