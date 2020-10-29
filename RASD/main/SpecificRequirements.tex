@@ -5,22 +5,35 @@
 \subsection{User Interfaces}
 
 % screenshots here
-\begin{figure}[h]
-	\centering
-	% \captionsetup{justification=centering,margin=1cm}
+\begin{figure}[H]
+	\centering     %%% not \center
+	\subfigure[Log In page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/log_in.png}}
+	\subfigure[Sign Up page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/sign_up.png}}
+	\caption{Example of Log In and Sign Up pages.}
+\end{figure}
 
-	\includegraphics[width=0.5\textwidth]{images/log_in.png}
-	\caption{Log In page.}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.35\textwidth]{images/home.png}
+	\caption{Home page.}
 	\label{customersUseCasesDiagram}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	% \captionsetup{justification=centering,margin=1cm}
+\begin{figure}[H]
+	\centering     %%% not \center
+	\subfigure[Lining Up page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/lining_up_01.png}}
+	\subfigure[Booking Visit page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/booking_visit_01.png}}
+	
+	\subfigure[Lining Up page with expanded spinner.]{\label{fig:c}\includegraphics[width=0.4\textwidth]{images/lining_up_02.png}}
+	\subfigure[Booking Visit page with expanded spinner.]{\label{fig:d}\includegraphics[width=0.4\textwidth]{images/booking_visit_02.png}}
+	\caption{Example of Lining Up and Booking Visit pages.}
+\end{figure}
 
-	\includegraphics[width=0.5\textwidth]{images/sign_up.png}
-	\caption{Sign Up page.}
-	\label{customersUseCasesDiagram}
+\begin{figure}[H]
+	\centering     %%% not \center
+	\subfigure[Get Status page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/get_status.png}}
+	\subfigure[Show QR code page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/show_qr_code.png}}
+	\caption{Example of Get Status and Show QR code pages.}
 \end{figure}
 
 
@@ -36,16 +49,14 @@
 
 Bla bla bla...
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	% \captionsetup{justification=centering,margin=1cm}
-
 	\includegraphics[width=1.0\textwidth]{images/customers_use_cases_diagram.pdf}
 	\caption{Customers use cases diagram.}
 	\label{customersUseCasesDiagram}
 \end{figure}
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -61,7 +72,7 @@ Bla bla bla...
 		\item Customer clicks on the Sign Up button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Sign Up completed successfully and customer is logged in. \\ 
+	\textbf{Exit Conditions} & Sign Up completed successfully and customer is logged in, then the application shows the Home page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
@@ -76,7 +87,7 @@ Bla bla bla...
 \label{tableSignUp}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -106,7 +117,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -134,7 +145,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -165,7 +176,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -198,7 +209,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -227,7 +238,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
@@ -256,7 +267,7 @@ Bla bla bla...
 \label{tableLogIn}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[hbt!]
 \centering
 \begin{tabular}{| m{0.3\textwidth} | m{0.7\textwidth} |} 
 	\hline
