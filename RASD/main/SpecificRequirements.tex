@@ -45,6 +45,134 @@
 
 \subsection{Requirements}
 
+Bla bla bla...
+
+\textbf{G1: Keep customers in safe condition w.r.t the \gls{dpcm} in force inside the store.}
+% requirements per gestire in flusso interno allo store, quindi planning
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}: The system has to
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}: Customers follow the rules imposed by the \gls{dpcm} in force.
+	\item {\textbf{[D]}}: Customers enter in the store only if the system, or the store manager, authorizes them.
+	\item {\textbf{[D]}}: Customers don't stay in the shop longer than necessary.
+	\item {\textbf{[D]}}: If customers booked a visit to the store and they specify the category of grocery, they won't buy other things.
+	\item {\textbf{[D]}}: 
+\end{itemize}
+\end{itemize}
+
+\textbf{G2: Limit the physical line situation in the proximity of the store}
+% requirements per calcolare il tempo di arrivo, limitare il numero di prenotazioni ecc.
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}: The system has to estimate the residence time, of a customer, in the store.
+	\item {\textbf{[R]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
+	\item {\textbf{[R]}}: The system has to monitor the global position of the customers.
+	\item {\textbf{[R]}}: The system has to limit the number of releasable QR code if imposed by the store manager.
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}: Customers line up physically only if they have a valid (non expired) QR code.
+	\item {\textbf{[D]}}: Customers go away from the store after they have done their shopping.
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
+\textbf{G3: Allow customers to line up from a remote device.}
+% requirements per l'app e il servizio di prenotazione (quality standard)
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}: Customers must be registered and logged in the application.
+	\item {\textbf{[R]}}: The application has to implement the possibility to line up remotely.
+	\item {\textbf{[R]}}: The application has to store locally the QR code.
+	\item {\textbf{[R]}}: The application has to implement the possibility to delete a lining up operation.
+	\item {\textbf{[R]}}:
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}: The customers have a smartphone.
+	\item {\textbf{[D]}}: The customers have installed the \gls{clup} application.
+	\item {\textbf{[D]}}: The customers have a \gls{gps} module inside the smartphone.
+	\item {\textbf{[D]}}: The customers allow the permissions requested by the application.
+	\item {\textbf{[D]}}: The customers keep Internet connection active.
+	\item {\textbf{[D]}}: The customers keep notification option active.
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
+\textbf{G4: Allow store manager to monitor entrances.}
+% requirements che implica l'implementazione nell'app dell'analisi del flusso, monito del tempistiche, previsioni ecc
+% + requirements per scan del QR code.
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}: The application has to show, to the store manager, analytical data concerning the influx of people to the store.
+	\item {\textbf{[R]}}: The system has to allow, to the store manager, the possibility to limit the number of QR code released.
+	\item {\textbf{[R]}}: The application shall allow the store manager to scan the QR codes.
+	\item {\textbf{[R]}}:
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}: There is always a store manager present in the store.
+	\item {\textbf{[D]}}: The store manager has a digital device.
+	\item {\textbf{[D]}}:
+	\item {\textbf{[D]}}:
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
+\textbf{G5: Allow customers to line up from a physical spot.}
+% requirements per physical spot, caratteristiche, ecc
+% come influenza la gestione delle physical line situation?
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}:
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
+\textbf{G6: Allow customers to book a visit from a remote device.}
+% requirements che implicano l'implementazione di una schermata nell'app per la prenotazione
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}:
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
+\textbf{G7: Infer customers visits duration.}	
+% requirements per il calcolo del tempo medio. Legato all'account dell'utente
+\begin{itemize}
+\item \textit{Requirements:}
+\begin{itemize}
+	\item {\textbf{[R]}}:
+\end{itemize}
+
+\item \textit{Domain assumptions:}
+\begin{itemize}
+	\item {\textbf{[D]}}:
+\end{itemize}
+\end{itemize}
+
 \subsection{Definition of Use Case Diagrams}
 
 Bla bla bla...
@@ -132,7 +260,7 @@ Bla bla bla...
 	\item Customer clicks on the Log Out button.
 	\end{itemize} \\ 
 	\hline
-	\textbf{Exit Conditions} & Log Out completed successfully and customer redirected to the Sign Up/Log In page. \\ 
+	\textbf{Exit Conditions} & Log Out completed successfully and customer redirected to the Log In page. \\ 
 	\hline
 	\textbf{Exceptions} &
 	\begin{itemize}
@@ -158,6 +286,8 @@ Bla bla bla...
 	\textbf{Event Flows} &
 	\begin{itemize}
 	\item Customer clicks on the Lining Up button.
+	\item Customer inserts the requested data in the form.
+	\item Customer clicks on the confirmation button.
 	\end{itemize} \\ 
 	\hline
 	\textbf{Exit Conditions} & Lining Up completed successfully, the application returns, to the customer, the Status page and saves the QR code in the main memory. \\ 
