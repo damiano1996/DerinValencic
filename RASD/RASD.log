@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  5 NOV 2020 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  6 NOV 2020 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,7 +973,7 @@ Package pdftex.def Info: images/polimi_logo.jpg  used on input line 10.
 h the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...{3.5.2}Availability}{19}{subsection.3.5.2}
+l.34 ...{3.5.2}Availability}{20}{subsection.3.5.2}
                                                   % [1
 
 
@@ -1184,33 +1184,48 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 477--499
  [][] 
  []
 
-<images/getHomePage_sequence_diagram.pdf, id=383, 500.83109pt x 385.44pt>
+<images/getHomePage_sequence_diagram.pdf, id=383, 522.99388pt x 536.0025pt>
 File: images/getHomePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getHomePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getHomePage_sequence_diagram.pdf  used on input
  line 508.
-(pdftex.def)             Requested size: 360.0pt x 277.06372pt.
-[17]) (./main/FormalAnalysisUsingAlloy.tex [18 <./images/getHomePage_sequence_d
-iagram.pdf
+(pdftex.def)             Requested size: 360.0pt x 368.967pt.
+[17]
+<images/liningUp_sequence_diagram.pdf, id=390, 515.04419pt x 912.2883pt>
+File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
+<use images/liningUp_sequence_diagram.pdf>
+Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
+ne 514.
+(pdftex.def)             Requested size: 360.0pt x 637.6648pt.
+ [18 <./images/getHomePage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getHomePage_sequence_diagram.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
->] [19]
+>]
+Overfull \vbox (67.59317pt too high) has occurred while \output is active []
+
+
+[19 <./images/liningUp_sequence_diagram.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/liningUp_sequence_diagram.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>]) (./main/FormalAnalysisUsingAlloy.tex [20]
 Chapter 4.
-) (./main/EffortSpent.tex [20
+) (./main/EffortSpent.tex [21
 
 ]
 Chapter 5.
-) (./main/References.tex [21
+) (./main/References.tex [22
 
 ]
 Chapter 6.
 )
 No file RASD.bbl.
-(./RASD.gls [22
+(./RASD.gls [23
 
-]) [23
+]) [24
 
 
 runsystem(makeindex -s RASD.ist -t RASD.glg -o RASD.gls RASD.glo)...executed sa
@@ -1231,10 +1246,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 25146 strings out of 483140
- 471571 string characters out of 5965151
+ 25154 strings out of 483140
+ 471840 string characters out of 5965151
  859369 words of memory out of 5000000
- 39502 multiletter control sequences out of 15000+600000
+ 39507 multiletter control sequences out of 15000+600000
  547959 words of font info for 55 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,14n,64p,999b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1250,10 +1265,10 @@ knappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/lj
 four/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecrm1095.600pk>
-Output written on RASD.pdf (26 pages, 5178416 bytes).
+Output written on RASD.pdf (27 pages, 5237375 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 
