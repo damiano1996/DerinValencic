@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
 Scanning style file ./RASD.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file RASD.glo....done (11 entries accepted, 0 rejected).
-Sorting entries....done (35 comparisons).
+Scanning input file RASD.glo....done (19 entries accepted, 0 rejected).
+Sorting entries....done (96 comparisons).
 Generating output file RASD.gls....done (18 lines written, 0 warnings).
 Output written in RASD.gls.
 Transcript written in RASD.glg.
