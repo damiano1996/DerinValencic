@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  17 NOV 2020 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  20 NOV 2020 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,7 +973,7 @@ Package pdftex.def Info: images/polimi_logo.jpg  used on input line 10.
 h the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 ...ormal Analysis Using Alloy}{24}{chapter.4}
+l.38 ...ormal Analysis Using Alloy}{26}{chapter.4}
                                                   % [1
 
 
@@ -1049,145 +1049,145 @@ Package pdftex.def Info: images/show_qr_code.png  used on input line 35.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
  [5 <./images/lining_up_01.png> <./images/booking_visit_01.png> <./images/linin
 g_up_02.png> <./images/booking_visit_02.png>]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 52--73
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 52--78
  [][] 
  []
 
 [6 <./images/get_status.png> <./images/show_qr_code.png>]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 77--99
- [][] 
- []
-
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 103--131
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 82--108
  [][] 
  []
 
 [7]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 135--161
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 112--145
  [][] 
  []
 
 [8]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 165--189
- [][] 
- []
-
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 193--223
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 149--175
  [][] 
  []
 
 [9]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 227--252
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 179--202
  [][] 
  []
 
 [10]
-<images/use_cases_diagram.pdf, id=329, 659.5842pt x 525.88469pt>
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 206--240
+ [][] 
+ []
+
+[11]
+Overfull \vbox (13.79639pt too high) has occurred while \output is active []
+
+
+[12]
+<images/use_cases_diagram.pdf, id=331, 659.5842pt x 525.88469pt>
 File: images/use_cases_diagram.pdf Graphic file (type pdf)
 <use images/use_cases_diagram.pdf>
-Package pdftex.def Info: images/use_cases_diagram.pdf  used on input line 261.
+Package pdftex.def Info: images/use_cases_diagram.pdf  used on input line 249.
 (pdftex.def)             Requested size: 345.0pt x 275.07451pt.
- [11]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 267--292
+
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 255--280
  [][] 
  []
 
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 298--322
- [][] 
- []
-
-[12 <./images/use_cases_diagram.pdf
+[13 <./images/use_cases_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/use_cases_diagram.pdf): PDF in
 clusion: invalid other resource which is no dict (key 'ProcSets', type <array>)
 ; ignored.
 >]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 328--350
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 286--310
  [][] 
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 356--382
- [][] 
- []
-
-[13]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 388--414
- [][] 
- []
-
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 420--445
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 316--338
  [][] 
  []
 
 [14]
-Underfull \hbox (badness 1874) in paragraph at lines 468--469
-[]\T1/cmr/m/n/10 No op-er-a-tion pre-vi-ously per-formed, there-fore
- []
-
-
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 451--474
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 344--370
  [][] 
  []
 
 
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 480--502
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 376--402
  [][] 
  []
 
 [15]
-Overfull \hbox (25.19998pt too wide) in paragraph at lines 508--530
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 408--433
  [][] 
  []
 
-<images/getHomePage_sequence_diagram.pdf, id=386, 522.99388pt x 536.0025pt>
+
+Underfull \hbox (badness 1874) in paragraph at lines 456--457
+[]\T1/cmr/m/n/10 No op-er-a-tion pre-vi-ously per-formed, there-fore
+ []
+
+
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 439--462
+ [][] 
+ []
+
+[16]
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 468--490
+ [][] 
+ []
+
+
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 496--518
+ [][] 
+ []
+
+[17]
+<images/getHomePage_sequence_diagram.pdf, id=390, 522.99388pt x 536.0025pt>
 File: images/getHomePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getHomePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getHomePage_sequence_diagram.pdf  used on input
- line 539.
+ line 527.
 (pdftex.def)             Requested size: 345.0pt x 353.59099pt.
-[16]
-<images/signUp_sequence_diagram.pdf, id=394, 469.755pt x 391.4625pt>
+ [18]
+<images/signUp_sequence_diagram.pdf, id=396, 469.755pt x 391.4625pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
- 545.
+ 533.
 (pdftex.def)             Requested size: 345.0pt x 287.49748pt.
- [17 <./images/getHomePage_sequence_diagram.pdf
+ [19 <./images/getHomePage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getHomePage_sequence_diagram.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >]
-<images/logIn_sequence_diagram.pdf, id=418, 498.90388pt x 463.7325pt>
+<images/logIn_sequence_diagram.pdf, id=420, 498.90388pt x 463.7325pt>
 File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logIn_sequence_diagram.pdf>
 Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
-551.
+539.
 (pdftex.def)             Requested size: 345.0pt x 320.69043pt.
- [18 <./images/signUp_sequence_diagram.pdf
+ [20 <./images/signUp_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/signUp_sequence_diagram.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
-<images/logOut_sequence_diagram.pdf, id=443, 383.51279pt x 225.7233pt>
+<images/logOut_sequence_diagram.pdf, id=445, 383.51279pt x 225.7233pt>
 File: images/logOut_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logOut_sequence_diagram.pdf>
 Package pdftex.def Info: images/logOut_sequence_diagram.pdf  used on input line
- 557.
+ 545.
 (pdftex.def)             Requested size: 345.0pt x 203.05952pt.
-<images/liningUp_sequence_diagram.pdf, id=444, 543.95218pt x 912.2883pt>
+<images/liningUp_sequence_diagram.pdf, id=446, 543.95218pt x 912.2883pt>
 File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/liningUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
-ne 563.
+ne 551.
 (pdftex.def)             Requested size: 345.0pt x 578.62846pt.
- [19 <./images/logIn_sequence_diagram.pdf
+ [21 <./images/logIn_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/logIn_sequence_diagram.pdf): P
 DF inclusion: invalid other resource which is no dict (key 'ProcSets', type <ar
@@ -1201,31 +1201,31 @@ rray>); ignored.
 Overfull \vbox (4.57243pt too high) has occurred while \output is active []
 
 
-[20 <./images/liningUp_sequence_diagram.pdf
+[22 <./images/liningUp_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/liningUp_sequence_diagram.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
 >]
-<images/bookingVisit_sequence_diagram.pdf, id=518, 505.89pt x 449.76028pt>
+<images/bookingVisit_sequence_diagram.pdf, id=521, 505.89pt x 449.76028pt>
 File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
 <use images/bookingVisit_sequence_diagram.pdf>
 Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
-t line 569.
+t line 557.
 (pdftex.def)             Requested size: 345.0pt x 306.7251pt.
-<images/getStatusPage_sequence_diagram.pdf, id=519, 543.95218pt x 298.23419pt>
+<images/getStatusPage_sequence_diagram.pdf, id=522, 543.95218pt x 298.23419pt>
 File: images/getStatusPage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getStatusPage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getStatusPage_sequence_diagram.pdf  used on inp
-ut line 575.
+ut line 563.
 (pdftex.def)             Requested size: 345.0pt x 189.15817pt.
-<images/getQRcodePage_sequence_diagram.pdf, id=520, 260.89468pt x 146.4672pt>
+<images/getQRcodePage_sequence_diagram.pdf, id=523, 260.89468pt x 146.4672pt>
 File: images/getQRcodePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getQRcodePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getQRcodePage_sequence_diagram.pdf  used on inp
-ut line 581.
+ut line 569.
 (pdftex.def)             Requested size: 345.0pt x 193.6971pt.
- [21 <./images/bookingVisit_sequence_diagram.pdf
+ [23 <./images/bookingVisit_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/bookingVisit_sequence_diagram.
 pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', t
@@ -1236,21 +1236,21 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/getStatusPage_sequence_diagram
 .pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', 
 type <array>); ignored.
 >]
-<images/getControlQueuePage_sequence_diagram.pdf, id=563, 498.90388pt x 355.327
+<images/getControlQueuePage_sequence_diagram.pdf, id=566, 498.90388pt x 355.327
 5pt>
 File: images/getControlQueuePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getControlQueuePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getControlQueuePage_sequence_diagram.pdf  used 
-on input line 587.
+on input line 575.
 (pdftex.def)             Requested size: 345.0pt x 245.72383pt.
-<images/getShowStatsPage_sequence_diagram.pdf, id=564, 558.16531pt x 298.23419p
+<images/getShowStatsPage_sequence_diagram.pdf, id=567, 558.16531pt x 298.23419p
 t>
 File: images/getShowStatsPage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getShowStatsPage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getShowStatsPage_sequence_diagram.pdf  used on 
-input line 593.
+input line 581.
 (pdftex.def)             Requested size: 345.0pt x 184.33899pt.
- [22 <./images/getQRcodePage_sequence_diagram.pdf
+ [24 <./images/getQRcodePage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getQRcodePage_sequence_diagram
 .pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', 
@@ -1260,7 +1260,7 @@ type <array>); ignored.
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getControlQueuePage_sequence_d
 iagram.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcS
 ets', type <array>); ignored.
->]) (./main/FormalAnalysisUsingAlloy.tex [23 <./images/getShowStatsPage_sequenc
+>]) (./main/FormalAnalysisUsingAlloy.tex [25 <./images/getShowStatsPage_sequenc
 e_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getShowStatsPage_sequence_diag
@@ -1268,19 +1268,19 @@ ram.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets
 ', type <array>); ignored.
 >]
 Chapter 4.
-) (./main/EffortSpent.tex [24
+) (./main/EffortSpent.tex [26
 
 ]
 Chapter 5.
-) (./main/References.tex [25
+) (./main/References.tex [27
 
 ]
 Chapter 6.
 )
 No file RASD.bbl.
-(./RASD.gls [26
+(./RASD.gls [28
 
-]) [27
+]) [29
 
 
 runsystem(makeindex -s RASD.ist -t RASD.glg -o RASD.gls RASD.glo)...executed sa
@@ -1301,9 +1301,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 25211 strings out of 483140
- 474064 string characters out of 5965151
- 860348 words of memory out of 5000000
+ 25213 strings out of 483140
+ 474078 string characters out of 5965151
+ 859348 words of memory out of 5000000
  39545 multiletter control sequences out of 15000+600000
  547250 words of font info for 53 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1320,10 +1320,10 @@ knappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/lj
 four/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on RASD.pdf (30 pages, 5571015 bytes).
+Output written on RASD.pdf (32 pages, 5572535 bytes).
 PDF statistics:
- 1060 PDF objects out of 1200 (max. 8388607)
- 594 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 1063 PDF objects out of 1200 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 109 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -53,20 +53,25 @@ Bla bla bla...
 	\hline
 	\textbf{Goal} &
 		\textbf{G1: Keep customers in safe condition w.r.t the \gls{dpcm} in force inside the store.} \\
-		% requirements per gestire in flusso interno allo store, quindi planning
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The system has to
-		\end{itemize} \\ 
+			\item {\textbf{[R]}}: The system has to schedule entrances to the store.
+			\item {\textbf{[R]}}: The system has to compute the maximum capacity of the store w.r.t. the social distances imposed by the \gls{dpcm} in force.
+			\item {\textbf{[R]}}: The system has to monitor the customers residence time in the store.
+			\item {\textbf{[R]}}: The system has to allow authorized customers to enter in the store.
+			\item {\textbf{[R]}}: The system has to deny unauthorized customers to enter in the store.
+			\item {\textbf{[R]}}: The system has to know when a customer enters in the store.
+			\item {\textbf{[R]}}: The system has to know when a customer has left the store.
+		\end{itemize} \\
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
 			\item {\textbf{[D]}}: There is a \gls{dpcm} in force.
 			\item {\textbf{[D]}}: Customers follow the rules imposed by the \gls{dpcm} in force.
-			\item {\textbf{[D]}}: Customers enter in the store only if the system, or the store manager, authorizes them.
+			\item {\textbf{[D]}}: Customers enter in the store only if the system authorizes them.
 			\item {\textbf{[D]}}: Customers don't stay in the shop longer than necessary.
-			\item {\textbf{[D]}}: If customers booked a visit to the store and they specify the category of grocery, they won't buy other things.
+			% \item {\textbf{[D]}}: If customers booked a visit to the store and they specify the category of grocery, they won't buy other things.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -78,14 +83,18 @@ Bla bla bla...
 	\hline
 	\textbf{Goal} &
 		\textbf{G2: Limit the physical line situation in the proximity of the store} \\
-		% requirements per calcolare il tempo di arrivo, limitare il numero di prenotazioni ecc.
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
 			\item {\textbf{[R]}}: The system has to estimate the residence time, of a customer, in the store.
+			\item {\textbf{[R]}}: The system has to infer the residence time of the customers based on past purchases.
 			\item {\textbf{[R]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
-			\item {\textbf{[R]}}: The system has to monitor the global position of the customers.
-			\item {\textbf{[R]}}: The system has to limit the number of releasable QR code if imposed by the store manager.
+			\item {\textbf{[R]}}: The system has to track the global position of the customers.
+			\item {\textbf{[R]}}: The system has to release QR codes to the customers.
+			\item {\textbf{[R]}}: The system has to limit the number of releasable QR codes if imposed by the store manager.
+			\item {\textbf{[R]}}: The system has to allow the store manager to monitor the status of the queue.
+			\item {\textbf{[R]}}: The system has to notify customers about the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R]}}: The system has to communicate which is the next served QR code number.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
@@ -108,23 +117,28 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The application has to allow user to register and to log in the application.
-			% req below is very similar to the goal! We should remove it...?
-			\item {\textbf{[R]}}: The application has to implement the possibility to line up remotely.
-			\item {\textbf{[R]}}: The application has to store locally the QR code.
-			\item {\textbf{[R]}}: The application has to implement the possibility to delete a lining up operation.
-			\item {\textbf{[R]}}:
+			\item {\textbf{[R]}}: The system has to allow customers to register to the application.
+			\item {\textbf{[R]}}: The system has to allow customers to login to the application.
+			\item {\textbf{[R]}}: The system has to allow customers to get a QR code from the application.
+			\item {\textbf{[R]}}: The system has to release QR codes to the customers through the application.
+			\item {\textbf{[R]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R]}}: The system has to encode the lining up number in the QR code.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the QR code from the application.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the lining up number encoded in the QR code.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R]}}: The system has to update the remaining time showed to the customers.
+			\item {\textbf{[R]}}: The system has to allow customers to delete a lining up operation.
+			\item {\textbf{[R]}}: The system has to notify customers about the validation status of the QR code.
+			\item {\textbf{[R]}}: The system has to check if customers have Internet connection active.
+			\item {\textbf{[R]}}: The system has to check if customers have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: The customers have a smartphone.
-			\item {\textbf{[D]}}: The customers have installed the \gls{clup} application.
-			\item {\textbf{[D]}}: The customers have a \gls{gps} module inside the smartphone.
-			\item {\textbf{[D]}}: The customers allow the permissions requested by the application.
-			\item {\textbf{[D]}}: The customers keep Internet connection active.
-			\item {\textbf{[D]}}: The customers keep notification option active.
-			\item {\textbf{[D]}}:
+			\item {\textbf{[D]}}: Customers have a smartphone.
+			\item {\textbf{[D]}}: Customers have installed the \gls{clup} application.
+			\item {\textbf{[D]}}: Customers allow the permissions requested by the application.
+			\item {\textbf{[D]}}: Customers keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -136,25 +150,25 @@ Bla bla bla...
 	\hline
 	\textbf{Goal} &
 		\textbf{G4: Allow store manager to monitor entrances.} \\
-		% requirements che implica l'implementazione nell'app dell'analisi del flusso, monito del tempistiche, previsioni ecc
-		% + requirements per scan del QR code.
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The application has to allow the store manager to log in the application.
-			\item {\textbf{[R]}}: The application has to show, to the store manager, analytical data concerning the influx of people to the store.
-			\item {\textbf{[R]}}: The system has to allow, to the store manager, the possibility to limit the number of QR code released.
-			\item {\textbf{[R]}}: The application shall allow the store manager to scan the QR codes.
-			\item {\textbf{[R]}}:
+			\item {\textbf{[R]}}: The system has to register store managers in the application.
+			\item {\textbf{[R]}}: The system has to allow store managers to login to the application.
+			\item {\textbf{[R]}}: The system has to allow store managers to monitor the status of the queue.
+			\item {\textbf{[R]}}: The system has to allow store managers to limit the number of QR codes released.
+			\item {\textbf{[R]}}: The system has to allow store managers to monitor the number of customers inside the store.
+			\item {\textbf{[R]}}: The system has to allow store managers to scan the QR codes of the customers.
+			\item {\textbf{[R]}}: The system has to allow store managers to modify the timing parameters of the scheduler.
+			\item {\textbf{[R]}}: The system has to check if store managers have Internet connection active.
+			\item {\textbf{[R]}}: The system has to check if store managers have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: The store manager has a smartphone.
-			\item {\textbf{[D]}}: The store manager has installed the \gls{clup} application.
-			\item {\textbf{[D]}}: The store manager allows the permissions requested by the application.
-			\item {\textbf{[D]}}: The store manager keeps Internet connection active.
-			\item {\textbf{[D]}}: There is always a store manager present in the store.
+			\item {\textbf{[D]}}: There is a store manager present in the store.
+			\item {\textbf{[D]}}: Store managers allow the permissions requested by the application.
+			\item {\textbf{[D]}}: Store managers keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -166,23 +180,22 @@ Bla bla bla...
 	\hline
 	\textbf{Goal} &
 		\textbf{G5: Allow customers to line up from a physical spot.} \\
-		% requirements per physical spot, caratteristiche, ecc
-		% come influenza la gestione delle physical line situation?
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: A physical spot shall be installed outside the store. % req (we are the installers...) or domain assumption?
-			\item {\textbf{[R]}}: The physical spot has to run the \gls{clup} application.
-			\item {\textbf{[R]}}: The physical spot must be registered and logged in the application.
-			% req below is very similar to the goal! We should remove it...?
-			\item {\textbf{[R]}}: The physical spot has to print the QR code.
-			\item {\textbf{[R]}}: The physical spot shall allow customers to line up.
+			\item {\textbf{[R]}}: The system has to allow unregistered customers to line up.
+			\item {\textbf{[R]}}: The system has to allow customers to get a QR code from a physical spot.
+			\item {\textbf{[R]}}: The system has to release QR codes to the customers through the physical spot.
+			\item {\textbf{[R]}}: The system has to encode the lining up number in the QR code.
+			\item {\textbf{[R]}}: The system has to print QR codes on a paper tickets.
+			\item {\textbf{[R]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R]}}: The system has to alert when the paper and toner of the physical spot is going to finish.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: Physical spot is powered on every working day.
-			\item {\textbf{[D]}}:
+			\item {\textbf{[D]}}: Physical spots are powered on every working day.
+			\item {\textbf{[D]}}: Physical spots are refilled when asked by the system. 
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -198,54 +211,29 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The application has to allow user to register and to log in the application.
-			% req below is very similar to the goal! We should remove it...?
-			\item {\textbf{[R]}}: The application has to implement the possibility to book a visit remotely.
-			\item {\textbf{[R]}}: The application has to store locally the QR code.
-			\item {\textbf{[R]}}: The application has to implement the possibility to delete a book a visit operation.
-			\item {\textbf{[R]}}: The application shall allow users to specify the category of grocery they want to buy.
-			\item {\textbf{[R]}}: The application shall allow users to specify the date of the visit and the store where they will want to go.
-			\item {\textbf{[R]}}:
+			\item {\textbf{[R]}}: The system has to allow customers to register to the application.
+			\item {\textbf{[R]}}: The system has to allow customers to login to the application.
+			\item {\textbf{[R]}}: The system has to allow customers to get a QR code from the application.
+			\item {\textbf{[R]}}: The system has to allow customers to specify the date and time for a visit to the store.
+			\item {\textbf{[R]}}: The system has to allow customers to specify the category of grocery they want to buy.
+			\item {\textbf{[R]}}: The system has to release QR codes to the customers through the application.
+			\item {\textbf{[R]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R]}}: The system has to encode the book-a-visit number in the QR code.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the QR code from the application.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the book-a-visit number encoded in the QR code.
+			\item {\textbf{[R]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R]}}: The system has to allow customers to delete a book-a-visit operation.
+			\item {\textbf{[R]}}: The system has to notify customers about the validation status of the QR code.
+			\item {\textbf{[R]}}: The system has to check if customers have Internet connection active.
+			\item {\textbf{[R]}}: The system has to check if customers have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: The customers have a smartphone.
-			\item {\textbf{[D]}}: The customers have installed the \gls{clup} application.
-			\item {\textbf{[D]}}: The customers have a \gls{gps} module inside the smartphone.
-			\item {\textbf{[D]}}: The customers allow the permissions requested by the application.
-			\item {\textbf{[D]}}: The customers keep Internet connection active.
-			\item {\textbf{[D]}}: The customers keep notification option active.
-			\item {\textbf{[D]}}:
-		\end{itemize} \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{| m{0.2\textwidth} | m{0.8\textwidth} |} 
-	\hline
-	\textbf{Goal} &
-		\textbf{G7: Infer customers visits duration.} \\
-		% requirements per il calcolo del tempo medio. Legato all'account dell'utente
-	\hline
-	\textbf{Requirements} &
-		\begin{itemize}
-			\item {\textbf{[R]}}: The application shall allow the store manager to scan the QR code of the customers.
-			\item {\textbf{[R]}}: The system has to store the time in which the customers' QR code has been scanned.
-			\item {\textbf{[R]}}: The system has to track the \gls{gps} position of the customers to estimate when they are out of the store.
-			\item {\textbf{[R]}}: The system has to store the time in which the customers left the store.
-		\end{itemize} \\ 
-	\hline
-	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
-		\begin{itemize}
-			\item {\textbf{[D]}}: The store manager scan the QR code of the customers when they enter in the store.
-			\item {\textbf{[D]}}: The customers have a smartphone.
-			\item {\textbf{[D]}}: The customers have installed the \gls{clup} application.
-			\item {\textbf{[D]}}: The customers have a \gls{gps} module inside the smartphone.
-			\item {\textbf{[D]}}: The customers allow the permissions requested by the application.
-			\item {\textbf{[D]}}: The customers keep Internet connection active.
+			\item {\textbf{[D]}}: Customers have a smartphone.
+			\item {\textbf{[D]}}: Customers have installed the \gls{clup} application.
+			\item {\textbf{[D]}}: Customers allow the permissions requested by the application.
+			\item {\textbf{[D]}}: Customers keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
