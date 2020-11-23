@@ -4,6 +4,47 @@
 
 \section{Product Functions}
 
+In this section are described the main functionalities offered by the service.
+
+\subsection{Lining Up}
+In light of the motivations described in the previous sections, the main purpose of the application is to allow customers to line up from remote.\\
+To achieve this result, the application provides the possibility to line up from the smartphone.
+The users have to log in the application, select the lining up operation, choose the store (in which they want to go) and confirm.
+Once the operation has been completed successfully, users are able to check the status of the queue and watch the QR code associated to the lining up.
+Moreover, users will receive live notifications about the status and the remaining time to be authorized to enter in the store.
+When the countdown is ending, customers have to approach to the store and wait outside for the call of their ticket number (showed with the QR code). At this time, they have to show the QR code to be scanned by the system and to be authorized to enter.
+
+From the point of view of the server, when it receives the request, it has to check if the user can be allocated in the virtual queue and in which position. If it can, the user will be allocated, otherwise it will reply with an error message.
+The application sends to the server information about the global position of the customer. These information are used to estimate the time necessary by the customer to arrive to the store.
+All the collected information are used to schedule the entrances to the store.
+More precisely, the algorithm takes into account the position of the customer, to infer the cruise speed and the time needed to arrive, the number of customers already inside the store, the number of customers previously allocated to the virtual queue and the number of customers in the physical queue.
+The server can infer the residence time in the store looking at previous purchases of the same user or by computing the average residence time of the customers.
+Based on these data, the order in which customers ask for a lining up operation can be different by the allocation order in the virtual queue. In case of huge delays (parameter that can be controlled by the store manager) by the customers, the virtual queue can be reorganized dynamically.
+
+\subsection{Booking a Visit}
+This functionality is an extension of the previous one, in particular it allows to specify the date and time to visit the store.\\
+To book a visit, customers should select the corresponding button from the menu of the application, insert the requested data, such as the store in which they want to go, the date, the slot time, the category of grocery they want to buy (it is not mandatory), and confirm the operation.
+As for the lining up operation, customers can check the status and the obtained QR code.
+
+From the point of view of the server, the behavior is similar to the lining up, but in this case it can infer more information from the category of grocery specified, such as the section in the store that will be visited by the customer. If not specified, the server can infer information from previous purchases.
+In any case, the server can allocate users in a finer way in the virtual queue exploiting these data: knowing the maximum capacity of the store and the section with higher density of customers, it can decide if an user has to be allocated in one or another slot of time.
+
+\subsection{Lining Up from Physical Spot}
+If a customer hasn't an user account, or if he doesn't want to use (or can't use) the smartphone application, he can line up from a physical spot installed outside the store.
+The physical spot is a digital device that runs the same smartphone application used by other users, but with less functionalities.
+From the physical spot, a customer can line up clicking on a button to confirm the operation and the spot will print the ticket showing the QR code and the ticket number.
+
+The physical spot acts as proxy. The physical spot is logged in the application with a custom account. In this way customers haven't to insert the credentials when they perform a lining up operation.
+The server retrieves the missing information (destination store, position of the customer, etc.), about the lining up, by the association between the physical spot account and the associated store (It can be best appreciated in ~\ref{figure:liningUpSequenceDiagram}).
+In this way the physical spot can be treated as a common user.
+
+\subsection{Monitoring and Controlling the Queue}
+These are functionalities dedicated to the store manager. Since the system performs different estimations, it can occur that the real situation differs from the theorized sequence of events.
+To handle this possibility, the store manager can monitor the status of the queue and the number of customers inside and outside the store from his device and decide if the server has to schedule in a different way the users arrivals.
+To do that, the application provides a different home page, if you are logged in with a store manger account, that provides buttons and interfaces to get the status of the situation and to set scheduling parameters that the server will use. In extreme cases he can stop issuing tickets.
+
+% TODO: inserisco qua la questione del tornello connesso al dispositivo del manager?
+
 \section{User Characteristics}
 
 \section{Assumptions, Dependencies and Constraints}

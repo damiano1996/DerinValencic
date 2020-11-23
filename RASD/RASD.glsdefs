@@ -1,0 +1,90 @@
+\ifglsentryexists{clup}{}%
+{%
+\gls@defglossaryentry{clup}%
+{%
+name={\acronymfont {\glsentryshort {clup}}},%
+sort={CLup},%
+type={main},%
+first={CLup},%
+firstplural={CLups},%
+text={CLup},%
+plural={CLups},%
+description={Customers Line-up},%
+descriptionplural={Customers Line-up},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Customers Line-up},%
+longplural={Customers Line-ups},%
+short={CLup},%
+shortplural={CLups},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dpcm}{}%
+{%
+\gls@defglossaryentry{dpcm}%
+{%
+name={\acronymfont {\glsentryshort {dpcm}}},%
+sort={d.P.C.m},%
+type={main},%
+first={d.P.C.m},%
+firstplural={d.P.C.ms},%
+text={d.P.C.m},%
+plural={d.P.C.ms},%
+description={\textit {"decreto del Presidente del Consiglio dei ministri"}},%
+descriptionplural={\textit {"decreto del Presidente del Consiglio dei ministri"}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {"decreto del Presidente del Consiglio dei ministri"}},%
+longplural={\protect \textit {"decreto del Presidente del Consiglio dei ministri"}s},%
+short={d.P.C.m},%
+shortplural={d.P.C.ms},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gps}{}%
+{%
+\gls@defglossaryentry{gps}%
+{%
+name={\acronymfont {\glsentryshort {gps}}},%
+sort={GPS},%
+type={main},%
+first={GPS},%
+firstplural={GPSs},%
+text={GPS},%
+plural={GPSs},%
+description={Global Positioning System},%
+descriptionplural={Global Positioning System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Positioning System},%
+longplural={Global Positioning Systems},%
+short={GPS},%
+shortplural={GPSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
