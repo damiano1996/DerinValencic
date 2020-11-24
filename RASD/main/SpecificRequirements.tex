@@ -4,38 +4,54 @@
 
 \subsection{User Interfaces}
 
+In this section we describe and present a possible mock-up for the application, following the order of events proposed in the sequence diagrams.\\
+
+At the launch of the application the user has to insert the credentials in the Log In page~\ref{fig:LogInMockup}. In case of new user, he can click on a button to open the Sign Up page~\ref{fig:SignUpMockup}, to create a new account.
+
 % screenshots here
 \begin{figure}[H]
 	\centering     %%% not \center
-	\subfigure[Log In page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/log_in.png}}
-	\subfigure[Sign Up page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/sign_up.png}}
+	\subfigure[Log In page.]{\label{fig:LogInMockup}\includegraphics[width=0.4\textwidth]{images/log_in.png}}
+	\subfigure[Sign Up page.]{\label{fig:SignUpMockup}\includegraphics[width=0.4\textwidth]{images/sign_up.png}}
 	\caption{Example of Log In and Sign Up pages.}
 \end{figure}
+
+Once the login has been completed successfully, the user is redirected to the Home page~\ref{fig:HomeMockup}.
+In particular, the reported figure shows the Home page for the customer account with all the functionalities. The application, knowing the type of account, is able to show different buttons. For example, in case of physical spot account, the application will display only the Lining Up button, hiding the others. In case of store manager account, there will be displayed only buttons to control the queue and to analyze the statistics. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.35\textwidth]{images/home.png}
 	\caption{Home page.}
-	\label{customersUseCasesDiagram}
+	\label{fig:HomeMockup}
 \end{figure}
+
+If a customer wants to line up, or book a visit, he can click on the corresponding button, in this way the application will show the form to insert the requested parameters~\ref{fig:LiningBookingMockup}.
+In the mock-up we show how the user can choose the store, the time slot and, in case of booking, the category of grocery, by expanding the drop down menu.
 
 \begin{figure}[H]
 	\centering     %%% not \center
-	\subfigure[Lining Up page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/lining_up_01.png}}
-	\subfigure[Booking Visit page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/booking_visit_01.png}}
+	\subfigure[Lining Up page.]{\label{fig:LiningUpMockup}\includegraphics[width=0.4\textwidth]{images/lining_up_01.png}}
+	\subfigure[Booking Visit page.]{\label{fig:BookingVisitMockup}\includegraphics[width=0.4\textwidth]{images/booking_visit_01.png}}
 	
-	\subfigure[Lining Up page with expanded spinner.]{\label{fig:c}\includegraphics[width=0.4\textwidth]{images/lining_up_02.png}}
-	\subfigure[Booking Visit page with expanded spinner.]{\label{fig:d}\includegraphics[width=0.4\textwidth]{images/booking_visit_02.png}}
+	\subfigure[Lining Up page with expanded spinner.]{\label{fig:LiningUp2Mockup}\includegraphics[width=0.4\textwidth]{images/lining_up_02.png}}
+	\subfigure[Booking Visit page with expanded spinner.]{\label{fig:BookingVisit2Mockup}\includegraphics[width=0.4\textwidth]{images/booking_visit_02.png}}
 	\caption{Example of Lining Up and Booking Visit pages.}
+	\label{fig:LiningBookingMockup}
 \end{figure}
+
+The application provides the possibility to check the queue status by clicking on the Get Status button and to watch the QR code by clicking on the relative button.
+These buttons aren't visible from the Home page until the user performs a lining up, or booking a visit, operation.
+If visible, the users will be able to see the interfaces: \ref{fig:GetStatusMockup}, \ref{fig:ShowQRMockup}.
 
 \begin{figure}[H]
 	\centering     %%% not \center
-	\subfigure[Get Status page.]{\label{fig:a}\includegraphics[width=0.4\textwidth]{images/get_status.png}}
-	\subfigure[Show QR code page.]{\label{fig:b}\includegraphics[width=0.4\textwidth]{images/show_qr_code.png}}
+	\subfigure[Get Status page.]{\label{fig:GetStatusMockup}\includegraphics[width=0.4\textwidth]{images/get_status.png}}
+	\subfigure[Show QR code page.]{\label{fig:ShowQRMockup}\includegraphics[width=0.4\textwidth]{images/show_qr_code.png}}
 	\caption{Example of Get Status and Show QR code pages.}
 \end{figure}
 
+% TODO: add mokup for store manager
 
 \subsection{Hardware Interfaces}
 \subsection{Software interfaces}
