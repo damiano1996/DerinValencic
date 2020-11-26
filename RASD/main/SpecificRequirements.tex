@@ -54,8 +54,31 @@ If visible, the users will be able to see the interfaces: \ref{fig:GetStatusMock
 % TODO: add mokup for store manager
 
 \subsection{Hardware Interfaces}
+
+The system is distributed over three main hardware resources.
+
+\begin{itemize}
+	\item \textbf{Smartphone}: used by the customers that wants to line up or book a visit from remote. The smartphone has to have a \gls{gps} module to send the position and an Internet connection active to receive live updates by the server.
+	\item \textbf{Physical spot}: is a totem composed by a tablet and a printer. The printer is a peripheral of the tablet. The tablet must have an Internet connection active.
+	\item \textbf{Turnstile}: is used to control the entries. The tablet of the store manager, the QR code scanner and the display, that shows the next ticket numbers, are parts of the turnstile. More precisely, turnstile, scanner and display are peripherals of the tablet.
+	We can imagine the turnstile as the metal detector in the airports, in which the guards are seated on the opposite side of the entrance.
+	The store manager controls everything by the tablet and the tablet controls the peripherals under the constraints imposed by the store manager and the remote server.
+	Indeed the tablet has to have an Internet connection active.
+\end{itemize}
+
 \subsection{Software interfaces}
+
+The system, to work properly, needs external \gls{api}.
+
+\begin{itemize}
+	\item \textbf{Store \glspl{api}}: are well-liked if they there are. Additional data provided by the store, such as the history of the purchases of the customers, can be used to improve the quality of the estimations of the residence time; the sections of the store that will be visited by customers and so on.
+	\item \textbf{Maps \glspl{api}}: can be used to improve the estimation of the needed time to arrive to the store by the global position of the customer.
+\end{itemize}
+
 \subsection{Communications Interfaces}
+
+In this service we aren't not scheduling to use external communications interfaces.
+Only the standard Internet protocols.
 
 \section{Functional Requirements}
 
