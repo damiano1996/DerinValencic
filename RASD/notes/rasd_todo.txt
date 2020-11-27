@@ -1,0 +1,6 @@
+- G1-D4 è uguale a G2-D2
+- G3 più generale
+- check finale con alloy
+- G4-R6 togli store manager, perché è l'app a fare lo scan
+
+- sequence diagram per l'app dello store manger per come viene sbloccato il tornello
