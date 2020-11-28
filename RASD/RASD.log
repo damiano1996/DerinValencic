@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.25)  26 NOV 2020 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.25)  28 NOV 2020 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,7 +962,7 @@ l.39 ... {3.5.1}Reliability}{31}{subsection.3.5.1}
 (./main/Introduction.tex
 Chapter 1.
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 51--51
+Overfull \hbox (24.0pt too wide) in alignment at lines 48--48
 [][] 
  []
 
@@ -1332,7 +1332,7 @@ m-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb
 onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
 
-Output written on RASD.pdf (37 pages, 5664071 bytes).
+Output written on RASD.pdf (37 pages, 5665160 bytes).
 PDF statistics:
  783 PDF objects out of 1000 (max. 8388607)
  645 compressed objects within 7 object streams

@@ -95,21 +95,21 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The system has to schedule entrances to the store.
-			\item {\textbf{[R]}}: The system has to compute the maximum capacity of the store w.r.t. the social distances imposed by the \gls{dpcm} in force.
-			\item {\textbf{[R]}}: The system has to monitor the customers residence time in the store.
-			\item {\textbf{[R]}}: The system has to allow authorized customers to enter in the store.
-			\item {\textbf{[R]}}: The system has to deny unauthorized customers to enter in the store.
-			\item {\textbf{[R]}}: The system has to know when a customer enters in the store.
-			\item {\textbf{[R]}}: The system has to know when a customer has left the store.
+			\item {\textbf{[R1]}}: The system has to schedule entrances to the store.
+			\item {\textbf{[R2]}}: The system has to compute the maximum capacity of the store w.r.t. the social distances imposed by the \gls{dpcm} in force.
+			\item {\textbf{[R3]}}: The system has to monitor the customers residence time in the store.
+			\item {\textbf{[R4]}}: The system has to allow authorized customers to enter in the store.
+			\item {\textbf{[R5]}}: The system has to deny unauthorized customers to enter in the store.
+			\item {\textbf{[R6]}}: The system has to know when a customer enters in the store.
+			\item {\textbf{[R7]}}: The system has to know when a customer has left the store.
 		\end{itemize} \\
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: There is a \gls{dpcm} in force.
-			\item {\textbf{[D]}}: Customers follow the rules imposed by the \gls{dpcm} in force.
-			\item {\textbf{[D]}}: Customers enter in the store only if the system authorizes them.
-			\item {\textbf{[D]}}: Customers don't stay in the shop longer than necessary.
+			\item {\textbf{[D1]}}: There is a \gls{dpcm} in force.
+			\item {\textbf{[D2]}}: Customers follow the rules imposed by the \gls{dpcm} in force.
+			\item {\textbf{[D3]}}: Customers enter in the store only if the system authorizes them.
+			\item {\textbf{[D4]}}: Customers don't stay in the shop longer than necessary and they go away from the store after they have done their shopping.
 			% \item {\textbf{[D]}}: If customers booked a visit to the store and they specify the category of grocery, they won't buy other things.
 		\end{itemize} \\ 
 	\hline
@@ -125,22 +125,22 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R]}}: The system has to estimate the residence time, of a customer, in the store.
-			\item {\textbf{[R]}}: The system has to infer the residence time of the customers based on past purchases.
-			\item {\textbf{[R]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
-			\item {\textbf{[R]}}: The system has to track the global position of the customers.
-			\item {\textbf{[R]}}: The system has to release QR codes to the customers.
-			\item {\textbf{[R]}}: The system has to limit the number of releasable QR codes if imposed by the store manager.
-			\item {\textbf{[R]}}: The system has to allow the store manager to monitor the status of the queue.
-			\item {\textbf{[R]}}: The system has to notify customers about the remaining time to be authorized to enter in the store.
-			\item {\textbf{[R]}}: The system has to communicate which is the next served QR code number.
+			\item {\textbf{[R8]}}: The system has to estimate the residence time, of a customer, in the store.
+			\item {\textbf{[R9]}}: The system has to infer the residence time of the customers based on past purchases.
+			\item {\textbf{[R10]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
+			\item {\textbf{[R11]}}: The system has to track the global position of the customers.
+			\item {\textbf{[R12]}}: The system has to release QR codes to the customers.
+			\item {\textbf{[R13]}}: The system has to limit the number of releasable QR codes if imposed by the store manager.
+			\item {\textbf{[R14]}}: The system has to allow the store manager to monitor the status of the queue.
+			\item {\textbf{[R15]}}: The system has to notify customers about the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R16]}}: The system has to communicate which is the next served QR code number.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D]}}: Customers line up physically only if they have a valid (non expired) QR code.
-			\item {\textbf{[D]}}: Customers go away from the store after they have done their shopping.
-			\item {\textbf{[D]}}: Outside the store, there is space to queue.
+			\item {\textbf{[D5]}}: Customers line up physically only if they have a valid (non expired) QR code.
+			\item {\textbf{[D4]}}: Customers don't stay in the shop longer than necessary and they go away from the store after they have done their shopping.
+			\item {\textbf{[D6]}}: Outside the store, there is space to queue.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -197,7 +197,7 @@ Bla bla bla...
 			\item {\textbf{[R]}}: The system has to allow store managers to monitor the status of the queue.
 			\item {\textbf{[R]}}: The system has to allow store managers to limit the number of QR codes released.
 			\item {\textbf{[R]}}: The system has to allow store managers to monitor the number of customers inside the store.
-			\item {\textbf{[R]}}: The system has to allow store managers to scan the QR codes of the customers.
+			\item {\textbf{[R]}}: The system has to scan the QR codes of the customers.
 			\item {\textbf{[R]}}: The system has to allow store managers to modify the timing parameters of the scheduler.
 			\item {\textbf{[R]}}: The system has to check if store managers have Internet connection active.
 			\item {\textbf{[R]}}: The system has to check if store managers have allowed the permissions requested by the application.
