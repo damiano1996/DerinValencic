@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.25)  28 NOV 2020 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  29 NOV 2020 17:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,9 +45,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language42) on input line 105.
+(babel)             (\language4) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language42) on input line 108.
+(babel)             (\language4) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -962,7 +962,7 @@ l.39 ... {3.5.1}Reliability}{31}{subsection.3.5.1}
 (./main/Introduction.tex
 Chapter 1.
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 48--48
+Overfull \hbox (24.0pt too wide) in alignment at lines 47--47
 [][] 
  []
 
@@ -980,12 +980,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<images/log_in.png, id=303, 1375.1375pt x 2543.5025pt>
+<images/log_in.png, id=302, 1375.1375pt x 2543.5025pt>
 File: images/log_in.png Graphic file (type png)
 <use images/log_in.png>
 Package pdftex.def Info: images/log_in.png  used on input line 14.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
-<images/sign_up.png, id=305, 1375.1375pt x 2543.5025pt>
+<images/sign_up.png, id=304, 1375.1375pt x 2543.5025pt>
 File: images/sign_up.png Graphic file (type png)
 <use images/sign_up.png>
 Package pdftex.def Info: images/sign_up.png  used on input line 15.
@@ -993,28 +993,28 @@ Package pdftex.def Info: images/sign_up.png  used on input line 15.
 [7
 
 ]
-<images/home.png, id=314, 1375.1375pt x 2543.5025pt>
+<images/home.png, id=313, 1375.1375pt x 2543.5025pt>
 File: images/home.png Graphic file (type png)
 <use images/home.png>
 Package pdftex.def Info: images/home.png  used on input line 24.
 (pdftex.def)             Requested size: 120.7521pt x 223.3166pt.
  [8 <./images/log_in.png> <./images/sign_up.png>]
-<images/lining_up_01.png, id=325, 1375.1375pt x 2543.5025pt>
+<images/lining_up_01.png, id=324, 1375.1375pt x 2543.5025pt>
 File: images/lining_up_01.png Graphic file (type png)
 <use images/lining_up_01.png>
 Package pdftex.def Info: images/lining_up_01.png  used on input line 34.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
-<images/booking_visit_01.png, id=326, 1375.1375pt x 2543.5025pt>
+<images/booking_visit_01.png, id=325, 1375.1375pt x 2543.5025pt>
 File: images/booking_visit_01.png Graphic file (type png)
 <use images/booking_visit_01.png>
 Package pdftex.def Info: images/booking_visit_01.png  used on input line 35.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
-<images/lining_up_02.png, id=327, 1375.1375pt x 2543.5025pt>
+<images/lining_up_02.png, id=326, 1375.1375pt x 2543.5025pt>
 File: images/lining_up_02.png Graphic file (type png)
 <use images/lining_up_02.png>
 Package pdftex.def Info: images/lining_up_02.png  used on input line 37.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
-<images/booking_visit_02.png, id=328, 1375.1375pt x 2543.5025pt>
+<images/booking_visit_02.png, id=327, 1375.1375pt x 2543.5025pt>
 File: images/booking_visit_02.png Graphic file (type png)
 <use images/booking_visit_02.png>
 Package pdftex.def Info: images/booking_visit_02.png  used on input line 38.
@@ -1026,12 +1026,12 @@ Underfull \hbox (badness 2698) in paragraph at lines 38--38
 
 [9 <./images/home.png>] [10 <./images/lining_up_01.png> <./images/booking_visit
 _01.png> <./images/lining_up_02.png> <./images/booking_visit_02.png>]
-<images/get_status.png, id=350, 1375.1375pt x 2543.5025pt>
+<images/get_status.png, id=349, 1375.1375pt x 2543.5025pt>
 File: images/get_status.png Graphic file (type png)
 <use images/get_status.png>
 Package pdftex.def Info: images/get_status.png  used on input line 49.
 (pdftex.def)             Requested size: 137.9979pt x 255.21898pt.
-<images/show_qr_code.png, id=351, 1375.1375pt x 2543.5025pt>
+<images/show_qr_code.png, id=350, 1375.1375pt x 2543.5025pt>
 File: images/show_qr_code.png Graphic file (type png)
 <use images/show_qr_code.png>
 Package pdftex.def Info: images/show_qr_code.png  used on input line 50.
@@ -1067,7 +1067,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 245--279
  []
 
 [17]
-Overfull \vbox (13.79639pt too high) has occurred while \output is active []
+Overfull \vbox (25.79639pt too high) has occurred while \output is active []
 
 
 [18]
@@ -1276,19 +1276,19 @@ ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{34}}}
+l.13 ...entrycounter[]{page}\glsnumberformat{34}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...entrycounter[]{page}\glsnumberformat{34}}}
+l.19 ...entrycounter[]{page}\glsnumberformat{34}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 ...entrycounter[]{page}\glsnumberformat{34}}}
+l.22 ...entrycounter[]{page}\glsnumberformat{34}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
@@ -1315,27 +1315,29 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 25307 strings out of 481239
- 475611 string characters out of 5920377
- 869230 words of memory out of 5000000
- 39868 multiletter control sequences out of 15000+600000
+ 25307 strings out of 483140
+ 475611 string characters out of 5965151
+ 864419 words of memory out of 5000000
+ 39624 multiletter control sequences out of 15000+600000
  547250 words of font info for 53 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 36 hyphenation exceptions out of 8191
  68i,14n,64p,999b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-
-Output written on RASD.pdf (37 pages, 5665160 bytes).
+ </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.6
+00pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti100
+0.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm
+1000.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx2074.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1000.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecbx2488.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecbx1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1000.600pk>
+Output written on RASD.pdf (37 pages, 5588184 bytes).
 PDF statistics:
- 783 PDF objects out of 1000 (max. 8388607)
- 645 compressed objects within 7 object streams
+ 1141 PDF objects out of 1200 (max. 8388607)
+ 655 compressed objects within 7 object streams
  120 named destinations out of 1000 (max. 500000)
  478 words of extra memory for PDF output out of 10000 (max. 10000000)
 
