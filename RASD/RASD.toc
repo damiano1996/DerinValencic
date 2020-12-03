@@ -22,25 +22,25 @@
 \contentsline {chapter}{\numberline {3}Specific Requirements}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}External Interface Requirements}{7}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}User Interfaces}{7}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{11}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Software interfaces}{12}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Communications Interfaces}{12}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Functional Requirements}{12}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Requirements}{12}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Definition of Use Case Diagrams}{19}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Use Cases and Sequence/Activity Diagrams}{25}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Mapping on Requirements}{33}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Performance Requirements}{33}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Design Constraints}{33}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Standard Compliance}{33}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{33}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Any Other Constraint}{33}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Software System Attributes}{33}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{33}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Availability}{33}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Security}{33}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{33}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Portability}{33}{subsection.3.5.5}%
-\contentsline {chapter}{\numberline {4}Formal Analysis Using Alloy}{34}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Effort Spent}{35}{chapter.5}%
-\contentsline {chapter}{\numberline {6}References}{36}{chapter.6}%
+\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Software interfaces}{11}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Communications Interfaces}{11}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Functional Requirements}{11}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Requirements}{11}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Definition of Use Case Diagrams}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Use Cases and Sequence/Activity Diagrams}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Mapping on Requirements}{32}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Performance Requirements}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Design Constraints}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Standard Compliance}{32}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{32}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Any Other Constraint}{32}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Software System Attributes}{32}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{32}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Availability}{32}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Security}{32}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{32}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Portability}{32}{subsection.3.5.5}%
+\contentsline {chapter}{\numberline {4}Formal Analysis Using Alloy}{33}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Effort Spent}{34}{chapter.5}%
+\contentsline {chapter}{\numberline {6}References}{35}{chapter.6}%
