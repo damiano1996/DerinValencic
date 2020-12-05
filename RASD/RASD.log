@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.8)  3 DEC 2020 08:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  5 DEC 2020 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,7 +950,7 @@ Package pdftex.def Info: images/polimi_logo.jpg  used on input line 10.
 h the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ... {3.5.1}Reliability}{32}{subsection.3.5.1}
+l.39 ... {3.5.1}Reliability}{33}{subsection.3.5.1}
                                                   % [1
 
 
@@ -1146,12 +1146,12 @@ Package pdftex.def Info: images/getHomePage_sequence_diagram.pdf  used on input
  line 575.
 (pdftex.def)             Requested size: 345.0pt x 353.59099pt.
  [23]
-<images/signUp_sequence_diagram.pdf, id=472, 469.755pt x 391.4625pt>
+<images/signUp_sequence_diagram.pdf, id=472, 469.755pt x 406.3983pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
  581.
-(pdftex.def)             Requested size: 345.0pt x 287.49748pt.
+(pdftex.def)             Requested size: 345.0pt x 298.46661pt.
  [24 <./images/getHomePage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getHomePage_sequence_diagram.p
@@ -1170,24 +1170,25 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/signUp_sequence_diagram.pdf):
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
-<images/logOut_sequence_diagram.pdf, id=520, 383.51279pt x 225.7233pt>
+<images/logOut_sequence_diagram.pdf, id=520, 356.29109pt x 240.9pt>
 File: images/logOut_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logOut_sequence_diagram.pdf>
 Package pdftex.def Info: images/logOut_sequence_diagram.pdf  used on input line
  593.
-(pdftex.def)             Requested size: 345.0pt x 203.05952pt.
-<images/liningUp_sequence_diagram.pdf, id=521, 543.95218pt x 912.2883pt>
-File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
-<use images/liningUp_sequence_diagram.pdf>
-Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
-ne 599.
-(pdftex.def)             Requested size: 345.0pt x 578.62846pt.
+(pdftex.def)             Requested size: 345.0pt x 233.26836pt.
  [26 <./images/logIn_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/logIn_sequence_diagram.pdf): P
 DF inclusion: invalid other resource which is no dict (key 'ProcSets', type <ar
 ray>); ignored.
-> <./images/logOut_sequence_diagram.pdf
+>]
+<images/liningUp_sequence_diagram.pdf, id=544, 543.95218pt x 912.2883pt>
+File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
+<use images/liningUp_sequence_diagram.pdf>
+Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
+ne 599.
+(pdftex.def)             Requested size: 345.0pt x 578.62846pt.
+ [27 <./images/logOut_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/logOut_sequence_diagram.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
@@ -1196,31 +1197,31 @@ rray>); ignored.
 Overfull \vbox (4.57243pt too high) has occurred while \output is active []
 
 
-[27 <./images/liningUp_sequence_diagram.pdf
+[28 <./images/liningUp_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/liningUp_sequence_diagram.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
 <array>); ignored.
 >]
-<images/bookingVisit_sequence_diagram.pdf, id=595, 505.89pt x 449.76028pt>
+<images/bookingVisit_sequence_diagram.pdf, id=600, 505.89pt x 449.76028pt>
 File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
 <use images/bookingVisit_sequence_diagram.pdf>
 Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
 t line 606.
 (pdftex.def)             Requested size: 345.0pt x 306.7251pt.
-<images/getStatusPage_sequence_diagram.pdf, id=596, 543.95218pt x 298.23419pt>
+<images/getStatusPage_sequence_diagram.pdf, id=601, 543.95218pt x 298.23419pt>
 File: images/getStatusPage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getStatusPage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getStatusPage_sequence_diagram.pdf  used on inp
 ut line 612.
 (pdftex.def)             Requested size: 345.0pt x 189.15817pt.
-<images/getQRcodePage_sequence_diagram.pdf, id=597, 260.89468pt x 146.4672pt>
+<images/getQRcodePage_sequence_diagram.pdf, id=602, 233.9139pt x 146.4672pt>
 File: images/getQRcodePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getQRcodePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getQRcodePage_sequence_diagram.pdf  used on inp
 ut line 618.
-(pdftex.def)             Requested size: 345.0pt x 193.6971pt.
- [28 <./images/bookingVisit_sequence_diagram.pdf
+(pdftex.def)             Requested size: 345.0pt x 216.03052pt.
+ [29 <./images/bookingVisit_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/bookingVisit_sequence_diagram.
 pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', t
@@ -1231,21 +1232,21 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/getStatusPage_sequence_diagram
 .pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', 
 type <array>); ignored.
 >]
-<images/getControlQueuePage_sequence_diagram.pdf, id=641, 498.90388pt x 355.327
+<images/getControlQueuePage_sequence_diagram.pdf, id=645, 472.64577pt x 355.327
 5pt>
 File: images/getControlQueuePage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getControlQueuePage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getControlQueuePage_sequence_diagram.pdf  used 
 on input line 624.
-(pdftex.def)             Requested size: 345.0pt x 245.72383pt.
-<images/getShowStatsPage_sequence_diagram.pdf, id=642, 558.16531pt x 298.23419p
+(pdftex.def)             Requested size: 345.0pt x 259.37605pt.
+<images/getShowStatsPage_sequence_diagram.pdf, id=646, 558.16531pt x 298.23419p
 t>
 File: images/getShowStatsPage_sequence_diagram.pdf Graphic file (type pdf)
 <use images/getShowStatsPage_sequence_diagram.pdf>
 Package pdftex.def Info: images/getShowStatsPage_sequence_diagram.pdf  used on 
 input line 630.
 (pdftex.def)             Requested size: 345.0pt x 184.33899pt.
- [29 <./images/getQRcodePage_sequence_diagram.pdf
+ [30 <./images/getQRcodePage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getQRcodePage_sequence_diagram
 .pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', 
@@ -1256,31 +1257,31 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/getControlQueuePage_sequence_d
 iagram.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcS
 ets', type <array>); ignored.
 >]
-<images/authorizationToEnter_sequence_diagram.pdf, id=685, 361.35pt x 471.68219
+<images/authorizationToEnter_sequence_diagram.pdf, id=689, 361.35pt x 471.68219
 pt>
 File: images/authorizationToEnter_sequence_diagram.pdf Graphic file (type pdf)
 <use images/authorizationToEnter_sequence_diagram.pdf>
 Package pdftex.def Info: images/authorizationToEnter_sequence_diagram.pdf  used
  on input line 636.
 (pdftex.def)             Requested size: 345.0pt x 450.34108pt.
- [30 <./images/getShowStatsPage_sequence_diagram.pdf
+ [31 <./images/getShowStatsPage_sequence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/getShowStatsPage_sequence_diag
 ram.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets
 ', type <array>); ignored.
->]) (./main/FormalAnalysisUsingAlloy.tex [31 <./images/authorizationToEnter_seq
+>]) (./main/FormalAnalysisUsingAlloy.tex [32 <./images/authorizationToEnter_seq
 uence_diagram.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/authorizationToEnter_sequence_
 diagram.pdf): PDF inclusion: invalid other resource which is no dict (key 'Proc
 Sets', type <array>); ignored.
->] [32]
+>] [33]
 Chapter 4.
-) (./main/EffortSpent.tex [33
+) (./main/EffortSpent.tex [34
 
 ]
 Chapter 5.
-) (./main/References.tex [34
+) (./main/References.tex [35
 
 ]
 Chapter 6.
@@ -1290,32 +1291,32 @@ No file RASD.bbl.
 o:api}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.6 ...tentrycounter[]{page}\glsnumberformat{35}}}
+l.6 ...tentrycounter[]{page}\glsnumberformat{36}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 ...entrycounter[]{page}\glsnumberformat{35}}}
+l.13 ...entrycounter[]{page}\glsnumberformat{36}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 ...entrycounter[]{page}\glsnumberformat{35}}}
+l.19 ...entrycounter[]{page}\glsnumberformat{36}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 ...entrycounter[]{page}\glsnumberformat{35}}}
+l.22 ...entrycounter[]{page}\glsnumberformat{36}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...entrycounter[]{page}\glsnumberformat{35}}}
-                                                  %) [35
+l.26 ...entrycounter[]{page}\glsnumberformat{36}}}
+                                                  %) [36
 
 runsystem(makeindex -s RASD.ist -t RASD.glg -o RASD.gls RASD.glo)...executed sa
 fely (allowed).
@@ -1335,8 +1336,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 25334 strings out of 483140
- 476386 string characters out of 5965151
+ 25335 strings out of 483140
+ 476393 string characters out of 5965151
  864618 words of memory out of 5000000
  39643 multiletter control sequences out of 15000+600000
  547250 words of font info for 53 fonts, out of 8000000 for 9000
@@ -1354,10 +1355,10 @@ knappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/lj
 four/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on RASD.pdf (38 pages, 6889710 bytes).
+Output written on RASD.pdf (39 pages, 6898640 bytes).
 PDF statistics:
- 1176 PDF objects out of 1200 (max. 8388607)
- 679 compressed objects within 7 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 682 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
  493 words of extra memory for PDF output out of 10000 (max. 10000000)
 
