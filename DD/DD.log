@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  13 DEC 2020 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  13 DEC 2020 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -986,12 +986,12 @@ File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 15.
 (pdftex.def)             Requested size: 598.0pt x 183.25505pt.
-<images/architecture_components.pdf, id=161, 813.0375pt x 426.63388pt>
-File: images/architecture_components.pdf Graphic file (type pdf)
-<use images/architecture_components.pdf>
-Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 29.
-(pdftex.def)             Requested size: 345.0pt x 181.03381pt.
+<images/signUp_sequence_diagram.pdf, id=161, 580.08719pt x 811.11026pt>
+File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
+<use images/signUp_sequence_diagram.pdf>
+Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
+ 25.
+(pdftex.def)             Requested size: 345.0pt x 482.41238pt.
 [4
 
  <./images/architecture.pdf
@@ -999,27 +999,38 @@ Package pdftex.def Info: images/architecture_components.pdf  used on input line
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
->] [5 <./images/component_diagram.pdf>]) (./main/UserInterfaceDesign.tex
-[6 <./images/architecture_components.pdf
+>] [5 <./images/component_diagram.pdf>]
+<images/architecture_components.pdf, id=202, 902.41138pt x 426.63388pt>
+File: images/architecture_components.pdf Graphic file (type pdf)
+<use images/architecture_components.pdf>
+Package pdftex.def Info: images/architecture_components.pdf  used on input line
+ 35.
+(pdftex.def)             Requested size: 345.0pt x 163.10555pt.
+ [6 <./images/signUp_sequence_diagram.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/signUp_sequence_diagram.pdf): 
+PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
+rray>); ignored.
+>]) (./main/UserInterfaceDesign.tex [7 <./images/architecture_components.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture_components.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
 Chapter 3.
-) (./main/RequirementsTraceability.tex [7
+) (./main/RequirementsTraceability.tex [8
 
 ]
 Chapter 4.
-) (./main/ImplementationIntegrationTestPlan.tex [8
+) (./main/ImplementationIntegrationTestPlan.tex [9
 
 ]
 Chapter 5.
-) (./main/EffortSpent.tex [9
+) (./main/EffortSpent.tex [10
 
 ]
 Chapter 6.
-) (./main/References.tex [10
+) (./main/References.tex [11
 
 ]
 Chapter 7.
@@ -1029,32 +1040,32 @@ No file DD.bbl.
 api}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 ...tentrycounter[]{page}\glsnumberformat{11}}}
+l.5 ...tentrycounter[]{page}\glsnumberformat{12}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 ...tentrycounter[]{page}\glsnumberformat{11}}}
+l.9 ...tentrycounter[]{page}\glsnumberformat{12}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{11}}}
+l.12 ...entrycounter[]{page}\glsnumberformat{12}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 ...entrycounter[]{page}\glsnumberformat{11}}}
+l.15 ...entrycounter[]{page}\glsnumberformat{12}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...entrycounter[]{page}\glsnumberformat{11}}}
-                                                  %) [11
+l.18 ...entrycounter[]{page}\glsnumberformat{12}}}
+                                                  %) [12
 
 runsystem(makeindex -s DD.ist -t DD.glg -o DD.gls DD.glo)...executed safely (al
 lowed).
@@ -1070,10 +1081,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25137 strings out of 483140
- 471125 string characters out of 5965151
+ 25145 strings out of 483140
+ 471382 string characters out of 5965151
  863193 words of memory out of 5000000
- 39546 multiletter control sequences out of 15000+600000
+ 39551 multiletter control sequences out of 15000+600000
  546151 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1087,10 +1098,10 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (13 pages, 1788756 bytes).
+Output written on DD.pdf (14 pages, 1837574 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
