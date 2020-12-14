@@ -114,14 +114,14 @@ Andrea is a worker with a fixed schedule, every day he finishes to work at eight
 Alfredo always uses the app to line up at the supermarket. One day he notices that when he lines up from his house the waiting time is always of twenty minutes even on the days where he goes there and see few people. With some reasoning he comes to the conclusion that the app gives him always a waiting time that is similar at the time he usually needs to get there. In fact, he really needs little less than twenty minutes to go there.\\
 
 
-\textbf{Sixth scenario 6:}\\
+\textbf{Sixth scenario:}\\
 Claudia is the manager of a supermarket that uses Clup and she checks the app to manage the flux of people inside the store. She always checks that the flux of people never reaches the eighty-five percent of the maximum capacity that the D.P.C.M. imposed to the store, when there are not bookings and not more than ninety percent of the maximum capacity if there are some bookings that specify the department. 
 One day even if the store respects these constrains, she notices that on one department, next to the entrance, a crowd is forming. Maybe it is happening because a recent sale on a category of products. She thinks that it would be appropriate to do not let other people enter until the problem is solved. So, she decides to use the app to temporarily block the number of new entrances. Leaving like that for few minutes the situation solve itself and she can allow again people to enter.\\
 
 
 \subsection{Requirements}
 
-Bla bla bla...
+\subsection{Mapping}
 
 \begin{table}[H]
 \centering
@@ -167,7 +167,7 @@ Bla bla bla...
 			\item {\textbf{[R10]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
 			\item {\textbf{[R11]}}: The system has to track the global position of the customers.
 			\item {\textbf{[R12]}}: The system has to release QR codes to the customers.
-			\item {\textbf{[R13]}}: The system has to limit the number of releasable QR codes if imposed by the store manager.
+			\item {\textbf{[R13]}}: The system has to allow store managers to limit the number of QR codes released.
 			\item {\textbf{[R14]}}: The system has to allow the store manager to monitor the status of the queue.
 			\item {\textbf{[R15]}}: The system has to notify customers about the remaining time to be authorized to enter in the store.
 			\item {\textbf{[R16]}}: The system has to communicate which is the next served QR code number.
@@ -175,8 +175,8 @@ Bla bla bla...
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D5]}}: Customers line up physically only if they have a valid (non expired) QR code.
 			\item {\textbf{[D4]}}: Customers don't stay in the shop longer than necessary and they go away from the store after they have done their shopping.
+			\item {\textbf{[D5]}}: Customers line up physically only if they have a valid (non expired) QR code.
 			\item {\textbf{[D6]}}: Outside the store there is space to queue.
 		\end{itemize} \\ 
 	\hline
@@ -194,27 +194,26 @@ Bla bla bla...
 	\textbf{Requirements} &
 		\begin{itemize}
 			\item {\textbf{[R17]}}: The system has to allow customers to register to the application.
-			\item {\textbf{[R18]}}: The system has to allow customers to login to the application.
-			\item {\textbf{[R19]}}: The system has to allow customers to get a QR code from the application.
-			\item {\textbf{[R20]}}: The system has to release QR codes to the customers through the application.
-			\item {\textbf{[R21]}}: The system has to alert customers if the queue is full.
-			\item {\textbf{[R22]}}: The system has to encode the lining up number in the QR code.
-			\item {\textbf{[R23]}}: The system has to allow customers to watch the QR code from the application.
-			\item {\textbf{[R24]}}: The system has to allow customers to watch the lining up number encoded in the QR code.
-			\item {\textbf{[R25]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
-			\item {\textbf{[R26]}}: The system has to update the remaining time showed to the customers.
-			\item {\textbf{[R27]}}: The system has to allow customers to delete a lining up operation.
-			\item {\textbf{[R28]}}: The system has to notify customers about the validation status of the QR code.
-			\item {\textbf{[R29]}}: The system has to check if customers have Internet connection active.
-			\item {\textbf{[R30]}}: The system has to check if customers have allowed the permissions requested by the application.
+			\item {\textbf{[R18]}}: The system has to allow users to login to the application.
+			\item {\textbf{[R19]}}: The system has to release QR codes to the customers through the application.
+			\item {\textbf{[R20]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R21]}}: The system has to encode the ticket number in the QR code.
+			\item {\textbf{[R22]}}: The system has to allow customers to watch the QR code from the application.
+			\item {\textbf{[R23]}}: The system has to allow customers to watch the ticket number encoded in the QR code.
+			\item {\textbf{[R24]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R25]}}: The system has to update the remaining time showed to the customers.
+			\item {\textbf{[R26]}}: The system has to allow customers to delete a ticket.
+			\item {\textbf{[R27]}}: The system has to notify customers about the validation status of the QR code.
+			\item {\textbf{[R28]}}: The system has to check if users have Internet connection active.
+			\item {\textbf{[R29]}}: The system has to check if users have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
 			\item {\textbf{[D7]}}: Customers have a smartphone.
 			\item {\textbf{[D8]}}: Customers have installed the \gls{clup} application.
-			\item {\textbf{[D9]}}: Customers allow the permissions requested by the application.
-			\item {\textbf{[D10]}}: Customers keep Internet connection active.
+			\item {\textbf{[D9]}}: Users allow the permissions requested by the application.
+			\item {\textbf{[D10]}}: Users keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -229,22 +228,22 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R31]}}: The system has to register store managers in the application.
-			\item {\textbf{[R32]}}: The system has to allow store managers to login to the application.
-			\item {\textbf{[R33]}}: The system has to allow store managers to monitor the status of the queue.
-			\item {\textbf{[R34]}}: The system has to allow store managers to limit the number of QR codes released.
-			\item {\textbf{[R35]}}: The system has to allow store managers to monitor the number of customers inside the store.
-			\item {\textbf{[R36]}}: The system has to scan the QR codes of the customers.
-			\item {\textbf{[R37]}}: The system has to allow store managers to modify the timing parameters of the scheduler.
-			\item {\textbf{[R38]}}: The system has to check if store managers have Internet connection active.
-			\item {\textbf{[R39]}}: The system has to check if store managers have allowed the permissions requested by the application.
+			\item {\textbf{[R30]}}: The system has to register store managers in the application.
+			\item {\textbf{[R18]}}: The system has to allow users to login to the application.
+			\item {\textbf{[R14]}}: The system has to allow store managers to monitor the status of the queue.
+			\item {\textbf{[R13]}}: The system has to allow store managers to limit the number of QR codes released.
+			\item {\textbf{[R31]}}: The system has to allow store managers to monitor the number of customers inside the store.
+			\item {\textbf{[R32]}}: The system has to scan the QR codes of the customers.
+			\item {\textbf{[R33]}}: The system has to allow store managers to modify the timing parameters of the scheduler.
+			\item {\textbf{[R28]}}: The system has to check if users have Internet connection active.
+			\item {\textbf{[R39]}}: The system has to check if users have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
+			\item {\textbf{[D9]}}: Users allow the permissions requested by the application.
+			\item {\textbf{[D10]}}: Users keep Internet connection active.
 			\item {\textbf{[D11]}}: There is a store manager present in the store.
-			\item {\textbf{[D12]}}: Store managers allow the permissions requested by the application.
-			\item {\textbf{[D13]}}: Store managers keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -259,19 +258,18 @@ Bla bla bla...
 	\hline
 	\textbf{Requirements} &
 		\begin{itemize}
-			\item {\textbf{[R40]}}: The system has to allow unregistered customers to line up.
-			\item {\textbf{[R41]}}: The system has to allow customers to get a QR code from a physical spot.
-			\item {\textbf{[R42]}}: The system has to release QR codes to the customers through the physical spot.
-			\item {\textbf{[R43]}}: The system has to encode the lining up number in the QR code.
-			\item {\textbf{[R44]}}: The system has to print QR codes on a paper tickets.
-			\item {\textbf{[R45]}}: The system has to alert customers if the queue is full.
-			\item {\textbf{[R46]}}: The system has to alert when the paper and toner of the physical spot is going to finish.
+			\item {\textbf{[R34]}}: The system has to allow unregistered customers to line up.
+			\item {\textbf{[R35]}}: The system has to release QR codes from a physical spot.
+			\item {\textbf{[R21]}}: The system has to encode the ticket number in the QR code.
+			\item {\textbf{[R36]}}: The system has to print QR codes on a paper tickets.
+			\item {\textbf{[R20]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R37]}}: The system has to alert when the paper and toner of the physical spot is going to finish.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
-			\item {\textbf{[D14]}}: Physical spots are powered on every working day.
-			\item {\textbf{[D15]}}: Physical spots are refilled when asked by the system. 
+			\item {\textbf{[D12]}}: Physical spots are powered on every working day.
+			\item {\textbf{[D13]}}: Physical spots are refilled when asked by the system. 
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
@@ -288,37 +286,102 @@ Bla bla bla...
 	\textbf{Requirements} &
 		\begin{itemize}
 			\item {\textbf{[R17]}}: The system has to allow customers to register to the application.
-			\item {\textbf{[R18]}}: The system has to allow customers to login to the application.
-			\item {\textbf{[R19]}}: The system has to allow customers to get a QR code from the application.
-			\item {\textbf{[R47]}}: The system has to allow customers to specify the date and time for a visit to the store.
-			\item {\textbf{[R48]}}: The system has to allow customers to specify the category of grocery they want to buy.
-			\item {\textbf{[R20]}}: The system has to release QR codes to the customers through the application.
-			\item {\textbf{[R21]}}: The system has to alert customers if the queue is full.
-			\item {\textbf{[R49]}}: The system has to encode the book-a-visit number in the QR code.
-			\item {\textbf{[R23]}}: The system has to allow customers to watch the QR code from the application.
-			\item {\textbf{[R50]}}: The system has to allow customers to watch the book-a-visit number encoded in the QR code.
-			\item {\textbf{[R25]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
-			\item {\textbf{[R51]}}: The system has to allow customers to delete a book-a-visit operation.
-			\item {\textbf{[R28]}}: The system has to notify customers about the validation status of the QR code.
-			\item {\textbf{[R29]}}: The system has to check if customers have Internet connection active.
-			\item {\textbf{[R30]}}: The system has to check if customers have allowed the permissions requested by the application.
+			\item {\textbf{[R18]}}: The system has to allow users to login to the application.
+			\item {\textbf{[R38]}}: The system has to allow customers to specify the date and time for a visit to the store.
+			\item {\textbf{[R39]}}: The system has to allow customers to specify the category of grocery they want to buy.
+			\item {\textbf{[R19]}}: The system has to release QR codes to the customers through the application.
+			\item {\textbf{[R20]}}: The system has to alert customers if the queue is full.
+			\item {\textbf{[R21]}}: The system has to encode the ticket number in the QR code.
+			\item {\textbf{[R22]}}: The system has to allow customers to watch the QR code from the application.
+			\item {\textbf{[R23]}}: The system has to allow customers to watch the book-a-visit number encoded in the QR code.
+			\item {\textbf{[R24]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
+			\item {\textbf{[R26]}}: The system has to allow customers to delete a ticket.
+			\item {\textbf{[R27]}}: The system has to notify customers about the validation status of the QR code.
+			\item {\textbf{[R28]}}: The system has to check if users have Internet connection active.
+			\item {\textbf{[R29]}}: The system has to check if users have allowed the permissions requested by the application.
 		\end{itemize} \\ 
 	\hline
 	\shortstack[l]{\textbf{Domain} \\ \textbf{Assumptions}} & 
 		\begin{itemize}
 			\item {\textbf{[D7]}}: Customers have a smartphone.
 			\item {\textbf{[D8]}}: Customers have installed the \gls{clup} application.
-			\item {\textbf{[D9]}}: Customers allow the permissions requested by the application.
-			\item {\textbf{[D10]}}: Customers keep Internet connection active.
+			\item {\textbf{[D9]}}: Users allow the permissions requested by the application.
+			\item {\textbf{[D10]}}: Users keep Internet connection active.
 		\end{itemize} \\ 
 	\hline
 \end{tabular}
 \end{table}
 
+\begin{table}[H]
+\centering
+\begin{tabular}{| m{0.2\textwidth} | m{0.4\textwidth} | m{0.4\textwidth} |} 
+	\hline
+		\textbf{Goal} & \textbf{Requirements} & \textbf{Domain Assumptions} \\
+		\hline
+		G1 & R1, R2, R3, R4, R5, R6, R7 & D1, D2, D3, D4 \\
+		\hline
+		G2 & R8, R9, R10, R11, R12, R13, R14, R15, R16 & D4, D5, D6 \\
+		\hline
+		G3 & R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29 & D7, D8, D9, D10 \\
+		\hline
+		G4 & R13, R14, R18, R28, R30, R31, R32, R33, R39 & D9, D10, D11 \\
+		\hline
+		G5 & R20, R21, R34, R35, R36, R37 & D12, D13 \\
+		\hline
+		G6 & R17, R18, R19, R20, R21, R22, R23, R24, R26, R27, R28, R29, R38, R39 & D7, D8, D9, D10 \\
+	\hline
+\end{tabular}
+\caption{Traceability matrix.}
+\end{table}
+
+\subsection{List of Requirements}
+
+\begin{itemize}
+
+	\item {\textbf{[R1]}}: The system has to schedule entrances to the store.
+	\item {\textbf{[R2]}}: The system has to compute the maximum capacity of the store w.r.t. the social distances imposed by the \gls{dpcm} in force.
+	\item {\textbf{[R3]}}: The system has to monitor the customers residence time in the store.
+	\item {\textbf{[R4]}}: The system has to allow authorized customers to enter in the store.
+	\item {\textbf{[R5]}}: The system has to deny unauthorized customers to enter in the store.
+	\item {\textbf{[R6]}}: The system has to know when a customer enters in the store.
+	\item {\textbf{[R7]}}: The system has to know when a customer has left the store.
+	\item {\textbf{[R8]}}: The system has to estimate the residence time, of a customer, in the store.
+	\item {\textbf{[R9]}}: The system has to infer the residence time of the customers based on past purchases.
+	\item {\textbf{[R10]}}: The system has to estimate the time needed to arrive, to the store, from the position of the customer.
+	\item {\textbf{[R11]}}: The system has to track the global position of the customers.
+	\item {\textbf{[R12]}}: The system has to release QR codes to the customers.
+	\item {\textbf{[R13]}}: The system has to allow store managers to limit the number of QR codes released.
+	\item {\textbf{[R14]}}: The system has to allow the store manager to monitor the status of the queue.
+	\item {\textbf{[R15]}}: The system has to notify customers about the remaining time to be authorized to enter in the store.
+	\item {\textbf{[R16]}}: The system has to communicate which is the next served QR code number.
+	\item {\textbf{[R17]}}: The system has to allow customers to register to the application.
+	\item {\textbf{[R18]}}: The system has to allow users to login to the application.
+	\item {\textbf{[R19]}}: The system has to release QR codes to the customers through the application.
+	\item {\textbf{[R20]}}: The system has to alert customers if the queue is full.
+	\item {\textbf{[R21]}}: The system has to encode the ticket number in the QR code.
+	\item {\textbf{[R22]}}: The system has to allow customers to watch the QR code from the application.
+	\item {\textbf{[R23]}}: The system has to allow customers to watch the ticket number encoded in the QR code.
+	\item {\textbf{[R24]}}: The system has to allow customers to watch the remaining time to be authorized to enter in the store.
+	\item {\textbf{[R25]}}: The system has to update the remaining time showed to the customers.
+	\item {\textbf{[R26]}}: The system has to allow customers to delete a ticket.
+	\item {\textbf{[R27]}}: The system has to notify customers about the validation status of the QR code.
+	\item {\textbf{[R28]}}: The system has to check if users have Internet connection active.
+	\item {\textbf{[R29]}}: The system has to check if users have allowed the permissions requested by the application.
+	\item {\textbf{[R30]}}: The system has to register store managers in the application.
+	\item {\textbf{[R31]}}: The system has to allow store managers to monitor the number of customers inside the store.
+	\item {\textbf{[R32]}}: The system has to scan the QR codes of the customers.
+	\item {\textbf{[R33]}}: The system has to allow store managers to modify the timing parameters of the scheduler.
+	\item {\textbf{[R34]}}: The system has to allow unregistered customers to line up.
+	\item {\textbf{[R35]}}: The system has to release QR codes from a physical spot.
+	\item {\textbf{[R36]}}: The system has to print QR codes on a paper tickets.
+	\item {\textbf{[R37]}}: The system has to alert when the paper and toner of the physical spot is going to finish.
+	\item {\textbf{[R38]}}: The system has to allow customers to specify the date and time for a visit to the store.
+	\item {\textbf{[R39]}}: The system has to allow customers to specify the category of grocery they want to buy.
+
+\end{itemize}
 
 \subsection{Definition of Use Case Diagrams}
 
-Bla bla bla...
 
 \begin{figure}[H]
 	\centering

@@ -88,3 +88,63 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{fifo}{}%
+{%
+\gls@defglossaryentry{fifo}%
+{%
+name={\acronymfont {\glsentryshort {fifo}}},%
+sort={FIFO},%
+type={main},%
+first={FIFO},%
+firstplural={FIFOs},%
+text={FIFO},%
+plural={FIFOs},%
+description={First In First Out},%
+descriptionplural={First In First Out},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={First In First Out},%
+longplural={First In First Outs},%
+short={FIFO},%
+shortplural={FIFOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={\acronymfont {\glsentryshort {api}}},%
+sort={API},%
+type={main},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

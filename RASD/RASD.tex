@@ -31,7 +31,8 @@
 
 \usepackage[dvipsnames] {xcolor}%Per il codice alloy
 
-\usepackage{alloy-style} %Per il codice alloy
+\usepackage{alloy/alloy-style} %Per il codice alloy
+\usepackage{rotating} % to rotate images
 
 \usepackage{lineno}
 
@@ -43,7 +44,9 @@
 
 
 \setacronymstyle{long-short}
+
 \input{main/glossary} % input definitions
+
 
 % Per inserire i contenuti, riferirsi ai file relativi e segnati tra parentesi graffe nei parametri \input
 
@@ -105,10 +108,5 @@
 \bibliography{bib/bibliography}
 \bibliographystyle{plain}
 
-%*******************************************************
-% Glossario
-%*******************************************************
-\glsaddall
-\printglossary[type=\acronymtype,title={Glossary}]
 
 \end{document}
