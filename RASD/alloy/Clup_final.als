@@ -70,7 +70,6 @@ fact {
 
 sig QRCode { 
 	user: one User,
-//	date: one Date,
 	time: one Int
 }{
  this in ( DigitalTicket.qrCode + PhysicalTicket.qrCode)
@@ -79,7 +78,6 @@ sig QRCode {
 
 sig QRCodeB { 
 	user: one Customer,
-//	date: one Date,
 	time: one Int
 }{
  time > 0

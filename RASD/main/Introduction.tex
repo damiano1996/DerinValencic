@@ -4,6 +4,15 @@
 
 \subsection{Description of the Given Problem}
 
+Our application is relative a situation of global pandemic that requires stores to help prevent the diffusion of the virus. And so, to guarantee their use in total safety. One of means to contribute to the success of this goal is to guarantee the absence of crowds. And that is the focus of our application.
+Considered one store and established the maximum number of people that is allowed to be inside, without having a crowd, our application is an instrument to keep the influx of people below that threshold.
+It works mainly managing automatically the influx of people inside the store, staggering the entrances in the store by using some parameters to keep them safe.
+This is done by offering to customers a basic service that consist in a digital lining up system. It mainly works remotely but in case it also works from a physical spot inside the store. In this way it should also help avoid having crowds outside the store. To reach the largest number of people this app should be easy to use, and its functions should work consistently in time. 
+Instead to the manager it is given a dashboard where are shown significant data like the number of people currently in the store, the status of the queue, the influx of people during different intervals of time, etc. It also allows, when it is necessary, the store manager to make decision that influences the flux of people (like for example blocking the entrances for a period or modifying some parameters value which the algorithm uses to manage the flux). 
+Furthermore, it is given to the customers a function that allow them to book a spot in the store by choosing the day and the time. This is thought to help people with limited availability during the day.
+This option requires optionally at people to point out which product categories they are going to purchase or the departments they are going to visit. This is used to optimize the algorithm of the system to maximize the number of people inside the store during a certain time, by knowing their distribution. This can also be made automatically by using their data for long-time customers.
+
+
 \subsection{Goals}
 
 We identified the following goals:
@@ -27,6 +36,51 @@ device.
 \end{itemize}
 
 \section{Scope}
+
+This document will refer mainly on a single supermarket chain with some already shared services, even though it could be naturally extended to a bigger set of different supermarkets chains. Inside a store we will encounter three possible users of our application, the store manager that will manly work with statistics, the physical spot that will act as the user for the people without the app, and the customers that are people using the app.
+ Our application will mainly focus on the last ones as they are the ones that will give us more information to work with and so consequently the ones that we will be more able to control and manage to respect our goals. In fact, the application will start, when they line up, to monitor and track their position and it will estimate their time of arrival, in order to have the least amount of people close to the store.
+The application will track the order of people in the digital queue by the time they line up. They will know about their position in the queue from a ticket that will be handed to them, in a digital format if the line up is done by the app or as a paper if this is done using the physical spot. Inside queue we will also consider the people that used the advance function of booking, even though it will be done in a different manner. The people that use this last function will give us additional information to enhance the precision of our model and so to better predict their behaviours and timings. 
+
+\subsection{Phenomena table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| m{0.5\textwidth} | m{0.2\textwidth} | m{0.3\textwidth} |} 
+	\hline
+	 \textbf{Phenomenon} & \textbf{Shared} &  \textbf{Who Controls it} \\
+	\hline
+	A person wants to do groceries &  N & World \\ 
+	\hline
+	A person finish to do groceries  & N &  World \\ 
+	\hline
+	A person vist a department of the store & N & World \\
+	\hline
+	A person sings up & Y & World \\ 
+	\hline
+	A person looks at their position in the queue & Y & World \\ 
+	\hline
+	The store is full & Y & World \\ 
+	\hline
+	A person shows a QR code to enter & Y & World \\ 
+	\hline
+	A person enters in the store & Y & World \\ 
+	\hline
+	A person books a visit in the store & Y & World \\ 
+	\hline
+	A person point out a department that they will visit & Y & World \\ 
+	\hline
+	A person is notified that their turn is coming & Y & Machine \\ 
+	\hline
+	A person is not allowed to enter & Y & Machine \\
+	\hline
+	A person is  allowed to enter & Y & Machine \\
+	\hline
+	The system tracks the number of people inside the store & Y & Machine \\
+	\hline
+\end{tabular}
+\caption{Phenomena table}
+\label{tablePhenomenatable}
+\end{table}
 
 \section{Definitions, Acronyms, Abbreviations}
 
