@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  13 DEC 2020 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  14 DEC 2020 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,11 +981,11 @@ File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
 Package pdftex.def Info: images/architecture.pdf  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 221.88248pt.
-<images/component_diagram.pdf, id=160, 2780.46764pt x 852.06331pt>
+<images/component_diagram.pdf, id=160, 2870.80513pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 15.
-(pdftex.def)             Requested size: 598.0pt x 183.25505pt.
+(pdftex.def)             Requested size: 598.0pt x 176.22794pt.
 <images/signUp_sequence_diagram.pdf, id=161, 580.08719pt x 811.11026pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
@@ -1098,7 +1098,7 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (14 pages, 1837574 bytes).
+Output written on DD.pdf (14 pages, 1843291 bytes).
 PDF statistics:
  608 PDF objects out of 1000 (max. 8388607)
  282 compressed objects within 3 object streams
