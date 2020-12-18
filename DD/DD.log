@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  14 DEC 2020 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  18 DEC 2020 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,17 +981,17 @@ File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
 Package pdftex.def Info: images/architecture.pdf  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 221.88248pt.
-<images/component_diagram.pdf, id=160, 2870.80513pt x 846.0408pt>
+<images/component_diagram.pdf, id=160, 2755.41408pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 15.
-(pdftex.def)             Requested size: 598.0pt x 176.22794pt.
-<images/signUp_sequence_diagram.pdf, id=161, 580.08719pt x 811.11026pt>
-File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
-<use images/signUp_sequence_diagram.pdf>
-Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
- 25.
-(pdftex.def)             Requested size: 345.0pt x 482.41238pt.
+(pdftex.def)             Requested size: 598.0pt x 183.6122pt.
+<images/sessionToken_sequence_diagram.pdf, id=161, 277.035pt x 406.3983pt>
+File: images/sessionToken_sequence_diagram.pdf Graphic file (type pdf)
+<use images/sessionToken_sequence_diagram.pdf>
+Package pdftex.def Info: images/sessionToken_sequence_diagram.pdf  used on inpu
+t line 25.
+(pdftex.def)             Requested size: 345.0pt x 506.10529pt.
 [4
 
  <./images/architecture.pdf
@@ -999,38 +999,58 @@ Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
->] [5 <./images/component_diagram.pdf>]
-<images/architecture_components.pdf, id=202, 902.41138pt x 426.63388pt>
+>] [5 <./images/component_diagram.pdf>] [6]
+Overfull \vbox (18.75034pt too high) has occurred while \output is active []
+
+
+[7 <./images/sessionToken_sequence_diagram.pdf>]
+<images/signUp_sequence_diagram.pdf, id=222, 580.08719pt x 533.1117pt>
+File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
+<use images/signUp_sequence_diagram.pdf>
+Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
+ 31.
+(pdftex.def)             Requested size: 345.0pt x 317.07117pt.
+<images/logIn_sequence_diagram.pdf, id=223, 580.08719pt x 529.98pt>
+File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
+<use images/logIn_sequence_diagram.pdf>
+Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
+37.
+(pdftex.def)             Requested size: 345.0pt x 315.20857pt.
+ [8 <./images/signUp_sequence_diagram.pdf>]
+<images/liningUp_sequence_diagram.pdf, id=240, 738.84026pt x 781.96138pt>
+File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
+<use images/liningUp_sequence_diagram.pdf>
+Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
+ne 43.
+(pdftex.def)             Requested size: 345.0pt x 365.14748pt.
+ [9 <./images/logIn_sequence_diagram.pdf>]
+<images/architecture_components.pdf, id=257, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 35.
+ 53.
 (pdftex.def)             Requested size: 345.0pt x 163.10555pt.
- [6 <./images/signUp_sequence_diagram.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/signUp_sequence_diagram.pdf): 
-PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
-rray>); ignored.
->]) (./main/UserInterfaceDesign.tex [7 <./images/architecture_components.pdf
+ [10 <./images/liningUp_sequence_diagram.pdf>]) (./main/UserInterfaceDesign.tex
+ [11 <./images/architecture_components.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture_components.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
 Chapter 3.
-) (./main/RequirementsTraceability.tex [8
+) (./main/RequirementsTraceability.tex [12
 
 ]
 Chapter 4.
-) (./main/ImplementationIntegrationTestPlan.tex [9
+) (./main/ImplementationIntegrationTestPlan.tex [13
 
 ]
 Chapter 5.
-) (./main/EffortSpent.tex [10
+) (./main/EffortSpent.tex [14
 
 ]
 Chapter 6.
-) (./main/References.tex [11
+) (./main/References.tex [15
 
 ]
 Chapter 7.
@@ -1040,32 +1060,32 @@ No file DD.bbl.
 api}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 ...tentrycounter[]{page}\glsnumberformat{12}}}
+l.5 ...tentrycounter[]{page}\glsnumberformat{16}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 ...tentrycounter[]{page}\glsnumberformat{12}}}
+l.9 ...tentrycounter[]{page}\glsnumberformat{16}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{12}}}
+l.12 ...entrycounter[]{page}\glsnumberformat{16}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 ...entrycounter[]{page}\glsnumberformat{12}}}
+l.15 ...entrycounter[]{page}\glsnumberformat{16}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...entrycounter[]{page}\glsnumberformat{12}}}
-                                                  %) [12
+l.18 ...entrycounter[]{page}\glsnumberformat{16}}}
+                                                  %) [16
 
 runsystem(makeindex -s DD.ist -t DD.glg -o DD.gls DD.glo)...executed safely (al
 lowed).
@@ -1081,10 +1101,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25145 strings out of 483140
- 471382 string characters out of 5965151
+ 25170 strings out of 483140
+ 472202 string characters out of 5965151
  863193 words of memory out of 5000000
- 39551 multiletter control sequences out of 15000+600000
+ 39566 multiletter control sequences out of 15000+600000
  546151 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1098,10 +1118,10 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (14 pages, 1843291 bytes).
+Output written on DD.pdf (18 pages, 1981939 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
