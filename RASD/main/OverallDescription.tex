@@ -1,22 +1,23 @@
 \chapter{Overall Description}
 
 \section{Product Perspective}
-The next image shows the mock-up of the system made in UML. The UML is not definitive model, but it shows the starting point of the Clup system. It is made to help visualize the main elements of our system and their interactions. The scheme wants to highlight the following interactions:
+The image~\ref{figure:UML} shows the mock-up of the system made in \gls{uml}. The \gls{uml} is not definitive model, but it shows the starting point of the \gls{clup} system. It is made to help visualize the main elements of our system and their interactions. The scheme wants to highlight the following interactions:
 \begin{itemize}
 
-	\item The ticket represents the person inside the queue
+	\item The ticket represents the person inside the queue.
 
 	\item The physical spot is treated like a user in the system, the default one. 
 
 	\item Since the booking ticket may point to different days, they are not immediately saved in the queue but instead in a booking list that will interact with the 	queue to schedule at the right time.
 
-	\item The dashboard interacts with the system elements to show relevant data, and the complete picture. 
+	\item The dashboard interacts with the system elements to show relevant data. 
 \end{itemize}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/uml.jpg}
 	\caption{Class diagram.}
+	\label{figure:UML}
 \end{figure}
 
 In the next state diagrams, it will be shown how the lining up feature works. It will also highlight the difference in the handling between the physical ticket and the digital ticket.
@@ -32,11 +33,11 @@ In the next state diagrams, it will be shown how the lining up feature works. It
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.5]{images/statechart.png}
-	\caption{State diagram digital ticket}
+	\caption{State diagram digital ticket.}
 \end{figure}
 
-The main difference is that in the digital lining up, since it can be done from a distant position, Clup must first calculate a feasible time to reach the store and then schedule it in the queue. Instead, the physical lining up it is immediately scheduled since the position is the store one. The second difference is that for the digital lining up a notification is sent to the customer, that suggest going to the store when it is the right time. But it is possible that other notifications are sent, if the reachable time check is violated, and if it exceeds a certain value the ticket is pre-emptively discarded. Instead for the physical one, since they are close to the store and that is not possible to notify them, they will able only to wait.
-And the end is the same for both, the ticket will authorize them to enter for a period then if not used it will expire.
+The main difference is that in the digital lining up, since it can be done from a distant position, \gls{clup} must first calculate a feasible time to reach the store and then schedule it in the queue. Instead, the physical lining up it is immediately scheduled since the position is the store one. The second difference is that for the digital lining up a notification is sent to the customer, that suggest going to the store when it is the right time. It is possible that other notifications are sent, if the reachable time check is violated, and if it exceeds a certain value the ticket is preemptively discarded. Instead for the physical one, since they are close to the store and that is not possible to notify them, they will able only to wait.
+The end is the same for both, the ticket will authorize them to enter for a period then if not used it will expire.
 
 
 \section{Product Functions}
@@ -88,10 +89,10 @@ The actors in our application are the following:
 
 \begin{itemize}
 
-	\item Customer: The customer is a person who has downloaded the application and regularly uses it to interact with the store. The first time they use it, 			they must register themself. The following times they must log in and authenticate in order to use the functionality of the app. Then they can either line up 			remotely or book a visit. If they uses the line-up function, then, for some time they can view the relative ticket with the associated data. Same happens
+	\item Customer: is a person who has downloaded the application and regularly uses it to interact with the store. The first time they use it, they have to register. The following times they must log in and authenticate in order to use the functionality of the application. Then they can either line up remotely or book a visit. If they uses the line-up function, then, for some time they can view the relative ticket with the associated data. Same happens
 	when using the function of booking a visit, after compiling the form and sending it, they can look at their appointments data for a period.
-	\item Physical Spot: The physical spot act as representant of the users that do not have the application and gives them the possibility to use the line-up 			function. He does that by handing to them a paper ticket which represent a position in the digital queue.
-	\item Manager: The manager is the person responsible of the store, and the one who can log as manager in the application.They are given a dashboard 			where they can check relevant data regarding the store, the influx of the people in it and the status of the queue. They can modify parameters important to 			the elaborations of the data and take decisions that influence the influx of people, like stopping the release of new tickets for a time period. 
+	\item Physical spot: represents users that do not have the application and gives them the possibility to use the line-up function. It does that by handing to them a paper ticket which represent a position in the digital queue.
+	\item Store manager: is the person responsible of the store, and the one who can log as manager in the application.They are given a dashboard where they can check relevant data regarding the store, the influx of the people in it and the status of the queue. They can modify parameters important to the elaborations of the data and take decisions that influence the influx of people, like stopping the release of new tickets for a time period. 
 
 \end{itemize}
 
@@ -102,9 +103,9 @@ Below has been reported the list of our domain assumptions.
 \begin{itemize}
 
 	\item \textbf{{[D1]}}: There is a \gls{dpcm} in force.
-	\item \textbf{{[D2]}}: Customers follow the rules impsed by the \gls{dpcm} in force.
+	\item \textbf{{[D2]}}: Customers follow the rules imposed by the \gls{dpcm} in force.
 	\item \textbf{{[D3]}}: Customers enter in the store only if the system authorizes them.
-	\item \textbf{{[D4]}}: Customers don't stay in the shop longer than necessary and they go away from the sotre after they have done their shopping.
+	\item \textbf{{[D4]}}: Customers don't stay in the shop longer than necessary and they go away from the store after they have done their shopping.
 	\item \textbf{{[D5]}}: Customers line up physically only if they have a valid (non expired) QR code.
 	\item \textbf{{[D6]}}: Outside the store there is space to queue.
 	\item \textbf{{[D7]}}: Customers have a smartphone.
