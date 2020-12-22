@@ -46,9 +46,9 @@ If visible, the users will be able to see the interfaces: \ref{fig:GetStatusMock
 
 \begin{figure}[H]
 	\centering     %%% not \center
-	\subfigure[Get Status page.]{\label{fig:GetStatusMockup}\includegraphics[width=0.3\textwidth]{images/get_status.png}}
+	\subfigure[Status page.]{\label{fig:GetStatusMockup}\includegraphics[width=0.3\textwidth]{images/get_status.png}}
 	\subfigure[Show QR code page.]{\label{fig:ShowQRMockup}\includegraphics[width=0.3\textwidth]{images/show_qr_code.png}}
-	\caption{Example of Get Status and Show QR code pages.}
+	\caption{Example of Status and Show QR code pages.}
 \end{figure}
 
 In figure~\ref{fig:ShowStatsMockup} has been reported a mockup showing a possible interface for the store manager to control the statistics about the status of the queue, instead,
@@ -81,17 +81,20 @@ The system, to work properly, needs external \gls{api}.
 
 \begin{itemize}
 	\item \textbf{Store \glspl{api}}: are well-liked if they there are. Additional data provided by the store, such as the history of the purchases of the customers, can be used to improve the quality of the estimations of the residence time; the sections of the store that will be visited by customers and so on.
-	\item \textbf{Maps \glspl{api}}: can be used to improve the estimation of the needed time to arrive to the store by the global position of the customer.
+	\item \textbf{Google Maps \glspl{api}}: can be used to improve the estimation of the needed time to arrive to the store by the global position of the customer.
+	\item \textbf{Google Firebase \glspl{api}}: to send live notifications to the customers.
 \end{itemize}
 
 \subsection{Communications Interfaces}
 
-In this service we aren't not scheduling to use external communications interfaces.
+In this service we aren't scheduling to use external communications interfaces.
 Only the standard Internet protocols.
 
 \section{Functional Requirements}
 
 \subsection{Scenarios}
+
+Here we will describe some common scenarios of using the service.\\
 
 \textbf{First scenario:}\\
 Mario reads the newspaper and realize that the virus is a serious problem. He thinks that we should try to have behaviors that helps contain the problem, like take appointments on the spots we will go. He learns from Internet that the supermarket where he usually goes to, is using an application to take appointments, \gls{clup}. He registers himself, and from day on when he needs to do grocery shopping, he uses the application to digitally line-up. When the application notifies him that his turn is coming, he goes out in the directions of the supermarket. And only in few cases he found himself waiting few minutes to enter inside the store.\\
@@ -115,7 +118,7 @@ Alfredo always uses the application to line up at the supermarket. One day he no
 
 
 \textbf{Sixth scenario:}\\
-Claudia is the manager of a supermarket that uses \gls{clup} and she checks the \gls{clup} to manage the flux of people inside the store. She always checks that the flux of people never reaches the eighty-five percent of the maximum capacity that the D.P.C.M. imposed to the store, when there are not bookings and not more than ninety percent of the maximum capacity if there are some bookings that specify the department. 
+Claudia is the manager of a supermarket that uses \gls{clup} and she checks the \gls{clup} to manage the flux of people inside the store. She always checks that the flux of people never reaches the eighty-five percent of the maximum capacity that the \gls{dpcm} imposed to the store, when there are not bookings and not more than ninety percent of the maximum capacity if there are some bookings that specify the department. 
 One day even if the store respects these constrains, she notices that on one department, next to the entrance, a crowd is forming. Maybe it is happening because a recent sale on a category of products. She thinks that it would be appropriate to do not let other people enter until the problem is solved. So, she decides to use the application to temporarily block the number of new entrances. Leaving like that for few minutes the situation solve itself and she can allow again people to enter.\\
 
 
@@ -418,7 +421,7 @@ In this section we report the requirements necessary to achieve our goals.
 	\end{itemize} \\ 
 	\hline
 \end{tabular}
-\caption{Use case: \textbf{Sign Up}.}
+\caption{Customer - use case: \textbf{Sign Up}.}
 \label{tableSignUp}
 \end{table}
 
@@ -734,7 +737,7 @@ In this section we report the requirements necessary to achieve our goals.
 
 \section{Performance Requirements}
 
-We can differentiate our performance requirements in 2 categories:
+We can differentiate our performance requirements in two categories:
 \begin{itemize}
 	\item The first ones are necessary to respect a goal, in our case are relative to the goal to limit the physical line situation in the proximity of the store. In 			order to achieve that, our application must precisely estimate the right time of arrival time of every single customer with an absolute error less than five 			minutes. That depends on the precise estimation of the position of the customer after lining up and a correct estimation on the duration of the customers time staying. Them also need to be under a certain value of error, for the first one the error must be less than ten meters instead the estimation of the time 	of the customer staying must be less than three minutes. Also, these estimations must not require more than twenty seconds to compute in order to be always relevant when it is shown to the customer.
 	\item The second ones are required to guarantee a good level of \gls{qos}. Such as being able to manage at least a five hundred simultaneous user connections for each store, in order to let the all customer being able to line up, re-elaborate periodically the stats for the manager with a period less than one minute.
@@ -748,8 +751,8 @@ We can differentiate our performance requirements in 2 categories:
 
 All measurements are made by using the \gls{si} metric system: 
 \begin{itemize}
-	\item Distance [m] \\
-	\item Time [s] \\
+	\item Distance [m]
+	\item Time [s]
 \end{itemize} 
 All information regarding the users and the data collected by the application will be kept safe, more information in that regard will be stated on an agreement the user will have to accept. \gls{clup} pledge to respect what it will be written in that agreement. \\
 
@@ -759,32 +762,31 @@ The most important hardware requirements are the ones used by the store, necessa
 \begin{itemize}
 	\item One that has to acts as physical spot and so it is preferably a totem but in more general terms a tablet connected to a printer should suffice, and it is implied that the tablet or the totem should be also connected to Internet to communicate with the \gls{clup} server. The tablet is needed for letting people choose to get a paper ticket and the printer should print and hand it to them.
 
-	\item The second component must be able to scan the QR code in order to let people enter when It is their turn and reject them when it is not their turn. So, it is preferably to have a turnstile with a scanner implemented on it for this purpose. Also is suggested to have a screen that shows the current position of the queue in order to reduce interactions. But the minimum requirement is to have at least a mobile scanner, that is  required to be used by an operator that so needs to stay close to the entrance. Also, in this case, the scanner has to be connected to the Internet or It has to be connected to another device in the store network that is connected to the Internet in order to verify the correctness of the QR code. 
+	\item The second component must be able to scan the QR code in order to let people enter when it is their turn and reject them when it is not their turn. So, it is preferably to have a turnstile with a scanner implemented on it for this purpose, it is also suggested to have a screen that shows the current position of the queue in order to reduce interactions.
 
 \end{itemize}
 
-There are also hardware requirements for the manager and the customers, the first one needs a device with a screen like a computer or a tablet, that is connected to Internet for the entirety opening hours of the store in order to let the manager control and manage the influx of people. The customers need a mobile device with Internet access and a \gls{gps} sensor, so a smartphone is preferred, in order to use both line-up and booking functionalities. 
+There are also hardware requirements for the manager and the customers, the first one needs a device with a screen like a tablet, that is connected to Internet for the entirety opening hours of the store in order to let the manager control and manage the influx of people. The customers need a mobile device with Internet access and a \gls{gps} sensor, so a smartphone is preferred, in order to use both line-up and booking functionalities. 
 
 \subsection{Any Other Constraint}
 
-The user cannot line-up if he is already in line
- The user must give to the application permission to \gls{gps} during all the time he is in line, without this permission the user will be not able to look at his ticket and show the QR code.
+The user cannot line-up if he is already in line.
+The user must give to the application permission to \gls{gps} during all the time he is in line, without this permission the user will be not able to look at his ticket and show the QR code.
 
 
 \section{Software System Attributes}
 
 \subsection{Reliability}
-The \gls{clup} system should be operating continuously as much as possible, so it should be up for at least ninety nine percent of time. The faults and problem in the system should not occur during times where there is a high influx of people as they could cause the most dangerous situations. So, the system must contain some mechanism to increase its fault tolerance especially in critical periods of the day like peak hours of stores. And have, extra mechanisms during high load periods like holidays. An alternative of the required hardware of a store should always be available in case of failures, and they both should regularly checked.
- The collection of data is not a particularly important aspect of the application, but it should be still robust, so the data should be backed-up regularly in physical storage devices. 
+The \gls{clup} system should be operating continuously as much as possible, so it should be up for at least ninety nine percent of time. The faults and problem in the system should not occur during times where there is a high influx of people as they could cause the most dangerous situations. So, the system must contain some mechanism to increase its fault tolerance especially in critical periods of the day like peak hours of stores and have extra mechanisms during high load periods like holidays. An alternative of the required hardware of a store should always be available in case of failures, and they both should regularly checked. The collection of data is not a particularly important aspect of the application, but it should be still robust, so the data should be backed-up regularly in physical storage devices. 
 
 \subsection{Availability}
-As stated above, the operating time of the system, and so its availability should be at least ninety nine percent of time. Scheduled maintenance should be programmed during the period between midnight and five a.m. since it is the period when most stores are closed, and the working ones have small load.
+As stated above, the operating time of the system, and so its availability, should be at least ninety nine percent of time. Scheduled maintenance should be programmed during the period between midnight and five a.m. since it is the period when most stores are closed, and the working ones have small load.
 
 \subsection{Security}
 The data collected by the application is not particularly sensible, but even so the applications should focus on keep it safe, by mainly encrypting the data before storing it and by using an encrypted channel to transmit it. Furthermore, the development of all components of the applications should be done in a way that considers the latest possible exploit and the possible vulnerability of the system and aiming to cover them all.  
 
 \subsection{Maintainability}
-The application should be designed by keeping in mind the design patterns of coding. Such as, dividing the application in functional components that are the least dependent on each other. So that their maintenance is done independently and does not spawn irregular behaviors and requires less downtime for the whole system to implement it. 
+The application should be designed by keeping in mind the design patterns of coding, such as dividing the application in functional components that are the least dependent on each other. So that their maintenance is done independently and does not spawn irregular behaviors and requires less downtime for the whole system to implement it. 
 
 \subsection{Portability}
 The applications should be available for Android and iOS operating systems. It should also be available for relatively older versions of these systems without it being a constrain and without reducing security standards.

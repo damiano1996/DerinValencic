@@ -14,3 +14,7 @@
 - [RASD](RASD): contains the Requirements Analysis and Specification Document;
 - [DD](DD): contains the Design Document;
 - [ProjectAssignments_AY2020-2021](ProjectAssignments_AY2020-2021): contains the project assignments.
+
+## Delivered Documents
+
+- [RASD1.pdf](DeliveryFolder/RASD1.pdf)

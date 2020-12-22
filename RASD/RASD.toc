@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {3.5.1}Reliability}{44}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Availability}{44}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Security}{44}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{45}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{44}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Portability}{45}{subsection.3.5.5}%
 \contentsline {chapter}{\numberline {4}Formal Analysis Using Alloy}{46}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Alloy Code}{46}{section.4.1}%

@@ -38,10 +38,31 @@ device.
 
 \section{Scope}
 
-This document will refer mainly on a single supermarket chain with some already shared services, even though it could be naturally extended to a bigger set of different supermarkets chains. Inside a store we will encounter three possible users of our application, the store manager that will mainly work with statistics, the physical spot that will act as the user for the people without the application, and the customers that are people using the application.
-Our service is designed to work properly for all kind of the specified users, but for the different nature of the customers we can exploit more only from the users that use the application.
-For instance, the system will be able to reduce the number of customers outside the store by monitoring, tracking and estimating the needed time to arrive to the store from the position at the lining up time.
-The application will track the order of people in the digital queue by the time they line up. They will know about their position in the queue from a ticket that will be handed to them, in a digital format if the line up is done by the application or as a paper if this is done using the physical spot. Inside queue we will also consider the people that used the advance function of booking, even though it will be done in a different manner. The people that use this last function will give us additional information to enhance the precision of our model and so to better predict their behaviors and timings. 
+This document will refer mainly on a single supermarket chain with some already shared services, even though it could be naturally extended to a bigger set of different supermarkets chains.
+
+The main phenomena, that this application is modeled on, are relative to the action that customers usually do and we have problems on tracking, such as:
+\begin{itemize}
+	\item a person wants to do groceries;
+	\item a person finishes to do groceries; and
+	\item a person visits a specific department of the store.
+\end{itemize}
+
+The application is built with having in mind these phenomena and by trying to have more control on them without limiting the possibilities the customers have of doing groceries, and so, for the first one by having people being able to line up remotely, it helps the application to know in advance when a person wants to do groceries and can manage them better by offering:
+\begin{itemize}
+	\item a lining up service;
+	\item a ticket that permits to a person to look on their position in the queue; and
+	\item the possibility to book a visit to the store.
+\end{itemize}
+\ \\
+In the other hand, the application:
+\begin{itemize}
+	\item can tell when a person enters and so, it can track the number of people inside the store and recognize when the store is full;
+	\item can interact with customers by allowing or not allowing them to enter; and
+	\item can notify the customers when it is their turn to enter.
+\end{itemize}
+\ \\
+Moreover, thanks to the fact the people that use the application are recognized by the system, it can also make prediction on the residence time of the customers and so it can predict when a person finishes to do groceries.
+For the last main phenomena, the system also predicts the department that are usually visited by the customers, if it have enough data to do so, but it is also helped by the fact that in booking ticket, the customers can point the departments or the set of items that they are going to buy. 
 
 \subsection{Phenomena table}
 
