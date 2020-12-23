@@ -13,6 +13,9 @@
   Store Manager & a person who is in charge of the store. In our context, we assume that the \textit{store manager} controls the entrances to the store with the help of \gls{clup} service. In the real world scenario this activity can be delegated, without loss of generality.\\ \\
   Physical Spot & a digital device positioned outside the store that allows customers to obtain tickets to line up.\\ \\
   User & a virtual entity that interacts with the virtual service offered by \gls{clup}. The user can be a customers, a store manager and a physical spot (when it is acting as proxy). In case of ambiguous interpretations, we will specify the real entity name.\\ \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{ >{\hsize=0.2\textwidth}X >{\hsize=0.8\textwidth}X}
   Proxy & an intermediary entity that exchanges information between two other entities. In our system, the physical spot can be seen as a proxy, since it allows customers to line up without the necessity to create an user account. From the point of view of the server, the physical spot is seen as an user.\\ \\
   Virtual Queue & a queue of users allocated in the memory of the server. When a user asks for a lining up operation, or a booking a visit operation, it is allocated in this queue.\\ \\
   Physical Queue & a queue of customers outside the store.\\ \\

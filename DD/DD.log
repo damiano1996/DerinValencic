@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  18 DEC 2020 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  23 DEC 2020 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,75 +963,103 @@ l.77 \mainmatter
 ] (./main/Introduction.tex
 Chapter 1.
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 23--23
+Overfull \hbox (24.0pt too wide) in alignment at lines 16--16
+[][] 
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 26--26
+[][] 
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 26--27
 [][] 
  []
 
 [1
 
 
-]
-Overfull \vbox (145.15784pt too high) has occurred while \output is active []
-
-
-[2] (./DD.gls)) (./main/ArchitecturalDesign.tex [3]
+] (./DD.gls)) (./main/ArchitecturalDesign.tex [2]
 Chapter 2.
-<images/architecture.pdf, id=159, 515.04419pt x 331.2375pt>
+<images/architecture.pdf, id=155, 515.04419pt x 331.2375pt>
 File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
 Package pdftex.def Info: images/architecture.pdf  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 221.88248pt.
-<images/component_diagram.pdf, id=160, 2755.41408pt x 846.0408pt>
+<images/component_diagram.pdf, id=156, 2755.41408pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 15.
 (pdftex.def)             Requested size: 598.0pt x 183.6122pt.
-<images/sessionToken_sequence_diagram.pdf, id=161, 277.035pt x 406.3983pt>
+<images/sessionToken_sequence_diagram.pdf, id=157, 277.035pt x 406.3983pt>
 File: images/sessionToken_sequence_diagram.pdf Graphic file (type pdf)
 <use images/sessionToken_sequence_diagram.pdf>
 Package pdftex.def Info: images/sessionToken_sequence_diagram.pdf  used on inpu
 t line 25.
 (pdftex.def)             Requested size: 345.0pt x 506.10529pt.
-[4
+[3
 
  <./images/architecture.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
->] [5 <./images/component_diagram.pdf>] [6]
+>] [4 <./images/component_diagram.pdf>] [5]
 Overfull \vbox (18.75034pt too high) has occurred while \output is active []
 
 
-[7 <./images/sessionToken_sequence_diagram.pdf>]
-<images/signUp_sequence_diagram.pdf, id=222, 580.08719pt x 533.1117pt>
+[6 <./images/sessionToken_sequence_diagram.pdf>]
+<images/signUp_sequence_diagram.pdf, id=218, 580.08719pt x 533.1117pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
  31.
 (pdftex.def)             Requested size: 345.0pt x 317.07117pt.
-<images/logIn_sequence_diagram.pdf, id=223, 580.08719pt x 529.98pt>
+<images/logIn_sequence_diagram.pdf, id=219, 580.08719pt x 529.98pt>
 File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logIn_sequence_diagram.pdf>
 Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
 37.
 (pdftex.def)             Requested size: 345.0pt x 315.20857pt.
- [8 <./images/signUp_sequence_diagram.pdf>]
-<images/liningUp_sequence_diagram.pdf, id=240, 738.84026pt x 781.96138pt>
+ [7 <./images/signUp_sequence_diagram.pdf>]
+<images/liningUp_sequence_diagram.pdf, id=236, 738.84026pt x 781.96138pt>
 File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/liningUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
 ne 43.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
- [9 <./images/logIn_sequence_diagram.pdf>]
-<images/architecture_components.pdf, id=257, 902.41138pt x 426.63388pt>
+ [8 <./images/logIn_sequence_diagram.pdf>]
+<images/bookingVisit_sequence_diagram.pdf, id=253, 738.84026pt x 781.96138pt>
+File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
+<use images/bookingVisit_sequence_diagram.pdf>
+Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
+t line 49.
+(pdftex.def)             Requested size: 345.0pt x 365.14748pt.
+ [9 <./images/liningUp_sequence_diagram.pdf>]
+<images/scheduler_sequence_diagram.pdf, id=270, 941.43718pt x 377.49028pt>
+File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
+<use images/scheduler_sequence_diagram.pdf>
+Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
+ine 55.
+(pdftex.def)             Requested size: 345.0pt x 138.33864pt.
+<images/dynamicScheduler_sequence_diagram.pdf, id=271, 948.42331pt x 334.3692pt
+>
+File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
+<use images/dynamicScheduler_sequence_diagram.pdf>
+Package pdftex.def Info: images/dynamicScheduler_sequence_diagram.pdf  used on 
+input line 61.
+(pdftex.def)             Requested size: 345.0pt x 121.62791pt.
+ [10 <./images/bookingVisit_sequence_diagram.pdf> <./images/scheduler_sequence_
+diagram.pdf>]
+<images/architecture_components.pdf, id=301, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 53.
+ 71.
 (pdftex.def)             Requested size: 345.0pt x 163.10555pt.
- [10 <./images/liningUp_sequence_diagram.pdf>]) (./main/UserInterfaceDesign.tex
- [11 <./images/architecture_components.pdf
+) (./main/UserInterfaceDesign.tex [11 <./images/dynamicScheduler_sequence_diagr
+am.pdf> <./images/architecture_components.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture_components.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
@@ -1101,10 +1129,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25170 strings out of 483140
- 472202 string characters out of 5965151
- 863193 words of memory out of 5000000
- 39566 multiletter control sequences out of 15000+600000
+ 25191 strings out of 483140
+ 473067 string characters out of 5965151
+ 860193 words of memory out of 5000000
+ 39581 multiletter control sequences out of 15000+600000
  546151 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1118,10 +1146,10 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (18 pages, 1981939 bytes).
+Output written on DD.pdf (18 pages, 2145797 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 53 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
