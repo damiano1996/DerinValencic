@@ -13,11 +13,11 @@
 \contentsline {section}{\numberline {2.2}Component View}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Deployment View}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Runtime View}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Component Interfaces}{11}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{11}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Other Design Decisions}{11}{section.2.7}%
-\contentsline {chapter}{\numberline {3}User Interface Design}{12}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Requirements Traceability}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{14}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Effort Spent}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{16}{chapter.7}%
+\contentsline {section}{\numberline {2.5}Component Interfaces}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{16}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Other Design Decisions}{16}{section.2.7}%
+\contentsline {chapter}{\numberline {3}User Interface Design}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Requirements Traceability}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Effort Spent}{20}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{21}{chapter.7}%

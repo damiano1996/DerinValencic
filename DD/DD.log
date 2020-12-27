@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  23 DEC 2020 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  27 DEC 2020 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,43 +1042,64 @@ File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/scheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
 ine 55.
-(pdftex.def)             Requested size: 345.0pt x 138.33864pt.
+(pdftex.def)             Requested size: 598.0pt x 239.79582pt.
 <images/dynamicScheduler_sequence_diagram.pdf, id=271, 948.42331pt x 334.3692pt
 >
 File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/dynamicScheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/dynamicScheduler_sequence_diagram.pdf  used on 
 input line 61.
-(pdftex.def)             Requested size: 345.0pt x 121.62791pt.
- [10 <./images/bookingVisit_sequence_diagram.pdf> <./images/scheduler_sequence_
-diagram.pdf>]
-<images/architecture_components.pdf, id=301, 902.41138pt x 426.63388pt>
+(pdftex.def)             Requested size: 598.0pt x 210.83228pt.
+<images/controlQueue_sequence_diagram.pdf, id=272, 738.84026pt x 724.62718pt>
+File: images/controlQueue_sequence_diagram.pdf Graphic file (type pdf)
+<use images/controlQueue_sequence_diagram.pdf>
+Package pdftex.def Info: images/controlQueue_sequence_diagram.pdf  used on inpu
+t line 67.
+(pdftex.def)             Requested size: 345.0pt x 338.3745pt.
+ [10 <./images/bookingVisit_sequence_diagram.pdf>] [11 <./images/scheduler_sequ
+ence_diagram.pdf>] [12 <./images/dynamicScheduler_sequence_diagram.pdf>]
+<images/showStats_sequence_diagram.pdf, id=323, 637.42137pt x 608.2725pt>
+File: images/showStats_sequence_diagram.pdf Graphic file (type pdf)
+<use images/showStats_sequence_diagram.pdf>
+Package pdftex.def Info: images/showStats_sequence_diagram.pdf  used on input l
+ine 73.
+(pdftex.def)             Requested size: 345.0pt x 329.22334pt.
+ [13 <./images/controlQueue_sequence_diagram.pdf>]
+<images/qrCodeChecking_sequence_diagram.pdf, id=340, 644.4075pt x 1272.67462pt>
+
+File: images/qrCodeChecking_sequence_diagram.pdf Graphic file (type pdf)
+<use images/qrCodeChecking_sequence_diagram.pdf>
+Package pdftex.def Info: images/qrCodeChecking_sequence_diagram.pdf  used on in
+put line 79.
+(pdftex.def)             Requested size: 276.00105pt x 545.10329pt.
+ [14 <./images/showStats_sequence_diagram.pdf>]
+<images/architecture_components.pdf, id=357, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 71.
+ 89.
 (pdftex.def)             Requested size: 345.0pt x 163.10555pt.
-) (./main/UserInterfaceDesign.tex [11 <./images/dynamicScheduler_sequence_diagr
-am.pdf> <./images/architecture_components.pdf
+ [15 <./images/qrCodeChecking_sequence_diagram.pdf>]) (./main/UserInterfaceDesi
+gn.tex [16 <./images/architecture_components.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture_components.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
 Chapter 3.
-) (./main/RequirementsTraceability.tex [12
+) (./main/RequirementsTraceability.tex [17
 
 ]
 Chapter 4.
-) (./main/ImplementationIntegrationTestPlan.tex [13
+) (./main/ImplementationIntegrationTestPlan.tex [18
 
 ]
 Chapter 5.
-) (./main/EffortSpent.tex [14
+) (./main/EffortSpent.tex [19
 
 ]
 Chapter 6.
-) (./main/References.tex [15
+) (./main/References.tex [20
 
 ]
 Chapter 7.
@@ -1088,32 +1109,32 @@ No file DD.bbl.
 api}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 ...tentrycounter[]{page}\glsnumberformat{16}}}
+l.5 ...tentrycounter[]{page}\glsnumberformat{21}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 ...tentrycounter[]{page}\glsnumberformat{16}}}
+l.9 ...tentrycounter[]{page}\glsnumberformat{21}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{16}}}
+l.12 ...entrycounter[]{page}\glsnumberformat{21}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 ...entrycounter[]{page}\glsnumberformat{16}}}
+l.15 ...entrycounter[]{page}\glsnumberformat{21}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...entrycounter[]{page}\glsnumberformat{16}}}
-                                                  %) [16
+l.18 ...entrycounter[]{page}\glsnumberformat{21}}}
+                                                  %) [21
 
 runsystem(makeindex -s DD.ist -t DD.glg -o DD.gls DD.glo)...executed safely (al
 lowed).
@@ -1129,10 +1150,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25191 strings out of 483140
- 473067 string characters out of 5965151
- 860193 words of memory out of 5000000
- 39581 multiletter control sequences out of 15000+600000
+ 25219 strings out of 483140
+ 473967 string characters out of 5965151
+ 860201 words of memory out of 5000000
+ 39598 multiletter control sequences out of 15000+600000
  546151 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1146,10 +1167,10 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (18 pages, 2145797 bytes).
+Output written on DD.pdf (23 pages, 2324874 bytes).
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 56 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 398 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
