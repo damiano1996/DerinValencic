@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  27 DEC 2020 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  29 DEC 2020 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,69 +1037,70 @@ Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
 t line 49.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [9 <./images/liningUp_sequence_diagram.pdf>]
-<images/scheduler_sequence_diagram.pdf, id=270, 941.43718pt x 377.49028pt>
+<images/scheduler_sequence_diagram.pdf, id=270, 716.6775pt x 377.49028pt>
 File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/scheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
 ine 55.
-(pdftex.def)             Requested size: 598.0pt x 239.79582pt.
-<images/dynamicScheduler_sequence_diagram.pdf, id=271, 948.42331pt x 334.3692pt
+(pdftex.def)             Requested size: 345.0pt x 181.72319pt.
+ [10 <./images/bookingVisit_sequence_diagram.pdf>]
+<images/dynamicScheduler_sequence_diagram.pdf, id=287, 673.55638pt x 334.3692pt
 >
 File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/dynamicScheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/dynamicScheduler_sequence_diagram.pdf  used on 
 input line 61.
-(pdftex.def)             Requested size: 598.0pt x 210.83228pt.
-<images/controlQueue_sequence_diagram.pdf, id=272, 738.84026pt x 724.62718pt>
+(pdftex.def)             Requested size: 345.0pt x 171.27094pt.
+<images/controlQueue_sequence_diagram.pdf, id=288, 738.84026pt x 724.62718pt>
 File: images/controlQueue_sequence_diagram.pdf Graphic file (type pdf)
 <use images/controlQueue_sequence_diagram.pdf>
 Package pdftex.def Info: images/controlQueue_sequence_diagram.pdf  used on inpu
 t line 67.
 (pdftex.def)             Requested size: 345.0pt x 338.3745pt.
- [10 <./images/bookingVisit_sequence_diagram.pdf>] [11 <./images/scheduler_sequ
-ence_diagram.pdf>] [12 <./images/dynamicScheduler_sequence_diagram.pdf>]
-<images/showStats_sequence_diagram.pdf, id=323, 637.42137pt x 608.2725pt>
+ [11 <./images/scheduler_sequence_diagram.pdf> <./images/dynamicScheduler_seque
+nce_diagram.pdf>]
+<images/showStats_sequence_diagram.pdf, id=319, 637.42137pt x 608.2725pt>
 File: images/showStats_sequence_diagram.pdf Graphic file (type pdf)
 <use images/showStats_sequence_diagram.pdf>
 Package pdftex.def Info: images/showStats_sequence_diagram.pdf  used on input l
 ine 73.
 (pdftex.def)             Requested size: 345.0pt x 329.22334pt.
- [13 <./images/controlQueue_sequence_diagram.pdf>]
-<images/qrCodeChecking_sequence_diagram.pdf, id=340, 644.4075pt x 1272.67462pt>
+ [12 <./images/controlQueue_sequence_diagram.pdf>]
+<images/qrCodeChecking_sequence_diagram.pdf, id=336, 644.4075pt x 1272.67462pt>
 
 File: images/qrCodeChecking_sequence_diagram.pdf Graphic file (type pdf)
 <use images/qrCodeChecking_sequence_diagram.pdf>
 Package pdftex.def Info: images/qrCodeChecking_sequence_diagram.pdf  used on in
 put line 79.
 (pdftex.def)             Requested size: 276.00105pt x 545.10329pt.
- [14 <./images/showStats_sequence_diagram.pdf>]
-<images/architecture_components.pdf, id=357, 902.41138pt x 426.63388pt>
+ [13 <./images/showStats_sequence_diagram.pdf>]
+<images/architecture_components.pdf, id=353, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
  89.
 (pdftex.def)             Requested size: 345.0pt x 163.10555pt.
- [15 <./images/qrCodeChecking_sequence_diagram.pdf>]) (./main/UserInterfaceDesi
-gn.tex [16 <./images/architecture_components.pdf
+ [14 <./images/qrCodeChecking_sequence_diagram.pdf>]) (./main/UserInterfaceDesi
+gn.tex [15 <./images/architecture_components.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture_components.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]
 Chapter 3.
-) (./main/RequirementsTraceability.tex [17
+) (./main/RequirementsTraceability.tex [16
 
 ]
 Chapter 4.
-) (./main/ImplementationIntegrationTestPlan.tex [18
+) (./main/ImplementationIntegrationTestPlan.tex [17
 
 ]
 Chapter 5.
-) (./main/EffortSpent.tex [19
+) (./main/EffortSpent.tex [18
 
 ]
 Chapter 6.
-) (./main/References.tex [20
+) (./main/References.tex [19
 
 ]
 Chapter 7.
@@ -1109,32 +1110,32 @@ No file DD.bbl.
 api}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 ...tentrycounter[]{page}\glsnumberformat{21}}}
+l.5 ...tentrycounter[]{page}\glsnumberformat{20}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:clup}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 ...tentrycounter[]{page}\glsnumberformat{21}}}
+l.9 ...tentrycounter[]{page}\glsnumberformat{20}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:dpcm}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{21}}}
+l.12 ...entrycounter[]{page}\glsnumberformat{20}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:fifo}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 ...entrycounter[]{page}\glsnumberformat{21}}}
+l.15 ...entrycounter[]{page}\glsnumberformat{20}}}
                                                   \glsgroupskippdfTeX warning (
 ext4): destination with the same identifier (name{glo:gps}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...entrycounter[]{page}\glsnumberformat{21}}}
-                                                  %) [21
+l.18 ...entrycounter[]{page}\glsnumberformat{20}}}
+                                                  %) [20
 
 runsystem(makeindex -s DD.ist -t DD.glg -o DD.gls DD.glo)...executed safely (al
 lowed).
@@ -1150,10 +1151,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25219 strings out of 483140
- 473967 string characters out of 5965151
- 860201 words of memory out of 5000000
- 39598 multiletter control sequences out of 15000+600000
+ 25216 strings out of 483140
+ 473950 string characters out of 5965151
+ 860193 words of memory out of 5000000
+ 39596 multiletter control sequences out of 15000+600000
  546151 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1167,10 +1168,10 @@ n/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (23 pages, 2324874 bytes).
+Output written on DD.pdf (22 pages, 2317383 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 63 named destinations out of 1000 (max. 500000)
  259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
