@@ -14,11 +14,17 @@
 \BOOKMARK [1][-]{section.2.4}{Runtime View}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.4.1}{Session Control}{section.2.4}% 15
 \BOOKMARK [2][-]{subsection.2.4.2}{Sign Up}{section.2.4}% 16
-\BOOKMARK [1][-]{section.2.5}{Component Interfaces}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.6}{Selected Architectural Styles and Patterns}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 20
-\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 21
-\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 22
-\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 23
-\BOOKMARK [0][-]{chapter.7}{References}{}% 24
+\BOOKMARK [2][-]{subsection.2.4.3}{Log In}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.4}{Lining Up}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.5}{Booking a Visit}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.6}{Static Scheduler}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.7}{Dynamic Scheduler}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.8}{Control Queue}{section.2.4}% 22
+\BOOKMARK [1][-]{section.2.5}{Component Interfaces}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.6}{Selected Architectural Styles and Patterns}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 26
+\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 27
+\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 28
+\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 29
+\BOOKMARK [0][-]{chapter.7}{References}{}% 30

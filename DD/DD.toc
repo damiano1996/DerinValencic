@@ -14,7 +14,13 @@
 \contentsline {section}{\numberline {2.3}Deployment View}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Runtime View}{6}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Session Control}{6}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Sign Up}{8}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Sign Up}{7}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Log In}{8}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Lining Up}{9}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Booking a Visit}{10}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Static Scheduler}{11}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Dynamic Scheduler}{12}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Control Queue}{13}{subsection.2.4.8}%
 \contentsline {section}{\numberline {2.5}Component Interfaces}{16}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{16}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Other Design Decisions}{16}{section.2.7}%

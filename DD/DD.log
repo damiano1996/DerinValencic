@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  29 DEC 2020 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  29 DEC 2020 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,7 +938,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 \openout7 = `DD.out'.
 
  ABD: EveryShipout initializing macros
-<images/polimi_logo.jpg, id=103, 513.92pt x 385.44pt>
+<images/polimi_logo.jpg, id=127, 513.92pt x 385.44pt>
 File: images/polimi_logo.jpg Graphic file (type jpg)
 <use images/polimi_logo.jpg>
 Package pdftex.def Info: images/polimi_logo.jpg  used on input line 10.
@@ -982,12 +982,12 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 26--27
 
 ] (./DD.gls)) (./main/ArchitecturalDesign.tex [2]
 Chapter 2.
-<images/architecture.pdf, id=166, 515.04419pt x 331.2375pt>
+<images/architecture.pdf, id=196, 515.04419pt x 331.2375pt>
 File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
 Package pdftex.def Info: images/architecture.pdf  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 221.88248pt.
-<images/component_diagram.pdf, id=170, 2755.41408pt x 846.0408pt>
+<images/component_diagram.pdf, id=200, 2755.41408pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 20.
@@ -1000,83 +1000,82 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
 >] [4] [5 <./images/component_diagram.pdf>]
-<images/sessionToken_sequence_diagram.pdf, id=219, 277.035pt x 406.3983pt>
+<images/sessionToken_sequence_diagram.pdf, id=249, 277.035pt x 406.3983pt>
 File: images/sessionToken_sequence_diagram.pdf Graphic file (type pdf)
 <use images/sessionToken_sequence_diagram.pdf>
 Package pdftex.def Info: images/sessionToken_sequence_diagram.pdf  used on inpu
 t line 71.
 (pdftex.def)             Requested size: 345.0pt x 506.10529pt.
- [6]
-<images/signUp_sequence_diagram.pdf, id=229, 580.08719pt x 533.1117pt>
+ [6] [7 <./images/sessionToken_sequence_diagram.pdf>]
+<images/signUp_sequence_diagram.pdf, id=277, 580.08719pt x 533.1117pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
- 79.
+ 81.
 (pdftex.def)             Requested size: 345.0pt x 317.07117pt.
- [7 <./images/sessionToken_sequence_diagram.pdf>]
-<images/logIn_sequence_diagram.pdf, id=245, 580.08719pt x 529.98pt>
+<images/logIn_sequence_diagram.pdf, id=279, 580.08719pt x 529.98pt>
 File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logIn_sequence_diagram.pdf>
 Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
-85.
+91.
 (pdftex.def)             Requested size: 345.0pt x 315.20857pt.
  [8 <./images/signUp_sequence_diagram.pdf>]
-<images/liningUp_sequence_diagram.pdf, id=262, 738.84026pt x 781.96138pt>
+<images/liningUp_sequence_diagram.pdf, id=297, 738.84026pt x 781.96138pt>
 File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/liningUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
-ne 91.
+ne 104.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [9 <./images/logIn_sequence_diagram.pdf>]
-<images/bookingVisit_sequence_diagram.pdf, id=279, 738.84026pt x 781.96138pt>
+<images/bookingVisit_sequence_diagram.pdf, id=316, 738.84026pt x 781.96138pt>
 File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
 <use images/bookingVisit_sequence_diagram.pdf>
 Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
-t line 97.
+t line 115.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [10 <./images/liningUp_sequence_diagram.pdf>]
-<images/scheduler_sequence_diagram.pdf, id=297, 716.6775pt x 377.49028pt>
+<images/scheduler_sequence_diagram.pdf, id=334, 716.6775pt x 377.49028pt>
 File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/scheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
-ine 103.
+ine 127.
 (pdftex.def)             Requested size: 345.0pt x 181.72319pt.
  [11 <./images/bookingVisit_sequence_diagram.pdf>]
-<images/dynamicScheduler_sequence_diagram.pdf, id=315, 673.55638pt x 334.3692pt
+<images/dynamicScheduler_sequence_diagram.pdf, id=353, 673.55638pt x 334.3692pt
 >
 File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/dynamicScheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/dynamicScheduler_sequence_diagram.pdf  used on 
-input line 109.
+input line 139.
 (pdftex.def)             Requested size: 345.0pt x 171.27094pt.
-<images/controlQueue_sequence_diagram.pdf, id=316, 738.84026pt x 724.62718pt>
+<images/controlQueue_sequence_diagram.pdf, id=354, 738.84026pt x 724.62718pt>
 File: images/controlQueue_sequence_diagram.pdf Graphic file (type pdf)
 <use images/controlQueue_sequence_diagram.pdf>
 Package pdftex.def Info: images/controlQueue_sequence_diagram.pdf  used on inpu
-t line 115.
+t line 147.
 (pdftex.def)             Requested size: 345.0pt x 338.3745pt.
  [12 <./images/scheduler_sequence_diagram.pdf> <./images/dynamicScheduler_seque
 nce_diagram.pdf>]
-<images/showStats_sequence_diagram.pdf, id=345, 637.42137pt x 608.2725pt>
+<images/showStats_sequence_diagram.pdf, id=382, 637.42137pt x 608.2725pt>
 File: images/showStats_sequence_diagram.pdf Graphic file (type pdf)
 <use images/showStats_sequence_diagram.pdf>
 Package pdftex.def Info: images/showStats_sequence_diagram.pdf  used on input l
-ine 121.
+ine 153.
 (pdftex.def)             Requested size: 345.0pt x 329.22334pt.
  [13 <./images/controlQueue_sequence_diagram.pdf>]
-<images/qrCodeChecking_sequence_diagram.pdf, id=362, 644.4075pt x 1272.67462pt>
+<images/qrCodeChecking_sequence_diagram.pdf, id=399, 644.4075pt x 1272.67462pt>
 
 File: images/qrCodeChecking_sequence_diagram.pdf Graphic file (type pdf)
 <use images/qrCodeChecking_sequence_diagram.pdf>
 Package pdftex.def Info: images/qrCodeChecking_sequence_diagram.pdf  used on in
-put line 127.
+put line 159.
 (pdftex.def)             Requested size: 276.00105pt x 545.10329pt.
  [14 <./images/showStats_sequence_diagram.pdf>]
-<images/architecture_components.pdf, id=379, 902.41138pt x 426.63388pt>
+<images/architecture_components.pdf, id=416, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 137.
+ 169.
 (pdftex.def)             Requested size: 345.0pt x 163.10555pt.
 
 [15 <./images/qrCodeChecking_sequence_diagram.pdf>])
@@ -1117,14 +1116,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `DD.out' has not changed.
-(rerunfilecheck)             Checksum: 94C9C2C96158F002F3B645BCB6003774;1505.
+(rerunfilecheck)             Checksum: 0B5911509DF8FA92F2EEF01D6CF6B87F;1905.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25416 strings out of 483140
- 476812 string characters out of 5965151
- 861770 words of memory out of 5000000
- 39790 multiletter control sequences out of 15000+600000
+ 25434 strings out of 483140
+ 477114 string characters out of 5965151
+ 862102 words of memory out of 5000000
+ 39802 multiletter control sequences out of 15000+600000
  548784 words of font info for 55 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,11n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1142,10 +1141,10 @@ four/jknappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (23 pages, 2340910 bytes).
+Output written on DD.pdf (23 pages, 2350602 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 67 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

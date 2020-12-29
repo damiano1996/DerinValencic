@@ -1,4 +1,6 @@
-Note: LogInService handles LogOut
+Note:
+- LogInService handles LogOut ---> DONE
+- In QRCodeChecking add connection to Scheduler to remove user from queue.
 
 For RASD v2:
     - remove requirements of releasing QR codes... There are two more specific...

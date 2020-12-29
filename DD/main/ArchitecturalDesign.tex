@@ -63,7 +63,7 @@ In this section we are going to present how the components interact at runtime.
 
 \subsection{Session Control}
 
-The figure \footnote{For all the sequence diagrams, a custom notation has been used to show the input parameters of the methods (**data). It follows a programming language notation to represent inputs in a more compact way. In Python style, it can be interpreted as a dictionary data structure.}~\ref{fig:SessControl} shows the sequence diagram associated to the operations performed by the SessionService module to generate and to control the validity of a given token. The tokens are part of the request parameters, they are used to keep sessions alive with users. The SessionService checks if a token already exists; if it is then the module controls if it is valid or expired, otherwise it will generate a new one.
+The figure \footnote{For all the sequence diagrams, a custom notation has been used to show the input parameters of the methods (**data). It follows a programming language notation to represent inputs in a more compact way. In Python style, it can be interpreted as a dictionary data structure.}~\ref{fig:SessControl} shows the sequence diagram associated to the operations performed by the SessionService module to generate and to control the validity of a given token. The tokens are part of the request parameters, they are used to keep sessions alive with users. The SessionService checks if a token already exists; if it is, then the module controls if it is valid or expired, otherwise it will generate a new one.
 Authentications and tokens are two different things: an user can have a token but he might be unauthorized (not logged or he could not have an account yet). The authorization status, associated to a token, will be updated by the LogInService or by activities performed in background by the system.
 
 \begin{figure}[H]
@@ -74,41 +74,73 @@ Authentications and tokens are two different things: an user can have a token bu
 
 \subsection{Sign Up}
 
+In figure~\ref{fig:SignUp} has been shown the procedure to register a new user. The core of the sequence diagram is the SignUpService that filters the data inserted by the customers and controls if the credentials have already been used for other accounts. If possible, the service creates the new account by inserting the credentials, and the other customers information, in the database. Results of the queries and the other executed methods are appended to the data that are back-propagated to the RequestHandler that creates the \gls{json} response.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/signUp_sequence_diagram.pdf}
-	\caption{Sign Up sequence diagram.}
+	\caption{Sign Up sequence diagram.}\label{fig:SignUp}
 \end{figure}
+
+\subsection{Log In}
+
+Similarly to the sign up, the figure~\ref{fig:LogIn} shows how the log in is performed. In this case the credentials are parsed from the request parameters and a verification is performed. If the pair username-password is present in the database, then the status of the token, assigned to the customer, will be updated to remember that the user has been authenticated.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/logIn_sequence_diagram.pdf}
-	\caption{Log In sequence diagram.}
+	\caption{Log In sequence diagram.}\label{fig:LogIn}
 \end{figure}
+
+\subsection{Lining Up}
+
+In figure~\ref{fig:LiningUp} the lining up operation has been reported.
+The user, to be allowed to perform a lining up, has to be registered and authenticated, therefore the ServiceHandler checks the token validity, communicating with the SessionService, and controls if the user is authenticated by getting the status of the token from the DataService.
+In case of valid token with positive status (user before logged in), the request is forwarded to the LiningUpService, which after few controls, can decide to pass the lining up information to the Scheduler.
+In any case the RequestHandler will reply to the clients with a response that it will contain lining up information (such as the QR code) or an error message.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/liningUp_sequence_diagram.pdf}
-	\caption{Lining Up sequence diagram.}
+	\caption{Lining Up sequence diagram.}\label{fig:LiningUp}
 \end{figure}
+
+\subsection{Booking a Visit}
+
+The sequence diagram~\ref{fig:BookingVisit} is similar to the previous one.
+The differences are in the kind of information passed from the EndUserApp.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/bookingVisit_sequence_diagram.pdf}
-	\caption{Booking a Visit sequence diagram.}
+	\caption{Booking a Visit sequence diagram.}\label{fig:BookingVisit}
 \end{figure}
+
+\subsection{Static Scheduler}
+
+Figure~\ref{fig:StaticScheduler} illustrates the sequence of events that occur in the Scheduler after that the LiningUpService, or BookingAVisitService, has been activated.
+It is called \textit{static} since these operations are performed only one time.
+The main purpose of this sequence is to show how the system allocates tickets in the virtual queue. It estimates the time in which customers will be called by collecting data from the history of purchases of customers (GroceryStoreService) and the needed time to arrive to the store (GoogleMapsService). Once an estimation is computed, the allocation in the queue is determined.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/scheduler_sequence_diagram.pdf}
-	\caption{Scheduler sequence diagram.}
+	\caption{Static Scheduler sequence diagram.}\label{fig:StaticScheduler}
 \end{figure}
+
+\subsection{Dynamic Scheduler}
+
+In contrast to the previous paragraph, in figure~\ref{fig:DynamicScheduler} there are activities that are performed mainly in background by the system to reschedule the virtual queue and to notify customers; for this reason it is called \textit{dynamic}.
+The EndUserApp periodically sends information to the server about the location of the customers (in case of active tickets). These kind of requests are forwarded to the UserPositionService through the LiningUpService, or the BookingAVisitService. The UserPositionService is used to estimate the position of the customers and to update the queue through the QueueManagerService.
+The QueueManagerService checks if it should notify users about timing and delays, moreover it updates the queue if tickets are expired.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/dynamicScheduler_sequence_diagram.pdf}
-	\caption{Dynamic Scheduler sequence diagram.}
+	\caption{Dynamic Scheduler sequence diagram.}\label{fig:DynamicScheduler}
 \end{figure}
+
+\subsection{Control Queue}
 
 \begin{figure}[H]
 	\centering
