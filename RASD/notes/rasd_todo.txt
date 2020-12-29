@@ -1,4 +1,0 @@
-- G3 più generale
-- check finale con alloy
-
-- sequence diagram per l'app dello store manger per come viene sbloccato il tornello

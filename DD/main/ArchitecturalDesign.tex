@@ -10,21 +10,69 @@
 
 \section{Component View}
 
-\begin{sidewaysfigure}
+The previously introduced components will be presented in details in this section by using the component diagram~\ref{fig:ComponentDiagram} that has been divided in three main sub-components to better understand the relation between the three tiers of the system.
+
+The presentation tier has been represented by the \textbf{EndUserApp} that generalizes the architecture of the smartphone application.
+It encapsulates the \textbf{\gls{mvc}}, that has been chosen as design pattern, and the \textbf{HostService} which is the module that allows the application to use the \glspl{api} offered by the device.
+
+\begin{sidewaystable} % \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/component_diagram.pdf}
-	\caption{Component Diagram.}
-\end{sidewaysfigure}
+	\caption{Component Diagram.}\label{fig:ComponentDiagram}
+\end{sidewaystable} % \end{figure}
+
+The business tier (web tier \& application tier) is the most complex part of the diagram, therefore it has been split in different layers of components:
+\begin{itemize}
+	\item \textbf{WebLayer}: contains the \textbf{RequestHandler} component that receives the requests from remote devices and forwards them to the application tier. The main functionalities are: \textit{decryption}, \textit{parsing} and \textit{forwarding} of the requests; \textit{reformatting} (in \gls{json} format) and \textit{encryption} of the responses before sending them to the clients.
+	
+	\item \textbf{ApplicationLogicLayer}: contains the modules for the functionalities offered by the system. They are:
+		\begin{itemize}
+			\item \textbf{ServiceHandler}: is the module that coordinates the others. It receives the requests from the previous layer and checks if sessions are active, communicating with the SessionService. After that, it calls the other services based on the request type. In the end, it returns the responses to the WebLayer.
+			\item \textbf{SessionService}: is the service that monitors the session by updating and releasing tokens.
+			\item \textbf{StatisticsService}: is the service that creates charts for the store manager to analyze the trend of the queues. It interacts with the DataLayer to retrieve data from the database.
+			\item \textbf{QRCodeCheckingService}: is the service used when customers scan the QR codes to verify that the ticket numbers are the same that have been notified by the system. It is called, in background, by the application running on the store manager device.
+			\item \textbf{LogInService}: is the service that controls and updates the status of the tokens. If an user has been recognized, by the system, it changes the status of the token in the database. In this way, the user will be identified as logged and he will be able to request for services that requires an authentication.
+			This service is used for log out too.
+			\item \textbf{SignUpSerivice}: allows users to create an account.
+			\item \textbf{ControlQueueService}: is the service used by the store manager to change parameters that modify the sequence of events in the Scheduler. From this service the store manager can modify the timing in which tickets are released, he can interrupt the release of tickets and he can change other parameters of the scheduler algorithm. This service communicates with the Scheduler and the DataLayer to store the new parameters.
+			\item \textbf{BookingAVisitService}: is the service that allows customers to book a visit. It handles the data passed from the clients, performs some checks on the inserted information and communicates with the Scheduler and with the DataLayer.
+			\item \textbf{LiningUpService}: is the service that allows customers to line up. As for the BookingAVisitService, it passes data to the Scheduler and the DataLayer.
+		\end{itemize}
+		
+		The main core of the ApplicationLogicLayer is the \textbf{Scheduler} that implements the algorithm used by the system to create and keep updated the virtual queue of users. It is composed by a StaticSchedulingService and a DynamicScheduler.
+		\item The \textbf{StaticSchedulingService} is in charge of performing few checks before asking to the DynamicScheduler to insert customers in the queue. Moreover, it is the first sub-module to be called by the LiningUpService and the BookingAVisitService. It communicates with the external services to compute a raw estimation of the time in which a customer will be called by the system to be authorized to enter in the store.
+		\item The \textbf{DynamicScheduler} is composed by different sub-services that are necessary to update the virtual queue in background and to notify customers.
+		The main sub-service is the \textbf{QueueManagerService} that handles the queue and coordinates the other modules.
+\end{itemize}
+
+The data tier has been represented by the \textbf{DataLayer} that contains the \textbf{DataService}. It interacts with the \gls{dbms} to execute queries.
+
+In the diagram has been reported the external services used by the system:
+\begin{itemize}
+	\item \textbf{GroceryStoreService}: to obtain data about customers from the store.
+	\item \textbf{GoogleMapsService}: used to compute the estimated time to arrive to the store from the location of the customer.
+	\item \textbf{GoogleFirebaseService}: used to notify customers.
+\end{itemize}
+
 
 \section{Deployment View}
 
 \section{Runtime View}
 
+In this section we are going to present how the components interact at runtime.
+
+\subsection{Session Control}
+
+The figure \footnote{For all the sequence diagrams, a custom notation has been used to show the input parameters of the methods (**data). It follows a programming language notation to represent inputs in a more compact way. In Python style, it can be interpreted as a dictionary data structure.}~\ref{fig:SessControl} shows the sequence diagram associated to the operations performed by the SessionService module to generate and to control the validity of a given token. The tokens are part of the request parameters, they are used to keep sessions alive with users. The SessionService checks if a token already exists; if it is then the module controls if it is valid or expired, otherwise it will generate a new one.
+Authentications and tokens are two different things: an user can have a token but he might be unauthorized (not logged or he could not have an account yet). The authorization status, associated to a token, will be updated by the LogInService or by activities performed in background by the system.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/sessionToken_sequence_diagram.pdf}
-	\caption{Session control sequence diagram.}
+	\caption{Session control sequence diagram.}\label{fig:SessControl}
 \end{figure}
+
+\subsection{Sign Up}
 
 \begin{figure}[H]
 	\centering

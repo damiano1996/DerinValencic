@@ -1,1 +1,5 @@
 Note: LogInService handles LogOut
+
+For RASD v2:
+    - remove requirements of releasing QR codes... There are two more specific...
+    - definition of TOKEN.
