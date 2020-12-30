@@ -20,11 +20,13 @@
 \BOOKMARK [2][-]{subsection.2.4.6}{Static Scheduler}{section.2.4}% 20
 \BOOKMARK [2][-]{subsection.2.4.7}{Dynamic Scheduler}{section.2.4}% 21
 \BOOKMARK [2][-]{subsection.2.4.8}{Control Queue}{section.2.4}% 22
-\BOOKMARK [1][-]{section.2.5}{Component Interfaces}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.6}{Selected Architectural Styles and Patterns}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 25
-\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 26
-\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 27
-\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 28
-\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 29
-\BOOKMARK [0][-]{chapter.7}{References}{}% 30
+\BOOKMARK [2][-]{subsection.2.4.9}{Show Stats}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.10}{QR Code Checking}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{Component Interfaces}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.6}{Selected Architectural Styles and Patterns}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 27
+\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 28
+\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 29
+\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 30
+\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 31
+\BOOKMARK [0][-]{chapter.7}{References}{}% 32

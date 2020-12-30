@@ -131,7 +131,7 @@ The main purpose of this sequence is to show how the system allocates tickets in
 \subsection{Dynamic Scheduler}
 
 In contrast to the previous paragraph, in figure~\ref{fig:DynamicScheduler} there are activities that are performed mainly in background by the system to reschedule the virtual queue and to notify customers; for this reason it is called \textit{dynamic}.
-The EndUserApp periodically sends information to the server about the location of the customers (in case of active tickets). These kind of requests are forwarded to the UserPositionService through the LiningUpService, or the BookingAVisitService. The UserPositionService is used to estimate the position of the customers and to update the queue through the QueueManagerService.
+The EndUserApp periodically sends information to the server about the location of the customers (in case of active tickets). These kind of requests are forwarded to the UserPositionService through the LiningUpService, or the BookingAVisitService. The UserPositionService is used to estimate the time to arrive of customers and to update the queue through the QueueManagerService.
 The QueueManagerService checks if it should notify users about timing and delays, moreover it updates the queue if tickets are expired.
 
 \begin{figure}[H]
@@ -142,22 +142,39 @@ The QueueManagerService checks if it should notify users about timing and delays
 
 \subsection{Control Queue}
 
+This service is used by the store manager to modify the parameters of the scheduler algorithm.
+Figure~\ref{fig:ControlQueue} follows the sequence of events to achieve this task. Since this operation can be activated only by store managers, the ControlQueueService verifies that the request is coming from a store manager account. In case of positive response, it will continue with a sequence of activities to update the parameters of the algorithm.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/controlQueue_sequence_diagram.pdf}
-	\caption{Control Queue sequence diagram.}
+	\caption{Control Queue sequence diagram.}\label{fig:ControlQueue}
 \end{figure}
+
+\subsection{Show Stats}
+
+Similarly to the previous paragraph, figure~\ref{fig:ShowStats} shows how the server retrieves data for analytical purposes. As before, this is an activity allowed only by store managers.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/showStats_sequence_diagram.pdf}
-	\caption{Show Stats sequence diagram.}
+	\caption{Show Stats sequence diagram.}\label{fig:ShowStats}
 \end{figure}
+
+\subsection{QR Code Checking}
+
+When customers scan the QR codes, the device of the store manager, in background, communicates with the server to authorize customers to enter in the store. Therefore, figure~\ref{fig:QRCodeChecking} reports the actions performed by the system to check that the scanned QR code is the same that has been called by the system.
+This sequence diagram is strongly related to the corresponding one reported in the \gls{rasd}.
+
+After having scanned the QR code, the EndUserApp of the store manager sends the ticket number to the server that compares it with the expected number.
+If it is the same, the server reply to the EndUserApp that unlocks the turnstile and sends a confirmation to the server that save and update the status of the queue.
+
+This is an activity that can be executed only by the store manager account, thus a verification must be performed as in figures~\ref{fig:ControlQueue} and \ref{fig:ShowStats} on the entity type. In this sequence, that verification wasn't be reported to avoid an overly crowded image.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{images/qrCodeChecking_sequence_diagram.pdf}
-	\caption{QR Code Checking sequence diagram.}
+	\caption{QR Code Checking sequence diagram.}\label{fig:QRCodeChecking}
 \end{figure}
 
 \section{Component Interfaces}

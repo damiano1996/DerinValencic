@@ -21,6 +21,8 @@
 \contentsline {subsection}{\numberline {2.4.6}Static Scheduler}{11}{subsection.2.4.6}%
 \contentsline {subsection}{\numberline {2.4.7}Dynamic Scheduler}{12}{subsection.2.4.7}%
 \contentsline {subsection}{\numberline {2.4.8}Control Queue}{13}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.4.9}Show Stats}{13}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {2.4.10}QR Code Checking}{14}{subsection.2.4.10}%
 \contentsline {section}{\numberline {2.5}Component Interfaces}{16}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{16}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Other Design Decisions}{16}{section.2.7}%
