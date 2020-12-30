@@ -1,8 +1,21 @@
 \chapter{Introduction}
 
 \section{Purpose}
+The purpose of this document is describing the Clup system in a more specific way than the RASD.
+Therefore, it is suggested to read ahead the RASD. This document is aimed both at stakeholders to view a preview of the final product, and at project managers as a guideline to follow.
+It describes the system by both showing high-level and in-depth analysis of it, and how these analyses affected the architectural design choices made. It also shows the division of the system in components describing how they work and interact, how they are necessary for the fulfilment of the requirements and how they will be implemented and in which order. 
+
 
 \section{Scope}
+Our application helps stores to prevent the diffusion of a virus, in a global pandemic situation, keeping customers in safety conditions.
+One of means to contribute to the success of this goal is to guarantee the absence of crowds.
+Considered one store, and established the maximum number of people that are allowed to be inside, our application is an instrument to keep the influx of people below that threshold.
+It works managing automatically the influx of people inside the store, staggering the entrances in the store by using some parameters to keep them safe.
+This is done by offering to customers a service that consist in a digital lining up system. It is designed to work remotely, but the possibility to line up physically is offered too. In this way, it should help to avoid crowds outside the store.
+Moreover, to reach the largest number of people, this application should be easy to use and its functions should work consistently in time. 
+Instead, to the manager of the store it is given a dashboard where are shown significant data like the number of people currently in the store, the status of the queue, the influx of people during different intervals of time, etc. It also allows, when it is necessary, the store manager to make decisions that influences the flux of people (like for example, blocking the entrances for a period or modifying some parameters which the algorithm uses to manage the flux). 
+Furthermore, it is given to the customers a function that allow them to book a visit to the store specifying a time slot. This is thought to help people with limited availability during the day.
+This option requires optionally at people to point out which product categories they are going to purchase or the departments they are going to visit. This is used to optimize the algorithm of the system to maximize the number of people inside the store during a certain time, by knowing their distribution. This can also be made automatically by using their data for long-time customers.
 
 \section{Definitions, Acronyms, Abbreviations}
 
