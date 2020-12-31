@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
 Scanning style file ./DD.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file DD.glo....done (8 entries accepted, 0 rejected).
-Sorting entries....done (23 comparisons).
-Generating output file DD.gls....done (22 lines written, 0 warnings).
+Scanning input file DD.glo....done (20 entries accepted, 0 rejected).
+Sorting entries....done (93 comparisons).
+Generating output file DD.gls....done (33 lines written, 0 warnings).
 Output written in DD.gls.
 Transcript written in DD.glg.
