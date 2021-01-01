@@ -229,19 +229,21 @@ The methods here shown are not supposed to be final but to give a hint of their 
 
 \section{Selected Architectural Styles and Patterns}
 
+\subsection{Overall Architecture}
+
 The most suitable architecture for \gls{clup} is the three tiers architecture since it is a well known design pattern and a well established software architecture. It allows to distribute the service over multiple independent sub-systems.
 
 In previous sections we already explained the functionalities offered by the different tiers, now we are focusing the attention on the architectural point of view.
 \begin{itemize}
 	\item \textbf{Presentation tier}: is the tier that allows users to interact with the system. It communicates with the business tier by using the \gls{rest} architecture.
 	As reported in figure \ref{fig:ArchitectureComponents}, there are three types of entity that allow users to interact with the system through a \gls{gui}. Only customers' devices communicate with the Google Firebase service to receive live notifications.
-	\item \textbf{Business tier}: is the core of the service. It is protected by a firewall; it is composed by a data balancer and two physical servers to increase availability and reliability of the system. The servers include the web and the application tiers. In case of necessity, the two sub-tiers can be divided over different servers.
-	The tier communicates with external services: Google Maps, Google Firebase and the Grocery store service.
-	\item \textbf{Data tier}: is protected by another firewall and a load balancer is used to distribute queries between the two database servers.
+	\item \textbf{Business tier}: is the core of the service. It is protected by a firewall; it is composed by a data balancer and two physical servers to increase the availability and reliability of the system. Servers include the web and the application tiers. In case of necessity, the two sub-tiers can be divided over different servers.
+	The tier communicates with external services: Google Maps, Google Firebase and the Grocery Store service.
+	\item \textbf{Data tier}: is protected by another firewall and a load balancer is used to distribute queries between the two database servers. Only the business tier can communicate with the data tier.
 \end{itemize}
 
 The architectural choice has been influenced by the benefits that follows: scalability, performance and availability are the main. They are consequences of the distribution of the system over multiple independent platforms.
-Moreover, independence allows a parallel development of the system, reducing the needed time to deploy the service and it plays an important role in a critic situation like the virus pandemic.
+Moreover, independence allows a parallel development of the system, reducing the needed time to deploy the service, playing an important role in a critic situation like the virus pandemic.
 
 \begin{sidewaysfigure}
 	\centering
@@ -249,4 +251,18 @@ Moreover, independence allows a parallel development of the system, reducing the
 	\caption{Architecture components.}\label{fig:ArchitectureComponents}
 \end{sidewaysfigure}
 
+\subsection{Design Patterns}
+
+The design patterns used by the system are:
+\begin{itemize}
+	\item \textbf{Proxy}: is used as firewall to protect the business tier and the data tier. It provides a well known way to control accesses to the servers.
+	\item \textbf{Observer} or \textbf{Publish/subscribe}: is the best choice in an environment in which there are one-to-many interactions. In \gls{clup}, the business tier acts as publisher when it notifies users about timing and delays. This pattern allows to update multiple objects (users' devices) after a state change in another one (server).
+	\item \textbf{Producer/consumer}: is used in systems in which there are objects that offer a service and others that use the service. In this particular case, the users' devices are consumers and servers are producers. This design pattern allows to build a scalable and asynchronous system that allows to break the dependency between the producers and the consumers.
+	\item \textbf{\gls{mvc}}: is used in two architectural levels. First, in the smartphone application, as reported in figure~\ref{fig:ComponentDiagram}; second, in the entire system as design pattern of the three tiers architecture since it is able to split the presentation tier from the business tier.
+	We propose to use this pattern since it is the most common choice and because it has several benefits such as: fast development process, possibility to have multiple views and, having different sub-modules, it allows to modify one component without changes in the others.
+\end{itemize}
+
 \section{Other Design Decisions}
+
+Few design decisions have been influenced by the integration of the external services.
+As shown in figure~\ref{fig:ArchitectureComponents}, Google Maps, Google Firebase and Grocery Store service have been integrated following the guidelines described in their documentations.

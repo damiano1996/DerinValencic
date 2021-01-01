@@ -24,9 +24,11 @@
 \BOOKMARK [2][-]{subsection.2.4.10}{QR Code Checking}{section.2.4}% 24
 \BOOKMARK [1][-]{section.2.5}{Component Interfaces}{chapter.2}% 25
 \BOOKMARK [1][-]{section.2.6}{Selected Architectural Styles and Patterns}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 28
-\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 29
-\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 30
-\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 31
-\BOOKMARK [0][-]{chapter.7}{References}{}% 32
+\BOOKMARK [2][-]{subsection.2.6.1}{Overall Architecture}{section.2.6}% 27
+\BOOKMARK [2][-]{subsection.2.6.2}{Design Patterns}{section.2.6}% 28
+\BOOKMARK [1][-]{section.2.7}{Other Design Decisions}{chapter.2}% 29
+\BOOKMARK [0][-]{chapter.3}{User Interface Design}{}% 30
+\BOOKMARK [0][-]{chapter.4}{Requirements Traceability}{}% 31
+\BOOKMARK [0][-]{chapter.5}{Implementation, Integration and Test Plan}{}% 32
+\BOOKMARK [0][-]{chapter.6}{Effort Spent}{}% 33
+\BOOKMARK [0][-]{chapter.7}{References}{}% 34
