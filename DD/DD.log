@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  1 JAN 2021 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  2 JAN 2021 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,17 +967,17 @@ Chapter 1.
 
 
 ]
-Overfull \hbox (24.0pt too wide) in alignment at lines 28--28
+Overfull \hbox (24.0pt too wide) in alignment at lines 31--31
 [][] 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 38--38
+Overfull \hbox (24.0pt too wide) in alignment at lines 41--41
 [][] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 38--39
+Overfull \hbox (15.0pt too wide) in paragraph at lines 41--42
 [][] 
  []
 
@@ -989,7 +989,7 @@ Chapter 2.
 <images/architecture.pdf, id=245, 515.04419pt x 331.2375pt>
 File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
-Package pdftex.def Info: images/architecture.pdf  used on input line 33.
+Package pdftex.def Info: images/architecture.pdf  used on input line 34.
 (pdftex.def)             Requested size: 345.0pt x 221.88248pt.
  [6 <./images/architecture.pdf
 
@@ -1000,54 +1000,54 @@ ored.
 <images/component_diagram.pdf, id=274, 2755.41408pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
-Package pdftex.def Info: images/component_diagram.pdf  used on input line 46.
+Package pdftex.def Info: images/component_diagram.pdf  used on input line 48.
 (pdftex.def)             Requested size: 598.0pt x 183.6122pt.
  [7] [8 <./images/component_diagram.pdf>] [9]
 <images/deployment_view.png, id=302, 1546.77875pt x 755.82375pt>
 File: images/deployment_view.png Graphic file (type png)
 <use images/deployment_view.png>
-Package pdftex.def Info: images/deployment_view.png  used on input line 97.
+Package pdftex.def Info: images/deployment_view.png  used on input line 99.
 (pdftex.def)             Requested size: 345.0pt x 168.57678pt.
  [10 <./images/deployment_view.png>]
 <images/sessionToken_sequence_diagram.pdf, id=314, 277.035pt x 406.3983pt>
 File: images/sessionToken_sequence_diagram.pdf Graphic file (type pdf)
 <use images/sessionToken_sequence_diagram.pdf>
 Package pdftex.def Info: images/sessionToken_sequence_diagram.pdf  used on inpu
-t line 112.
+t line 115.
 (pdftex.def)             Requested size: 345.0pt x 506.10529pt.
  [11] [12 <./images/sessionToken_sequence_diagram.pdf>]
 <images/signUp_sequence_diagram.pdf, id=342, 580.08719pt x 533.1117pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
- 122.
+ 125.
 (pdftex.def)             Requested size: 345.0pt x 317.07117pt.
 <images/logIn_sequence_diagram.pdf, id=344, 580.08719pt x 529.98pt>
 File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logIn_sequence_diagram.pdf>
 Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
-132.
+135.
 (pdftex.def)             Requested size: 345.0pt x 315.20857pt.
  [13 <./images/signUp_sequence_diagram.pdf>]
 <images/liningUp_sequence_diagram.pdf, id=362, 738.84026pt x 781.96138pt>
 File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/liningUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
-ne 145.
+ne 148.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [14 <./images/logIn_sequence_diagram.pdf>]
 <images/bookingVisit_sequence_diagram.pdf, id=380, 738.84026pt x 781.96138pt>
 File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
 <use images/bookingVisit_sequence_diagram.pdf>
 Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
-t line 156.
+t line 159.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [15 <./images/liningUp_sequence_diagram.pdf>]
 <images/scheduler_sequence_diagram.pdf, id=398, 716.6775pt x 377.49028pt>
 File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/scheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
-ine 168.
+ine 171.
 (pdftex.def)             Requested size: 345.0pt x 181.72319pt.
  [16 <./images/bookingVisit_sequence_diagram.pdf>]
 <images/dynamicScheduler_sequence_diagram.pdf, id=417, 673.55638pt x 334.3692pt
@@ -1055,7 +1055,7 @@ ine 168.
 File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/dynamicScheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/dynamicScheduler_sequence_diagram.pdf  used on 
-input line 180.
+input line 183.
 (pdftex.def)             Requested size: 345.0pt x 171.27094pt.
  [17 <./images/scheduler_sequence_diagram.pdf> <./images/dynamicScheduler_seque
 nce_diagram.pdf>]
@@ -1063,13 +1063,13 @@ nce_diagram.pdf>]
 File: images/controlQueue_sequence_diagram.pdf Graphic file (type pdf)
 <use images/controlQueue_sequence_diagram.pdf>
 Package pdftex.def Info: images/controlQueue_sequence_diagram.pdf  used on inpu
-t line 191.
+t line 194.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
 <images/showStats_sequence_diagram.pdf, id=449, 637.42137pt x 659.5842pt>
 File: images/showStats_sequence_diagram.pdf Graphic file (type pdf)
 <use images/showStats_sequence_diagram.pdf>
 Package pdftex.def Info: images/showStats_sequence_diagram.pdf  used on input l
-ine 201.
+ine 204.
 (pdftex.def)             Requested size: 345.0pt x 356.99544pt.
  [18 <./images/controlQueue_sequence_diagram.pdf>]
 <images/qrCodeChecking_sequence_diagram.pdf, id=471, 745.82639pt x 1272.67462pt
@@ -1077,7 +1077,7 @@ ine 201.
 File: images/qrCodeChecking_sequence_diagram.pdf Graphic file (type pdf)
 <use images/qrCodeChecking_sequence_diagram.pdf>
 Package pdftex.def Info: images/qrCodeChecking_sequence_diagram.pdf  used on in
-put line 217.
+put line 220.
 (pdftex.def)             Requested size: 276.00105pt x 470.95992pt.
 
 [19 <./images/showStats_sequence_diagram.pdf>]
@@ -1085,7 +1085,7 @@ put line 217.
 File: images/Component_class_diagram.png Graphic file (type png)
 <use images/Component_class_diagram.png>
 Package pdftex.def Info: images/Component_class_diagram.png  used on input line
- 226.
+ 230.
 (pdftex.def)             Requested size: 345.0pt x 476.83719pt.
  [20 <./images/qrCodeChecking_sequence_diagram.pdf>] [21 <./images/Component_cl
 ass_diagram.png>]
@@ -1093,7 +1093,7 @@ ass_diagram.png>]
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
- 250.
+ 255.
 (pdftex.def)             Requested size: 598.0pt x 282.72496pt.
  [22] [23 <./images/architecture_components.pdf
 
@@ -1172,7 +1172,7 @@ four/jknappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (37 pages, 2577334 bytes).
+Output written on DD.pdf (37 pages, 2577268 bytes).
 PDF statistics:
  1079 PDF objects out of 1200 (max. 8388607)
  596 compressed objects within 6 object streams

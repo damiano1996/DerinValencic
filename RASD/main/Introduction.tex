@@ -1,5 +1,6 @@
 \chapter{Introduction}
 
+
 \section{Purpose}
 
 \subsection{Description of the Given Problem}
@@ -9,11 +10,10 @@ One of means to contribute to the success of this goal is to guarantee the absen
 Considered one store, and established the maximum number of people that are allowed to be inside, our application is an instrument to keep the influx of people below that threshold.
 It works managing automatically the influx of people inside the store, staggering the entrances in the store by using some parameters to keep them safe.
 This is done by offering to customers a service that consist in a digital lining up system. It is designed to work remotely, but the possibility to line up physically is offered too. In this way, it should help to avoid crowds outside the store.
-Moreover, to reach the largest number of people, this application should be easy to use and its functions should work consistently in time. 
-Instead, to the manager of the store it is given a dashboard where are shown significant data like the number of people currently in the store, the status of the queue, the influx of people during different intervals of time, etc. It also allows, when it is necessary, the store manager to make decisions that influences the flux of people (like for example, blocking the entrances for a period or modifying some parameters which the algorithm uses to manage the flux). 
+Moreover, to reach the largest number of people, this application should be easy to use and its functions should work consistently in time.
+Instead, to the manager of the store it is given a dashboard where are shown significant data like the number of people currently in the store, the status of the queue, the influx of people during different intervals of time, etc. It also allows, when it is necessary, the store manager to make decisions that influences the flux of people (like for example, blocking the entrances for a period or modifying some parameters which the algorithm uses to manage the flux).
 Furthermore, it is given to the customers a function that allow them to book a visit to the store specifying a time slot. This is thought to help people with limited availability during the day.
 This option requires optionally at people to point out which product categories they are going to purchase or the departments they are going to visit. This is used to optimize the algorithm of the system to maximize the number of people inside the store during a certain time, by knowing their distribution. This can also be made automatically by using their data for long-time customers.
-
 
 \subsection{Goals}
 
@@ -21,20 +21,21 @@ We identified the following goals:
 
 \begin{itemize}
 
-	\item {\textbf{[G1]}}: Keep customers in safe condition w.r.t the \gls{dpcm} in force inside the store.
-		
-	\item {\textbf{[G2]}}: Limit the physical line situation in the proximity of the store.
-		
-	\item {\textbf{[G3]}}: Allow customers to line up from a remote device.
-	
-	\item {\textbf{[G4]}}: Allow store manager to monitor entrances.
-	
-	\item {\textbf{[G5]}}: Allow customers to line up from a physical spot.
-	
-	\item {\textbf{[G6]}}: Allow customers to book a visit from a remote
-device.
+    \item {\textbf{[G1]}}: Keep customers in safe condition w.r.t the \gls{dpcm} in force inside the store.
+
+    \item {\textbf{[G2]}}: Limit the physical line situation in the proximity of the store.
+
+    \item {\textbf{[G3]}}: Allow customers to line up from a remote device.
+
+    \item {\textbf{[G4]}}: Allow store manager to monitor entrances.
+
+    \item {\textbf{[G5]}}: Allow customers to line up from a physical spot.
+
+    \item {\textbf{[G6]}}: Allow customers to book a visit from a remote
+    device.
 
 \end{itemize}
+
 
 \section{Scope}
 
@@ -42,120 +43,125 @@ This document will refer mainly on a single supermarket chain with some already 
 
 The main phenomena, that this application is modeled on, are relative to the action that customers usually do and we have problems on tracking, such as:
 \begin{itemize}
-	\item a person wants to do groceries;
-	\item a person finishes to do groceries; and
-	\item a person visits a specific department of the store.
+    \item a person wants to do groceries;
+    \item a person finishes to do groceries; and
+    \item a person visits a specific department of the store.
 \end{itemize}
 
 The application is built with having in mind these phenomena and by trying to have more control on them without limiting the possibilities the customers have of doing groceries, and so, for the first one by having people being able to line up remotely, it helps the application to know in advance when a person wants to do groceries and can manage them better by offering:
 \begin{itemize}
-	\item a lining up service;
-	\item a ticket that permits to a person to look on their position in the queue; and
-	\item the possibility to book a visit to the store.
+    \item a lining up service;
+    \item a ticket that permits to a person to look on their position in the queue; and
+    \item the possibility to book a visit to the store.
 \end{itemize}
 \ \\
 In the other hand, the application:
 \begin{itemize}
-	\item can tell when a person enters and so, it can track the number of people inside the store and recognize when the store is full;
-	\item can interact with customers by allowing or not allowing them to enter; and
-	\item can notify the customers when it is their turn to enter.
+    \item can tell when a person enters and so, it can track the number of people inside the store and recognize when the store is full;
+    \item can interact with customers by allowing or not allowing them to enter; and
+    \item can notify the customers when it is their turn to enter.
 \end{itemize}
 \ \\
 Moreover, thanks to the fact the people that use the application are recognized by the system, it can also make prediction on the residence time of the customers and so it can predict when a person finishes to do groceries.
-For the last main phenomena, the system also predicts the department that are usually visited by the customers, if it have enough data to do so, but it is also helped by the fact that in booking ticket, the customers can point the departments or the set of items that they are going to buy. 
+For the last main phenomena, the system also predicts the department that are usually visited by the customers, if it have enough data to do so, but it is also helped by the fact that in booking ticket, the customers can point the departments or the set of items that they are going to buy.
 
 \subsection{Phenomena table}
 
 \begin{table}[H]
-\centering
-\begin{tabular}{| m{0.5\textwidth} | m{0.2\textwidth} | m{0.3\textwidth} |} 
-	\hline
-	 \textbf{Phenomenon} & \textbf{Shared} &  \textbf{Who Controls it} \\
-	\hline
-	A person wants to do groceries &  N & World \\ 
-	\hline
-	A person finish to do groceries  & N &  World \\ 
-	\hline
-	A person vist a department of the store & N & World \\
-	\hline
-	A person sings up & Y & World \\ 
-	\hline
-	A person looks at their position in the queue & Y & World \\ 
-	\hline
-	The store is full & Y & World \\ 
-	\hline
-	A person shows a QR code to enter & Y & World \\ 
-	\hline
-	A person enters in the store & Y & World \\ 
-	\hline
-	A person books a visit in the store & Y & World \\ 
-	\hline
-	A person point out a department that they will visit & Y & World \\ 
-	\hline
-	A person is notified that their turn is coming & Y & Machine \\ 
-	\hline
-	A person is not allowed to enter & Y & Machine \\
-	\hline
-	A person is  allowed to enter & Y & Machine \\
-	\hline
-	The system tracks the number of people inside the store & Y & Machine \\
-	\hline
-\end{tabular}
-\caption{Phenomena table}
-\label{tablePhenomenatable}
+    \centering
+    \begin{tabular}{| m{0.5\textwidth} | m{0.2\textwidth} | m{0.3\textwidth} |}
+        \hline
+        \textbf{Phenomenon}                                  & \textbf{Shared} & \textbf{Who Controls it} \\
+        \hline
+        A person wants to do groceries                          & N               & World                    \\
+        \hline
+        A person finish to do groceries                         & N               & World                    \\
+        \hline
+        A person visit a department of the store                & N               & World                    \\
+        \hline
+        A person sings up                                       & Y               & World                    \\
+        \hline
+        A person looks at their position in the queue           & Y               & World                    \\
+        \hline
+        The store is full                                       & Y               & World                    \\
+        \hline
+        A person shows a QR code to enter                       & Y               & World                    \\
+        \hline
+        A person enters in the store                            & Y               & World                    \\
+        \hline
+        A person books a visit in the store                     & Y               & World                    \\
+        \hline
+        A person point out a department that they will visit    & Y               & World                    \\
+        \hline
+        A person is notified that their turn is coming          & Y               & Machine                  \\
+        \hline
+        A person is not allowed to enter                        & Y               & Machine                  \\
+        \hline
+        A person is allowed to enter                             & Y               & Machine                  \\
+        \hline
+        The system tracks the number of people inside the store & Y               & Machine                  \\
+        \hline
+    \end{tabular}
+    \caption{Phenomena table}
+    \label{tablePhenomenatable}
 \end{table}
+
 
 \section{Definitions, Acronyms, Abbreviations}
 
 \subsection{Definitions}
 
 \begin{tabularx}{\textwidth}{ >{\hsize=0.2\textwidth}X >{\hsize=0.8\textwidth}X}
-  Customer & a person who buys goods from the stores. We will use the term \textit{customers} to refer to natural persons, instead the term \textit{users} will be used to specify the virtual entity served by the application.\\ \\
-  Store Manager & a person who is in charge of the store. In our context, we assume that the \textit{store manager} controls the entrances to the store with the help of \gls{clup} service. In the real world scenario this activity can be delegated, without loss of generality.\\ \\
-  Physical Spot & a digital device positioned outside the store that allows customers to obtain tickets to line up.\\ \\
-  User & a virtual entity that interacts with the virtual service offered by \gls{clup}. The user can be a customers, a store manager and a physical spot (when it is acting as proxy). In case of ambiguous interpretations, we will specify the real entity name.\\ \\
+    Customer      & a person who buys goods from the stores. We will use the term \textit{customers} to refer to natural persons, instead the term \textit{users} will be used to specify the virtual entity served by the application.                                               \\ \\
+    Store Manager & a person who is in charge of the store. In our context, we assume that the \textit{store manager} controls the entrances to the store with the help of \gls{clup} service. In the real world scenario this activity can be delegated, without loss of generality.\\ \\
+    Physical Spot & a digital device positioned outside the store that allows customers to obtain tickets to line up.\\ \\
+    User & a virtual entity that interacts with the virtual service offered by \gls{clup}. The user can be a customers, a store manager and a physical spot (when it is acting as proxy). In case of ambiguous interpretations, we will specify the real entity name.\\ \\
 \end{tabularx}
 % splitting table, it was too big.
 \begin{tabularx}{\textwidth}{ >{\hsize=0.2\textwidth}X >{\hsize=0.8\textwidth}X}
-  Proxy & an intermediary entity that exchanges information between two other entities. In our system, the physical spot can be seen as a proxy, since it allows customers to line up without the necessity to create an user account. From the point of view of the server, the physical spot is seen as an user.\\ \\
-  Virtual Queue & a queue of users allocated in the memory of the server. When a user asks for a lining up operation, or a booking a visit operation, it is allocated in this queue.\\ \\
-  Physical Queue & a queue of customers outside the store.\\ \\
-  Ticket & a piece of paper or a virtual card given to customers to show that they have performed a lining up or a booking a visit operation.\\ \\
-  QR code & a matrix composed by white and black squares encoding a string. It is reported on the ticket.\\ \\
-  System & we use this term to represent the entire service, composed by smartphone application and servers.\\ \\
-  Application & program executable on smartphone.
+    Proxy          & an intermediary entity that exchanges information between two other entities. In our system, the physical spot can be seen as a proxy, since it allows customers to line up without the necessity to create an user account. From the point of view of the server, the physical spot is seen as an user. \\ \\
+    Virtual Queue & a queue of users allocated in the memory of the server. When a user asks for a lining up operation, or a booking a visit operation, it is allocated in this queue.\\ \\
+    Physical Queue & a queue of customers outside the store.\\ \\
+    Ticket & a piece of paper or a virtual card given to customers to show that they have performed a lining up or a booking a visit operation.\\ \\
+    QR code & a matrix composed by white and black squares encoding a string. It is reported on the ticket.         \\ \\
+    System & we use this term to represent the entire service, composed by smartphone application and servers.\\ \\
+    Application & program executable on smartphone.
 \end{tabularx}
 
 \subsection{Acronyms and Abbreviations}
 \printglossary
 
+
 \section{Revision History}
 
 \begin{table}[H]
-\centering
-\begin{tabular}{ m{0.25\textwidth} | m{0.25\textwidth} } 
-	 \textbf{Date} & \textbf{Modifications} \\
-	\hline
-	\today & First version \\
-\end{tabular}
-\caption{Revision history table.}
-\label{table:revisionHistory}
+    \centering
+    \begin{tabular}{ m{0.25\textwidth} | m{0.25\textwidth} }
+        \textbf{Date}     & \textbf{Modifications} \\
+        \hline
+        December 22, 2020 & First version          \\
+        \today            & Second version
+    \end{tabular}
+    \caption{Revision history table.}
+    \label{table:revisionHistory}
 \end{table}
+
 
 \section{Reference Documents}
 
 \begin{itemize}
-	\item Specification document: "R \& DD Assignment AY2020-2021.pdf".
-	\item Slides of the lectures.
+    \item Specification document: "R \& DD Assignment AY2020-2021.pdf".
+    \item Slides of the lectures.
 \end{itemize}
+
 
 \section{Documents Structure}
 
 \begin{itemize}
-	\item \textbf{chapter 1}: this section analyses and describes the problem assigned, and the possible phenomena involved. From them it extracts the goals of the application. It also briefly describes some general information about the document and the parts that follow.
-	\item \textbf{chapter 2}: the overall description has been reported here. In this chapter we explain the main functionalities offered by the system describing the product perspective supported by state charts and the class diagram; the user characteristics with the description of the actors that are supposed to use the application and concluding with the domain assumptions that are necessary to achieve the goals.
-	\item \textbf{chapter 3}: in this section it will be shown what was previously reported in the second section but with a higher level of details. In particular it will be shown in more detail the requirements necessary for the application both functional ones, necessary to fulfill a goal, and non-functional ones composed of the interface, functional and design ones.
-	\item \textbf{chapter 4}: in this section will be shown a model of some features of the system made in alloy. This will be mainly shown by the commented code and by images of the result produced by the alloy program.
-	\item \textbf{chapter 5}: here we report the effort spent to design this document and how the activities have been divided between the authors.
-	\item \textbf{chapter 6}: list of references.
+    \item \textbf{chapter 1}: this section analyses and describes the problem assigned, and the possible phenomena involved. From them it extracts the goals of the application. It also briefly describes some general information about the document and the parts that follow.
+    \item \textbf{chapter 2}: the overall description has been reported here. In this chapter we explain the main functionalities offered by the system describing the product perspective supported by state charts and the class diagram; the user characteristics with the description of the actors that are supposed to use the application and concluding with the domain assumptions that are necessary to achieve the goals.
+    \item \textbf{chapter 3}: in this section it will be shown what was previously reported in the second section but with a higher level of details. In particular it will be shown in more detail the requirements necessary for the application both functional ones, necessary to fulfill a goal, and non-functional ones composed of the interface, functional and design ones.
+    \item \textbf{chapter 4}: in this section will be shown a model of some features of the system made in alloy. This will be mainly shown by the commented code and by images of the result produced by the alloy program.
+    \item \textbf{chapter 5}: here we report the effort spent to design this document and how the activities have been divided between the authors.
+    \item \textbf{chapter 6}: list of references.
 \end{itemize}

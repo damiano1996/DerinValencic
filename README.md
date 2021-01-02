@@ -1,8 +1,8 @@
-
 # Software Engineering 2 - Course Projects
 ---
 
 ## Team Members
+
 | Surname   | Name      | Contact Info                      |
 |:----------|:----------|:----------------------------------|
 | Derin     | Damiano   | damiano.derin@mail.polimi.it      |
