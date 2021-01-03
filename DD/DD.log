@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  2 JAN 2021 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.4)  3 JAN 2021 09:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,12 +981,18 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 41--42
 [][] 
  []
 
-[2] (./DD.gls) [3]) (./main/ArchitecturalDesign.tex [4]
+[2] (./DD.gls) [3]
+Overfull \hbox (35.69095pt too wide) in paragraph at lines 70--71
+\T1/cmr/m/n/10 "https://docs.microsoft.com/en-us/azure/architecture/guide/archi
+tecturestyles/" 
+ []
+
+) (./main/ArchitecturalDesign.tex [4]
 Chapter 2.
 [5
 
 ]
-<images/architecture.pdf, id=245, 515.04419pt x 331.2375pt>
+<images/architecture.pdf, id=247, 515.04419pt x 331.2375pt>
 File: images/architecture.pdf Graphic file (type pdf)
 <use images/architecture.pdf>
 Package pdftex.def Info: images/architecture.pdf  used on input line 34.
@@ -997,60 +1003,60 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/architecture.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
 >]
-<images/component_diagram.pdf, id=274, 2755.41408pt x 846.0408pt>
+<images/component_diagram.pdf, id=276, 2755.41408pt x 846.0408pt>
 File: images/component_diagram.pdf Graphic file (type pdf)
 <use images/component_diagram.pdf>
 Package pdftex.def Info: images/component_diagram.pdf  used on input line 48.
 (pdftex.def)             Requested size: 598.0pt x 183.6122pt.
  [7] [8 <./images/component_diagram.pdf>] [9]
-<images/deployment_view.png, id=302, 1546.77875pt x 755.82375pt>
+<images/deployment_view.png, id=305, 1546.77875pt x 755.82375pt>
 File: images/deployment_view.png Graphic file (type png)
 <use images/deployment_view.png>
 Package pdftex.def Info: images/deployment_view.png  used on input line 99.
 (pdftex.def)             Requested size: 345.0pt x 168.57678pt.
  [10 <./images/deployment_view.png>]
-<images/sessionToken_sequence_diagram.pdf, id=314, 277.035pt x 406.3983pt>
+<images/sessionToken_sequence_diagram.pdf, id=316, 277.035pt x 406.3983pt>
 File: images/sessionToken_sequence_diagram.pdf Graphic file (type pdf)
 <use images/sessionToken_sequence_diagram.pdf>
 Package pdftex.def Info: images/sessionToken_sequence_diagram.pdf  used on inpu
 t line 115.
 (pdftex.def)             Requested size: 345.0pt x 506.10529pt.
  [11] [12 <./images/sessionToken_sequence_diagram.pdf>]
-<images/signUp_sequence_diagram.pdf, id=342, 580.08719pt x 533.1117pt>
+<images/signUp_sequence_diagram.pdf, id=344, 580.08719pt x 533.1117pt>
 File: images/signUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/signUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/signUp_sequence_diagram.pdf  used on input line
  125.
 (pdftex.def)             Requested size: 345.0pt x 317.07117pt.
-<images/logIn_sequence_diagram.pdf, id=344, 580.08719pt x 529.98pt>
+<images/logIn_sequence_diagram.pdf, id=346, 580.08719pt x 529.98pt>
 File: images/logIn_sequence_diagram.pdf Graphic file (type pdf)
 <use images/logIn_sequence_diagram.pdf>
 Package pdftex.def Info: images/logIn_sequence_diagram.pdf  used on input line 
 135.
 (pdftex.def)             Requested size: 345.0pt x 315.20857pt.
  [13 <./images/signUp_sequence_diagram.pdf>]
-<images/liningUp_sequence_diagram.pdf, id=362, 738.84026pt x 781.96138pt>
+<images/liningUp_sequence_diagram.pdf, id=364, 738.84026pt x 781.96138pt>
 File: images/liningUp_sequence_diagram.pdf Graphic file (type pdf)
 <use images/liningUp_sequence_diagram.pdf>
 Package pdftex.def Info: images/liningUp_sequence_diagram.pdf  used on input li
 ne 148.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [14 <./images/logIn_sequence_diagram.pdf>]
-<images/bookingVisit_sequence_diagram.pdf, id=380, 738.84026pt x 781.96138pt>
+<images/bookingVisit_sequence_diagram.pdf, id=382, 738.84026pt x 781.96138pt>
 File: images/bookingVisit_sequence_diagram.pdf Graphic file (type pdf)
 <use images/bookingVisit_sequence_diagram.pdf>
 Package pdftex.def Info: images/bookingVisit_sequence_diagram.pdf  used on inpu
 t line 159.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
  [15 <./images/liningUp_sequence_diagram.pdf>]
-<images/scheduler_sequence_diagram.pdf, id=398, 716.6775pt x 377.49028pt>
+<images/scheduler_sequence_diagram.pdf, id=400, 716.6775pt x 377.49028pt>
 File: images/scheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/scheduler_sequence_diagram.pdf>
 Package pdftex.def Info: images/scheduler_sequence_diagram.pdf  used on input l
 ine 171.
 (pdftex.def)             Requested size: 345.0pt x 181.72319pt.
  [16 <./images/bookingVisit_sequence_diagram.pdf>]
-<images/dynamicScheduler_sequence_diagram.pdf, id=417, 673.55638pt x 334.3692pt
+<images/dynamicScheduler_sequence_diagram.pdf, id=419, 673.55638pt x 334.3692pt
 >
 File: images/dynamicScheduler_sequence_diagram.pdf Graphic file (type pdf)
 <use images/dynamicScheduler_sequence_diagram.pdf>
@@ -1059,20 +1065,20 @@ input line 183.
 (pdftex.def)             Requested size: 345.0pt x 171.27094pt.
  [17 <./images/scheduler_sequence_diagram.pdf> <./images/dynamicScheduler_seque
 nce_diagram.pdf>]
-<images/controlQueue_sequence_diagram.pdf, id=447, 738.84026pt x 781.96138pt>
+<images/controlQueue_sequence_diagram.pdf, id=449, 738.84026pt x 781.96138pt>
 File: images/controlQueue_sequence_diagram.pdf Graphic file (type pdf)
 <use images/controlQueue_sequence_diagram.pdf>
 Package pdftex.def Info: images/controlQueue_sequence_diagram.pdf  used on inpu
 t line 194.
 (pdftex.def)             Requested size: 345.0pt x 365.14748pt.
-<images/showStats_sequence_diagram.pdf, id=449, 637.42137pt x 659.5842pt>
+<images/showStats_sequence_diagram.pdf, id=451, 637.42137pt x 659.5842pt>
 File: images/showStats_sequence_diagram.pdf Graphic file (type pdf)
 <use images/showStats_sequence_diagram.pdf>
 Package pdftex.def Info: images/showStats_sequence_diagram.pdf  used on input l
 ine 204.
 (pdftex.def)             Requested size: 345.0pt x 356.99544pt.
  [18 <./images/controlQueue_sequence_diagram.pdf>]
-<images/qrCodeChecking_sequence_diagram.pdf, id=471, 745.82639pt x 1272.67462pt
+<images/qrCodeChecking_sequence_diagram.pdf, id=473, 745.82639pt x 1272.67462pt
 >
 File: images/qrCodeChecking_sequence_diagram.pdf Graphic file (type pdf)
 <use images/qrCodeChecking_sequence_diagram.pdf>
@@ -1081,7 +1087,7 @@ put line 220.
 (pdftex.def)             Requested size: 276.00105pt x 470.95992pt.
 
 [19 <./images/showStats_sequence_diagram.pdf>]
-<images/Component_class_diagram.png, id=488, 1426.32875pt x 1971.365pt>
+<images/Component_class_diagram.png, id=490, 1426.32875pt x 1971.365pt>
 File: images/Component_class_diagram.png Graphic file (type png)
 <use images/Component_class_diagram.png>
 Package pdftex.def Info: images/Component_class_diagram.png  used on input line
@@ -1089,7 +1095,7 @@ Package pdftex.def Info: images/Component_class_diagram.png  used on input line
 (pdftex.def)             Requested size: 345.0pt x 476.83719pt.
  [20 <./images/qrCodeChecking_sequence_diagram.pdf>] [21 <./images/Component_cl
 ass_diagram.png>]
-<images/architecture_components.pdf, id=514, 902.41138pt x 426.63388pt>
+<images/architecture_components.pdf, id=516, 902.41138pt x 426.63388pt>
 File: images/architecture_components.pdf Graphic file (type pdf)
 <use images/architecture_components.pdf>
 Package pdftex.def Info: images/architecture_components.pdf  used on input line
@@ -1102,7 +1108,7 @@ PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
 >]) (./main/UserInterfaceDesign.tex [24]
 Chapter 3.
-<images/UX.pdf, id=579, 1016.83888pt x 988.65356pt>
+<images/UX.pdf, id=581, 1016.83888pt x 988.65356pt>
 File: images/UX.pdf Graphic file (type pdf)
 <use images/UX.pdf>
 Package pdftex.def Info: images/UX.pdf  used on input line 8.
@@ -1133,6 +1139,12 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 40--70
 
 ] [33]
 Chapter 7.
+
+Overfull \hbox (35.69095pt too wide) in paragraph at lines 10--11
+\T1/cmr/m/n/10 "https://docs.microsoft.com/en-us/azure/architecture/guide/archi
+tecturestyles/" 
+ []
+
 )
 No file DD.bbl.
 [34
@@ -1151,10 +1163,10 @@ Package rerunfilecheck Info: File `DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 25616 strings out of 483140
- 479880 string characters out of 5965151
- 863774 words of memory out of 5000000
- 39951 multiletter control sequences out of 15000+600000
+ 25647 strings out of 483140
+ 480284 string characters out of 5965151
+ 863905 words of memory out of 5000000
+ 39981 multiletter control sequences out of 15000+600000
  548784 words of font info for 55 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,12n,64p,997b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1172,10 +1184,10 @@ four/jknappen/ec/ecrm1200.600pk> </home/damiano/.texlive2019/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecbx1440.600pk> </home/damiano/.texlive2019/texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/damiano/.texlive2019/texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on DD.pdf (37 pages, 2577268 bytes).
+Output written on DD.pdf (37 pages, 2578200 bytes).
 PDF statistics:
- 1079 PDF objects out of 1200 (max. 8388607)
- 596 compressed objects within 6 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 1084 PDF objects out of 1200 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
  370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
