@@ -1,0 +1,111 @@
+\documentclass[a4paper,10pt,oneside,openany]{book}
+
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc} % Consente l'uso dei caratteri accentati italiani
+\usepackage[T1]{fontenc} % Consente l'uso di caratteri speciali appartenenti in genere ad alfabeti non inglesi
+
+\usepackage{fancyhdr} % Consente il rendering della copertina
+
+\usepackage{graphicx} % Consente l'inserimento delle figure nel documento
+
+\usepackage{subfigure} % Consente l'inserimento di sottofigure
+
+\usepackage{tabularx} % Consente l'uso di funzionalità aggiuntive alle tabelle
+\usepackage{longtable} % Consente la scrittura delle tabelle su più pagine
+
+\usepackage[titletoc]{appendix} % Consente di porre le appendici in indice
+
+\usepackage{float} % Necessario per inserire immagini flottanti
+
+\usepackage{fancyvrb} % Consente l'utilizzo di finestre Verbatim (testo cche si vuole porre così com'è, senza formattazione alcuna) all'interno di una cornice
+
+\usepackage{amsmath} % Consente l'uso di funzioni aggiuntive per le formule
+\numberwithin{equation}{section}
+
+\usepackage{hyperref} % Indice degli argomenti e rimandi cliccabili, per una navigazione più comoda all'interno del file
+
+\usepackage{lipsum} % Consente di inserire testo fittizio all'interno della tesi. Inutile in fase di scrittura della tesi. Eliminare questa dicitura e tutte le diciture \lorem all'interno del testo.
+
+\usepackage{rotating} % to rotate images
+
+
+\usepackage{lineno}
+\modulolinenumbers[1]
+
+\usepackage[nopostdot,style=super,nonumberlist,toc, automake]{glossaries}
+\makeglossaries
+\renewcommand{\glossarysection}[2][]{}
+
+
+\setacronymstyle{long-short}
+\input{main/glossary} % input definitions
+
+% Per inserire i contenuti, riferirsi ai file relativi e segnati tra parentesi graffe nei parametri \input
+
+%*******************************************************
+% Impostazioni della singola pagina e della copertina
+%*******************************************************
+\input{settings/settings}
+
+%*******************************************************
+% Copertina
+%*******************************************************
+% Imposta la copertina
+% Non modificare questa parte
+\usepackage[some]{background}
+\SetBgScale{1}
+\SetBgColor{gray}
+\SetBgAngle{0}
+\SetBgOpacity{0.07}
+% Non modificare questa parte
+
+\input{main/frontpage}
+
+\frontmatter
+
+
+%*******************************************************
+% Indice
+%*******************************************************
+\tableofcontents
+
+
+%*******************************************************
+% Capitoli
+%*******************************************************
+\mainmatter
+
+% Non modificare questa parte
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+% Non modificare questa parte
+
+% Inserire tutti i capitoli necessari. Si possono inserire tutti i capitoli
+% all'interno di un singolo file .tex oppure un file .tex per ogni capitolo.
+
+%\begin{linenumbers}
+\input{main/Introduction}
+\input{main/ArchitecturalDesign}
+\input{main/UserInterfaceDesign}
+\input{main/RequirementsTraceability}
+\input{main/ImplementationIntegrationTestPlan}
+\input{main/EffortSpent}
+\input{main/References}
+%\end{linenumbers}
+
+
+% bibliogarphy should be moved under References!
+%*******************************************************
+% Bibliografia
+%*******************************************************
+\nocite{*}
+\bibliography{bib/bibliography}
+\bibliographystyle{plain}
+
+%*******************************************************
+% Glossario
+%*******************************************************
+% \glsaddall
+% \printglossary[type=\acronymtype,title={Glossary}]
+
+\end{document}

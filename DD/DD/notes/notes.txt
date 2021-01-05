@@ -1,0 +1,8 @@
+Note:
+- LogInService handles LogOut ---> DONE
+- In QRCodeChecking add connection to Scheduler to remove user from queue. ---> DONE
+- Add Google Maps, firebase in the references! (is there an explanation of what is Grocery Store Service?)
+
+For RASD v2:
+    - remove requirements of releasing QR codes... There are two more specific...
+    - definition of TOKEN.
