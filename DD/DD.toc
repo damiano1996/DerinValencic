@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Component View}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Deployment View}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Runtime View}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Runtime View}{11}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Session Control}{11}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Sign Up}{12}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Log In}{13}{subsection.2.4.3}%

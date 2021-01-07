@@ -42,6 +42,14 @@ The previously introduced components will be presented in details in this sectio
 
 The presentation tier has been represented by the \textbf{EndUserApp} that generalizes the architecture of the smartphone application.
 It encapsulates the \textbf{\gls{mvc}}, that has been chosen as design pattern, and the \textbf{HostService} which is the module that allows the application to use the \glspl{api} offered by the device.
+Under the EndUserApp there are the peripheral components:
+\begin{itemize}
+	\item \textbf{Turnstile}: to control the physical turnstile.
+	\item \textbf{Display}: to control the physical display  and to show messages to the customers in the physical queue (note: it isn't the display of the tablet of the store manager).
+	\item \textbf{QRCodeScanner}: to control the scanner of QR codes.
+	\textbf{Printer}: to control the printer that releases tickets from the physical spot.
+\end{itemize}
+As reported in the \gls{rasd}, these peripherals are only for store manager device (Turnstile, Display, QRCodeScanner) and for the physical spot (Printer).
 
 \begin{sidewaystable} % \begin{figure}[H]
     \centering
