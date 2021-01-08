@@ -47,7 +47,7 @@ Under the EndUserApp there are the peripheral components:
 	\item \textbf{Turnstile}: to control the physical turnstile.
 	\item \textbf{Display}: to control the physical display  and to show messages to the customers in the physical queue (note: it isn't the display of the tablet of the store manager).
 	\item \textbf{QRCodeScanner}: to control the scanner of QR codes.
-	\textbf{Printer}: to control the printer that releases tickets from the physical spot.
+	\item \textbf{Printer}: to control the printer that releases tickets from the physical spot.
 \end{itemize}
 As reported in the \gls{rasd}, these peripherals are only for store manager device (Turnstile, Display, QRCodeScanner) and for the physical spot (Printer).
 
@@ -83,7 +83,7 @@ The business tier (web tier \& application tier) is the most complex part of the
 
 The data tier has been represented by the \textbf{DataLayer} that contains the \textbf{DataService}. It interacts with the \gls{dbms} to execute queries.
 
-In the diagram has been reported the external services used by the system:
+In the diagram, the external services, used by the system, have been reported:
 \begin{itemize}
     \item \textbf{GroceryStoreService}: to obtain data about customers from the store.
     \item \textbf{GoogleMapsService}: used to compute the estimated time to arrive to the store from the location of the customer.

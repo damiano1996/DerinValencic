@@ -8,7 +8,7 @@ It describes the system by both showing high-level and in-depth analysis of it, 
 
 
 \section{Scope}
-Our application helps stores to prevent the diffusion of a virus, in a global pandemic situation, keeping customers in safety conditions.
+The application helps stores to prevent the diffusion of a virus, in a global pandemic situation, keeping customers in safety conditions.
 One of means to contribute to the success of this goal is to guarantee the absence of crowds.
 Considered one store, and established the maximum number of people that are allowed to be inside, our application is an instrument to keep the influx of people below that threshold.
 It works managing automatically the influx of people inside the store, staggering the entrances in the store by using some parameters to keep them safe.
@@ -28,9 +28,8 @@ This option requires optionally at people to point out which product categories 
     Store Manager & a person who is in charge of the store. In our context, we assume that the \textit{store manager} controls the entrances to the store with the help of \gls{clup} service. In the real world scenario this activity can be delegated, without loss of generality.\\ \\
     Physical Spot & a digital device positioned outside the store that allows customers to obtain tickets to line up.\\ \\
     User & a virtual entity that interacts with the virtual service offered by \gls{clup}. The user can be a customers, a store manager and a physical spot (when it is acting as proxy). In case of ambiguous interpretations, we will specify the real entity name.\\ \\
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{ >{\hsize=0.2\textwidth}X >{\hsize=0.8\textwidth}X}
+%\end{tabularx}
+%\begin{tabularx}{\textwidth}{ >{\hsize=0.2\textwidth}X >{\hsize=0.8\textwidth}X}
     Proxy          & an intermediary entity that exchanges information between two other entities. In our system, the physical spot can be seen as a proxy, since it allows customers to line up without the necessity to create an user account. From the point of view of the server, the physical spot is seen as an user. \\ \\
     Virtual Queue & a queue of users allocated in the memory of the server. When a user asks for a lining up operation, or a booking a visit operation, it is allocated in this queue.\\ \\
     Physical Queue & a queue of customers outside the store.\\ \\
@@ -41,15 +40,15 @@ This option requires optionally at people to point out which product categories 
 \end{tabularx}
 
 \subsection{Acronyms and Abbreviations}
-\printglossary
 
+\printglossary
 
 \section{Revision History}
 
 \begin{table}[H]
     \centering
     \begin{tabular}{ m{0.25\textwidth} | m{0.25\textwidth} }
-        \textbf{Date} & \textbf{Modifications} \\
+        \textbf{Date} & \textbf{Version} \\
         \hline
         \today        & First version          \\
     \end{tabular}
@@ -76,9 +75,9 @@ This option requires optionally at people to point out which product categories 
 
 \begin{itemize}
 	\item \textbf{Chapter 1}: this section analyses and describes the problem assigned, and the possible phenomena involved. It briefly describes some general information about the document and the parts that follow.
-	\item \textbf{Chapter 2}: In this section an intensive analysis of the architectural design has been reported. Design choices will be motivated and explained, focusing the attention on the main components of the system and how they dynamically interact.
+	\item \textbf{Chapter 2}: in this section an intensive analysis of the architectural design has been reported. Design choices will be motivated and explained, focusing the attention on the main components of the system and how they dynamically interact.
 	\item \textbf{Chapter 3}: this is an extension of the section \textit{User Interfaces} section from the \gls{rasd}.
-	\item \textbf{Chapter 4}: analyzes the requirements mapping them to the components of the system that allow it to be accomplished.
+	\item \textbf{Chapter 4}: analyzes the requirements, mapping them, to the components of the system that allow it to be accomplished.
 	\item \textbf{Chapter 5}: describes the plan for the implementation, integration and test of the system.
 	\item \textbf{Chapter 6}: here we report the effort spent to design this document and how the activities have been divided between the authors.
 	\item \textbf{Chapter 7}: list of references.
