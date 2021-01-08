@@ -27,7 +27,9 @@ Subsequently the fourth block begin, after the scheduler is integrated, the comp
 
 In the end, the last block to be integrated is composed in order by the ServiceHandler, RequestHandler and the EndUserApp. The order of integration is clear since they are in different levels, it require to develop the RequestHandler and then EndUserApp drivers when proceeding on the implementation. 
 Since they are the last ones to be implemented the testing should be done more meticulously to ensure that the almost complete system works as thought. Especially because these components are crucial to its functioning, they allow so send the request from the device, elaborate them and redirect on the right component.\\
-The interfaces of the hardware component of the store and so turnstile, scanner and printer are included in the GroceryStoreSerivice, and so even though they are already implemented and tested, they should by further tested on site to verify that the acquisition of data, the output data and the state transition are correct. 
+After all of that, the interfaces of the hardware components of the store and so turnstile, scanner and printer are to be implented and tested on site to verify that the acquisition of data, the output data and the state transition are correct. \\
+The following image is a Gannt chart that show the schedule of the various activities as described:
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{images/Gantt.pdf}
